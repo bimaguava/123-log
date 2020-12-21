@@ -2,7 +2,7 @@
 type   : post
 title  : "Azure CLI test"
 date   : 2020-09-18T09:17:35+07:00
-slug   : ci-cd-overview
+slug   : azure-cli-testing
 categories: [sysadmin]
 tags      : [azure, asd]
 keywords  : [static site, overview]
