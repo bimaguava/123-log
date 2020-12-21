@@ -15,13 +15,13 @@
             {{ partial (print . ".html") . }}
           {{- end -}}
 
-          {{ partial "service/google-adsense.html" . }}
+          <!--{{ partial "service/google-adsense.html" . }}-->
 
           <div class="blog-content">
             {{ .Content }}
           </div>
 
-          {{ partial "service/google-adsense.html" . }}
+          <!--{{ partial "service/google-adsense.html" . }}-->
 
           {{ partial "post/navigation.html" . }}
         </article>
