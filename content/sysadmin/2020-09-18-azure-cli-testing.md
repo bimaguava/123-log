@@ -1,20 +1,16 @@
 ---
 type   : post
-title  : "Azure CLI test"
+title  : "Azure CLI testing"
 date   : 2020-09-18T09:17:35+07:00
-slug   : azure-cli-testing
 categories: [sysadmin]
 tags      : [azure, asd]
-keywords  : [static site, overview]
-author : bima
-opengraph:
-  image: assets/site/images/topics/git.png
 
 excerpt:
   Login and installations Azure CLI
 ---
 
 Read:
+Follow the official documentation:
 - https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
 
 ### Installation
