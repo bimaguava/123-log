@@ -1,5 +1,5 @@
 [context.production.environment]
-  HUGO_VERSION = "0.76"
+  HUGO_VERSION = "0.53"
 
 [build]
   command = "hugo"
