@@ -1,5 +1,5 @@
 +++
-title = "About Epsi"
+title = "About site"
 rssExclude = true
 +++
  
