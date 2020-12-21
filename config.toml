@@ -19,9 +19,9 @@ PygmentsStyle      = "monokai"
 [params]
   mainSections = ["post", "presentation"]
 
-  description = """\
-    Learn and Discover Open Source with Daily Genuine Experience.
-    From Coding, Front End, Back End, Database, and Static Site Generator.
+  description = """
+    Learn and Discover Open Source with Daily Genuine Experience.\\
+    From Coding, Front End, Back End, Database, and Static Site Generator.\\
     """
 
 # opengraphimage = "assets/site/images/logo-gear-opengraph.png"
