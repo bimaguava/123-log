@@ -1,0 +1,19 @@
+<nav class="pagination is-centered is-small" 
+     role="navigation" aria-label="pagination">
+
+    <!-- Previous Page. -->
+    {{ if .Page.PrevPage }}
+      <a class="pagination-previous post-previous"
+         href="{{ .Page.PrevPage.Permalink | absURL }}"
+         title="{{ .Page.PrevPage.Title }}">
+        <span class="fas fa-chevron-left"></span>&nbsp;&nbsp;</a>
+    {{ end }}
+
+    {{ if .Page.NextPage }}
+      <a class="pagination-next post-next"
+         href="{{ .Page.NextPage.Permalink | absURL }}" 
+         title="{{ .Page.NextPage.Title }}">&nbsp;&nbsp;
+        <span class="fas fa-chevron-right"></span></a>
+    {{ end }}
+</nav>
+

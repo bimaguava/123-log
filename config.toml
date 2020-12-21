@@ -1,0 +1,64 @@
+# A Hugo Site Using Oriclone Theme
+# $ hugo server --baseUrl=192.168.43.111 --bind="0.0.0.0"
+
+baseURL      = "https://epsi-rns.gitlab.io/"
+languageCode = "en-us"
+title        = "Yet Another Open Source Blog"
+theme        = "oriclone-bulma-md"
+
+Paginate     = 7
+
+PygmentsCodeFences = true
+PygmentsStyle      = "monokai"
+
+# https://github.com/gohugoio/hugo/issues/4288
+# uglyurls = true
+
+[params]
+  mainSections = ["post", "presentation"]
+
+  description = """
+    Learn and Discover Open Source with Daily Genuine Experience.\\
+    From Coding, Front End, Back End, Database, and Static Site Generator.\\
+    """
+
+# opengraphimage = "assets/site/images/logo-gear-opengraph.png"
+# opengraphimage = "assets/site/images/epsi-bulat.png"
+  opengraphimage = "assets/site/images/topics/default.png"
+
+  keywords  = [
+    "sass", "ssg", "static site",
+    "jekyll", "hugo", "hexo", "11ty", "eleventy", 
+    "bootstrap", "bulma", "materialize"
+  ]
+
+[permalinks]
+  backend    = ":section/:year/:month/:day/:slug"  
+  code       = ":section/:year/:month/:day/:slug"
+  frontend   = ":section/:year/:month/:day/:slug"
+  ssg        = ":section/:year/:month/:day/:slug"
+  devops     = ":section/:year/:month/:day/:slug" 
+  math       = ":section/:year/:month/:day/:slug"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+[mediaTypes]
+  [mediaTypes."text/yaml"]
+    suffixes = ["yml"]
+
+[outputFormats]
+  [outputFormats.yml]
+    baseName    = "index"
+    mediaType   = "text/yaml"
+    isPlainText = true
+  [outputFormats.txt]
+    baseName    = "index"
+    mediaType   = "text/plain"
+    isPlainText = true

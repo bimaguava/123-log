@@ -1,0 +1,81 @@
+<header>
+
+  <div id="layout-header" class="maxwidth">
+  <div id="layout-header_message"
+       class="maxwidth rounded-bottom shadow-hover
+              border border-top-0 border-dark text-light">
+      {{ .Site.Params.Description }}
+  </div>
+  </div>
+
+  <nav class="navbar navbar-expand-md navbar-light fixed-top
+              bg-stripe maxwidth rounded-bottom shadow-hover
+              border border-top-0 border-dark">
+
+    <a class="navbar-brand" href="{{ .Site.BaseURL }}">
+       <img src="{{ "assets/site/images/logo-gear.png" | absURL }}"
+           alt="Home" />
+    </a>
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{{ "pages" | absURL }}"
+           >Blog <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+    <button class="navbar-toggler" type="button" 
+        data-toggle="collapse" data-target="#navbarCollapse" 
+        aria-controls="navbarCollapse" aria-expanded="false" 
+        aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
+             role="button" data-toggle="dropdown" 
+             aria-haspopup="true" aria-expanded="false">Archives
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item"
+               href="{{ "tags" | absURL }}">By Tag</a>
+            <a class="dropdown-item"
+               href="{{ "categories" | absURL }}">By Category</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item"
+               href="{{ "pages/archives" | absURL }}">By Date</a>
+          </div>
+        </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" 
+             role="button" data-toggle="dropdown" 
+             aria-haspopup="true" aria-expanded="false">About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <a class="dropdown-item"
+               href="{{ "ssg/2019/02/17/concept-ssg" | absURL }}"
+              >SSG Concept</a>
+            <a class="dropdown-item"
+               href="{{ "frontend/2019/02/15/concept-css" | absURL }}"
+              >CSS Concept</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item"
+               href="{{ "pages/about" | absURL }}"
+              >Me, The Author</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline mt-2 mt-md-0" 
+          action="/pages/search/" method="get">
+        <input class="form-control mr-sm-2" type="text" name="q"
+          placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-dark my-2 my-sm-0" 
+          type="submit">Search</button>
+      </form>
+    </div>
+
+  </nav>
+</header>
+

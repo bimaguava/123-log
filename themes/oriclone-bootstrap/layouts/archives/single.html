@@ -1,0 +1,28 @@
+{{ define "main" }}
+<main role="main" class="col-md-12">
+<div class="container-fluid mb-3 p-3
+            bg-light rounded border border-dark shadow-hover">
+  <header>
+    <h2>{{ .Title | default .Site.Title }}</h2>
+  </header>
+
+  <article>
+    {{ .Content }}
+  </article>
+
+  {{ $posts := where .Site.Pages "Type" "in" site.Params.mainSections }}
+  <section id="archive">
+    {{ range ($posts.GroupByDate "2006") }}
+      {{ partial "summary/by-month.html" . }}
+    {{ end }}
+  </section>
+</div>
+</main>
+{{ end }}
+
+{{ define "aside" }}
+{{ end }}
+
+{{ define "yaosb" }}
+<!-- no yaosb site image -->
+{{ end }}

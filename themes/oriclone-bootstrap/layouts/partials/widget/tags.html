@@ -1,0 +1,24 @@
+{{/* view_tag_type : 'before' or 'after' */}}
+
+<div class="card mb-3 shadow-hover">
+  <div class="card-header bg-stripe-zero text-dark pb-0">
+    <span class="fa fa-tag float-right"></span>
+    <p class="card-title">Tags</p>
+    <div class="clearfix"></div>
+  </div>
+  <div class="card-body py-2">
+    {{ if eq .view_tag_type "after" }}
+      {{ range $name, $taxonomy := .taxonomies.tags }}
+        <a href="{{ printf "tags/%s" $name | absURL }}">
+          <span class="badge badge-secondary">{{ $name }} <span class="fa fa-tag"></span></span>
+        </a>&nbsp;
+      {{ end }}
+    {{ else }}
+      {{ range $name, $taxonomy := .taxonomies.tags }}
+        <a href="{{ printf "tags/%s" $name | absURL }}">
+          <span class="badge badge-secondary"><span class="fa fa-tag"></span> {{ $name }}</span>
+        </a>&nbsp;
+      {{ end }}
+    {{ end }}
+  </div>
+</div> 

@@ -1,0 +1,17 @@
+{{- define "main" -}}
+# Helper for related links
+# {{ .Title }}
+
+# just copy the result manually
+# from /pages/archives/index.txt
+# to folder data/archives.yml
+
+{{ range (where .Site.Pages "Type" "post") }}
+  {{- if .Date }}
+- id: {{ .Date.Format "06010204" }}
+  title: "{{ .Title }}"
+  url: {{ .RelPermalink }}
+  {{ end -}}
+{{ end }}
+
+{{- end -}}

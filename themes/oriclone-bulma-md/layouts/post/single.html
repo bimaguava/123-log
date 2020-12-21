@@ -1,0 +1,84 @@
+{{ define "main" }}
+  {{ $color := "blue" }}
+  <main role="main" 
+        class="column is-two-thirds">
+
+    <section class="main-wrapper {{ $color }}">
+      <div class="blog white z-depth-3 hoverable">
+
+        <section class="blog-header {{ $color }} lighten-5">
+          {{ partial "post/blog-header.html" . }}
+        </section>
+
+        <article class="blog-body" itemprop="articleBody">
+          {{- with .Page.Params.toc -}}
+            {{ partial (print . ".html") . }}
+          {{- end -}}
+
+          {{ partial "service/google-adsense.html" . }}
+
+          <div class="blog-content">
+            {{ .Content }}
+          </div>
+
+          {{ partial "service/google-adsense.html" . }}
+
+          {{ partial "post/navigation.html" . }}
+        </article>
+
+        <section class="blog-footer {{ $color }} lighten-5">
+          {{ partial "post/blog-footer.html" . }}
+          {{/* partial "service/disqus-comments.html" . */}}
+        </section>
+
+        {{/*
+        <section class="blog-body">
+        {% include service/disqus-comments.html %}
+        </section>
+        */}}
+
+      </div>
+    </section>
+
+  </main>
+{{ end }}
+
+{{ define "aside" }}
+  <aside class="column is-one-thirds">
+    {{ partial "widget/friends.html" . }}
+    {{ partial "widget/related-posts.html" . }}
+
+    {{ partial "widget/categories.html" . }}
+    {{ partial "widget/archives.html" . }}
+
+    {{ partial "widget/tags.html" (dict "taxonomies" .Site.Taxonomies "view_tag_type" "before") }}
+    {{ partial "widget/recent-posts.html" . }}
+    {{ partial "widget/archives-github.html" . }}
+    {{ partial "widget/archives-bitbucket.html" . }}
+
+    {{ partial "widget/oto-spies.html" . }}
+  </aside>
+{{ end }}
+
+{{ define "aside-all-widget" }}
+  <aside class="column is-one-thirds">
+    {{ partial "widget/friends.html" . }}
+    {{ partial "widget/related-posts.html" . }}
+
+    {{ partial "widget/categories.html" . }}
+    {{ partial "widget/tags.html" . }}
+
+    {{ partial "widget/archives.html" . }}
+    {{ partial "widget/recent-post.html" . }}
+
+    {{ partial "widget/archives-github.html" . }}
+    {{ partial "widget/archives-gitlab.html" . }}
+
+    {{ partial "widget/oto-spies.html" . }}
+    {{ partial "widget/affiliates.html" . }}
+  </aside>
+{{ end }}
+
+{{ define "yaosb" }}
+<!-- no yaosb site image -->
+{{ end }}

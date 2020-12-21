@@ -1,0 +1,44 @@
+
+    <header class="rounded p-2 mb-4"> 
+      <div class="main_title"> 
+        <div class="calendar calendar-icon--{{ .Page.Date.Format "01" }}">
+          <div class="calendar-day">{{ .Page.Date.Format "02" }}</div>
+        </div>
+        <h2 itemprop="name headline">
+          <a href="{{ .Permalink }}"
+          >{{ .Page.Title }}</a></h2>
+      </div>
+
+      <div class="clearfix"></div>
+      <div class="container-fluid">
+        {{ if .Params.author }}
+        <span class="meta_author badge badge-primary mr-2">
+            <span class="fa fa-user"></span>
+            &nbsp;
+            <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span itemprop="name">{{ .Params.author }}</span></span>
+        </span>
+        {{ end }}  
+        <div class="float-left">
+            <span class="meta-time badge badge-secondary mr-2">
+            {{ partial "post/time-elapsed.html" . }}
+            </span>
+        </div>
+        <div class="float-right mr-2">
+          {{ range .Params.tags }}
+            <a href="{{ printf "tags/%s" . | absURL }}">
+              <span class="badge badge-dark"><span class="fa fa-tag"></span> {{ . }}</span></a>
+          {{ end }}
+        </div>
+        <div class="float-right mr-2">
+          {{ range .Params.categories }}
+            <a href="{{ printf "categories/%s" . | absURL }}">
+              <span class="badge badge-info"><span class="fa fa-folder"></span> {{ . }}</span></a>
+          {{ end }}
+          &nbsp;
+        </div>
+      </div>
+    </header>
+
+  <div class="clearfix"></div>
+

@@ -1,0 +1,607 @@
+---
+type   : post
+title  : "CI/CD - Travis - Part Two"
+date   : 2020-02-15T13:13:35+07:00
+slug   : ci-cd-travis-02
+categories: [devops]
+tags      : [git, ssg, deploy]
+keywords  : [static site, travis]
+author : epsi
+opengraph:
+  image: assets/site/images/topics/git.png
+
+toc    : "toc-2020-02-ci-cd-ssg"
+
+excerpt:
+  CI/CD for SSG using Travis.
+  This part show example configuration for
+  Jekyll, Pelican, Hexo, Hugo, and Eleventy.
+---
+
+### Preface
+
+> Goal: Deploy SSG using Travis.
+
+After finishing steps in previous article.
+Now it is time to push to go to the configuration detail.
+
+Travis use `.travis.yaml` as a configuration.
+YAML engineer folks should be feels like home.
+Each SSG have their own different configuration.
+
+#### Reading
+
+Follow the official documentation:
+
+* https://docs.travis-ci.com/user/customizing-the-build
+
+#### Table of Content
+
+* Preface: Table of Content
+
+* 3: Basic: Language
+
+* 4: Script: Install and Build
+
+* 5: Deploy
+
+* 6: Complete YAML.
+
+* 7: URL Adjustment
+
+* 8: Miscellanous Adjustment
+
+* What is Next ?
+
+-- -- --
+
+### 3: Basic: Language
+
+Since each SSG might have different platform,
+most `.travis.yml` utilize **language environment** definition.
+
+#### 1: Jekyll
+
+{{< highlight yaml >}}
+language: ruby
+rvm:
+  - 2.6.3
+{{< / highlight >}}
+
+#### 2: Pelican
+
+{{< highlight yaml >}}
+language: python
+
+python:
+  - 3.5
+{{< / highlight >}}
+
+#### 3: Hugo
+
+Hugo use static binary executable.
+Thus, no language environment required.
+
+#### 4: Hexo
+
+{{< highlight yaml >}}
+language: node_js
+node_js:
+  - 8
+{{< / highlight >}}
+
+#### 5: Eleventy
+
+{{< highlight yaml >}}
+language: node_js
+node_js:
+  - 8
+{{< / highlight >}}
+
+-- -- --
+
+### 4: Script: Install and Build
+
+Commonly, there are two kind of script:
+
+* before_script: install required SSG
+
+* script: build site
+
+#### 1: Jekyll
+
+{{< highlight yaml >}}
+before_script: bundle install
+script: bundle exec jekyll build
+{{< / highlight >}}
+
+#### 2: Pelican
+
+{{< highlight yaml >}}
+before_script:
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
+
+script:
+  - make html
+{{< / highlight >}}
+
+Which the `requirement.txt` in my case is:
+
+{{< highlight configuration >}}
+Jinja2   ~= 2.10.1
+pelican  ~= 4.2.0
+Markdown ~= 3.1.1
+{{< / highlight >}}
+
+#### 3: Hugo
+
+{{< highlight yaml >}}
+before_script:
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.55.4/hugo_0.55.4_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.55.4_Linux-64bit.deb
+
+script:
+  - hugo
+{{< / highlight >}}
+
+#### 4: Hexo
+
+{{< highlight yaml >}}
+script:
+  - hexo generate # generate static files
+{{< / highlight >}}
+
+#### 5: Eleventy
+
+{{< highlight yaml >}}
+before_script:
+  - npm install @11ty/eleventy -g
+
+script: eleventy --pathprefix="/travis-11ty/"
+{{< / highlight >}}
+
+-- -- --
+
+### 5: Deploy
+
+Github using `gh-pages` branch as a place for generated result.
+Travis manage this easily using `pages` provider.
+No need any complex `git worktree`.
+
+The configuration is short,
+but you have to setup `$GITHUB_TOKEN` in environment,
+to enable Travis writing to `gh-pages`.
+For example this eleventy site:
+
+{{< highlight yaml >}}
+deploy:
+  local-dir: dist
+  provider: pages
+  skip-cleanup: true
+
+  # Set in travis-ci.org dashboard, marked secure
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+{{< / highlight >}}
+
+The only different between SSG is `local-dir`.
+
+#### 1: Jekyll
+
+{{< highlight yaml >}}
+deploy:
+  local-dir: _site
+{{< / highlight >}}
+
+#### 2: Pelican
+
+{{< highlight yaml >}}
+deploy:
+  local-dir: output
+{{< / highlight >}}
+
+#### 3: Hugo
+
+{{< highlight yaml >}}
+deploy:
+  local-dir: public
+{{< / highlight >}}
+
+#### 4: Hexo
+
+{{< highlight yaml >}}
+deploy:
+  local-dir: public
+{{< / highlight >}}
+
+#### 5: Eleventy
+
+Eleventy is very flexible,
+you can easily change output directory.
+The default is `_site`, but in my case, change it to `dist`.
+
+{{< highlight yaml >}}
+deploy:
+  local-dir: dist
+{{< / highlight >}}
+
+-- -- --
+
+### 6: Complete YAML.
+
+Now we can see them all running.
+
+![Travis: My Repository][image-ss-travis-10]
+
+As a summary, here is the complete configuration fo each SSG.
+
+#### 1: Jekyll
+
+* [github.com/epsi-rns/.../.travis.yml][travis-yaml-jekyll]
+
+{{< highlight yaml >}}
+language: ruby
+rvm:
+  - 2.6.3
+
+before_script: bundle install
+script: bundle exec jekyll build
+
+deploy:
+  local-dir: _site
+  provider: pages
+  skip-cleanup: true
+
+  # Set in travis-ci.org dashboard, marked secure
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+{{< / highlight >}}
+
+#### 2: Pelican
+
+* [github.com/epsi-rns/.../.travis.yml][travis-yaml-pelican]
+
+{{< highlight yaml >}}
+sudo: false
+
+language: python
+
+python:
+  - 3.5
+
+before_script:
+  - pip install --upgrade pip
+  - pip install -r requirements.txt
+
+script:
+  - make html
+
+deploy:
+  local-dir: output
+  provider: pages
+  skip-cleanup: true
+
+  # Set in travis-ci.org dashboard, marked secure
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+{{< / highlight >}}
+
+#### 3: Hugo
+
+* [github.com/epsi-rns/.../.travis.yml][travis-yaml-hugo]
+
+{{< highlight yaml >}}
+before_script:
+  - curl -LO https://github.com/gohugoio/hugo/releases/download/v0.55.4/hugo_0.55.4_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.55.4_Linux-64bit.deb
+
+script:
+  - hugo
+
+deploy:
+  local-dir: public
+  provider: pages
+  skip-cleanup: true
+
+  # Set in travis-ci.org dashboard, marked secure
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+{{< / highlight >}}
+
+#### 4: Hexo
+
+* [github.com/epsi-rns/.../.travis.yml][travis-yaml-hexo]
+
+From Hexo official site:
+
+* <https://hexo.io/docs/github-pages.html>
+
+{{< highlight yaml >}}
+sudo: false
+
+language: node_js
+node_js:
+  - 8
+
+cache: npm
+branches:
+  only:
+    - master # build master branch only
+script:
+  - hexo generate # generate static files
+
+deploy:
+  local-dir: public
+  provider: pages
+  skip-cleanup: true
+
+  # Set in travis-ci.org dashboard, marked secure
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+{{< / highlight >}}
+
+#### 5: Eleventy
+
+* [github.com/epsi-rns/.../.travis.yml][travis-yaml-11ty]
+
+{{< highlight yaml >}}
+language: node_js
+node_js:
+  - 8
+
+before_script:
+  - npm install @11ty/eleventy -g
+
+script: eleventy --pathprefix="/travis-11ty/"
+
+deploy:
+  local-dir: dist
+  provider: pages
+  skip-cleanup: true
+
+  # Set in travis-ci.org dashboard, marked secure
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+{{< / highlight >}}
+
+-- -- --
+
+### 7: Adjustment
+
+All SSG works well in my case, just need a few adjustment.
+
+#### 1: Jekyll
+
+{{< highlight yaml >}}
+language: ruby
+rvm:
+  - 2.6.3
+{{< / highlight >}}
+
+#### 2: Pelican
+
+{{< highlight yaml >}}
+language: python
+
+python:
+  - 3.5
+{{< / highlight >}}
+
+#### 3: Hugo
+
+Hugo use static binary executable.
+Thus, no language environment required.
+
+#### 4: Hexo
+
+{{< highlight yaml >}}
+language: node_js
+node_js:
+  - 8
+{{< / highlight >}}
+
+#### 5: Eleventy
+
+{{< highlight yaml >}}
+language: node_js
+node_js:
+  - 8
+{{< / highlight >}}
+
+-- -- --
+
+### 7: URL Adjustment
+
+You only need this adjustment if you use github pages.
+
+#### 1: Jekyll
+
+Since the repository use github pages,
+we should set the `_config.yml` as below example:
+
+{{< highlight yaml >}}
+# the subpath of your site, e.g. /blog
+baseurl: "/travis-jekyll" 
+{{< / highlight >}}
+
+#### 2: Pelican
+
+This is the easiest one. No adjustment required.
+
+#### 3: Hugo
+
+Since the repository use github pages,
+we should set the `config.toml` as below example:
+
+{{< highlight bash >}}
+# The subpath of your site, e.g. /blog
+baseURL      = "/travis-hugo"
+{{< / highlight >}}
+
+#### 4: Hexo
+
+Since the repository use github pages,
+we should set the `root` as below example:
+
+This travis example has **_config.yml** as below
+
+{{< highlight yaml >}}
+root          : /travis-hexo/
+{{< / highlight >}}
+
+And has **_config_local.yml** as below
+
+{{< highlight yaml >}}
+root          : /
+{{< / highlight >}}
+
+To run locally you can override use this command.
+
+{{< highlight yaml >}}
+hexo server -p 5000 --debug --config _config.yml,_config_local.yml
+{{< / highlight >}}
+
+If you use link in landing page,
+it should also altered manually,
+because Hexo did not come with **absolute path**.
+
+For example this `source/index.html`, 
+we should add `/travis-hexo/` as below example below:
+
+{{< highlight html >}}
+  <p>
+    <a href="/travis-hexo/archives/" 
+       class="button is-dark has-margin-bottom-5"
+      >Articles Sorted by Month</a>
+    <a href="/travis-hexo/tags.html" 
+       class="button is-primary has-margin-bottom-5"
+      >Articles Sorted by Tag</a>
+  </p>
+{{< / highlight >}}
+
+Another needed adjustment is in EJS part.
+If you accidentaly code using `each` as below example:
+
+{{< highlight javascript >}}
+  if (page.categories) {
+    page.categories.each(function(item){
+      terms.push(item.name);
+    })
+  }
+
+  if (page.tags) {
+    page.tags.each(function(item){
+      terms.push(item.name);
+    })
+  }
+{{< / highlight >}}
+
+You should change it to `forEach`.
+
+{{< highlight javascript >}}
+  if (page.categories) {
+    page.categories.forEach(function(item){
+      terms.push(item.name);
+    })
+  }
+
+  if (page.tags) {
+    page.tags.forEach(function(item){
+      terms.push(item.name);
+    })
+  }
+{{< / highlight >}}
+
+#### 5: Eleventy
+
+Since the repository use github pages,
+we should set the `.eleventy.js` as below example:
+
+{{< highlight javascript >}}
+const config = {
+    // URL related
+    pathPrefix: "/travis-11ty/",
+    
+    dir: {
+      ...
+      output: "dist",
+    }
+}
+{{< / highlight >}}
+
+So that we ca nsynchronize with
+`--pathprefix="/travis-11ty/"` in command above.
+
+-- -- --
+
+### 8: Miscellanous Adjustment
+
+The only SSG that need adjustment is Jekyll.
+
+#### 1: Jekyll
+
+The `Gemfile`.
+Comment specific gem for windows platform as needed,
+such as `tzinfo` and `wdm`.
+
+#### 5: Eleventy
+
+You might seen in official Eleventy something like this:
+
+* https://github.com/11ty/eleventy/blob/master/.travis.yml
+
+{{< highlight yaml >}}
+before_script: npm install
+script: npm run test
+{{< / highlight >}}
+
+If Travis complain about `test`, you can make dummy `test` command.
+
+{{< highlight javascript >}}
+  "scripts": {
+    "build": "eleventy",
+    "watch": "eleventy --watch",
+    "debug": "DEBUG=* eleventy",
+    "test": "echo \"No Error: test specified\""
+  },
+{{< / highlight >}}
+
+But this is not necessary,
+since my example script is different, as below:
+
+{{< highlight yaml >}}
+before_script: npm install @11ty/eleventy -g
+script: eleventy --pathprefix="/travis-11ty/"
+{{< / highlight >}}
+
+-- -- --
+
+### What is Next ?
+
+Consider continue reading [ [CI/CD - CircleCI - Part One][local-whats-next] ].
+A different CI/CD that you can compare with Travis.
+
+[//]: <> ( -- -- -- links below -- -- -- )
+
+[local-whats-next]:     {{< baseurl >}}/devops/2020/02/16/ci-cd-circleci-01/
+
+[travis-yaml-jekyll]:   https://github.com/epsi-rns/travis-jekyll/blob/master/.travis.yml
+[travis-yaml-hexo]:     https://github.com/epsi-rns/travis-hexo/blob/master/.travis.yml
+[travis-yaml-hugo]:     https://github.com/epsi-rns/travis-hugo/blob/master/.travis.yml
+[travis-yaml-11ty]:     https://github.com/epsi-rns/travis-11ty/blob/master/.travis.yml
+[travis-yaml-pelican]:  https://github.com/epsi-rns/travis-pelican/blob/master/.travis.yml
+
+[image-ss-travis-10]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-10-running.png

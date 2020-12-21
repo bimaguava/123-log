@@ -1,0 +1,40 @@
+  {{ $year := .Key }}
+  <div class ="anchor-target archive-year" 
+       id="{{ $year }}">
+       {{- if eq .Key (now.Format "2006") -}}
+         This year's posts ({{ $year }})
+       {{- else -}}
+         {{ .Key }}
+       {{- end -}}
+       </div>
+
+  <div class="row">
+  {{ range (.Pages.GroupByDate "January") }}
+  {{ $month := .Key }}
+    <div class="col-lg-4 col-md-6 col-sm-12 pl-3">
+
+      <div class="card mb-3" id="{{ $year }}-{{ $month }}">
+        <div class="card-header bg-stripe-zero text-dark pb-0">
+          <p class="card-title">{{ $month }} - {{ $year }}</p>
+        </div>
+        <div class="card-body py-2">
+
+          <div class="archive-list pl-3">
+            {{ range .Pages }}
+            <div class="archive-item d-flex flex-row-reverse">
+              <div class="text-right text-nowrap"><time>
+                  {{ .Date.Format "02 Jan" }}&nbsp;
+                  <span class="fas fa-calendar"></span></time></div>
+              <div class="mr-auto"><a href="{{ .Permalink }}">
+                {{ .Title }}
+              </a></div>
+            </div>
+            {{ end }}
+          </div>
+
+        </div>
+      </div>
+  
+    </div>
+  {{ end }}
+  </div>

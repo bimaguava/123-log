@@ -1,0 +1,32 @@
+<head>
+  {{ partial "meta/html.html" . }}
+
+  {{/* NOTE: the Site's title, and if there is a page title, that is set too */}}
+  <title>{{ .Page.Title | default .Site.Title }}</title>
+
+  {{/*  Bootstrap CSS */}}
+  <link rel="stylesheet" type="text/css"
+        href="{{ "assets/css/bootstrap.css" | relURL }}">
+  <link rel="stylesheet" type="text/css"
+        href="{{ "assets/css/fontawesome.css" | relURL }}">
+  <link rel="stylesheet" type="text/css"
+        href="{{ "assets/css/main.css" | relURL }}">
+  {{ block "custom-stylesheet" . }}{{ end }}
+
+  {{/* javascript */}}
+
+  {{/* miscellanous */}}
+  <link rel="shortcut icon" type="image/x-icon" 
+        href="{{ "favicon.ico" | relURL }}"/>
+
+  {{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="%s" type="%s"
+        href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+
+  {{ partial "meta/seo.html" . }}
+  {{ partial "meta/opengraph.html" . }}
+  {{ partial "meta/twitter.html" . }}
+
+  {{/* unused */}}
+</head>

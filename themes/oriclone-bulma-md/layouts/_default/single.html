@@ -1,0 +1,54 @@
+{{ define "main" }}
+  {{ $color := "pink" }}
+  <main role="main" 
+        class="column is-two-thirds">
+
+    {{- block "yaosb" . }}
+    <div id="sitedesc_image"></div>
+    {{- end }}
+
+    <section class="main-wrapper {{ $color }}">
+      <div class="blog white z-depth-3 hoverable">
+
+        <section class="blog-header {{ $color }} lighten-5">
+          {{ partial "page/blog-header.html" . }}
+        </section>
+
+        <article class="blog-body" itemprop="articleBody">
+          <div class="blog-content">
+            {{ .Content }}
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+{{ end }}
+
+{{ define "aside" }}
+  <aside class="column is-one-thirds">
+    {{ partial "widget/tags.html" (dict "taxonomies" .Site.Taxonomies "view_tag_type" "before") }}
+    {{ partial "widget/recent-posts.html" . }}
+    {{ partial "widget/affiliates.html" . }}
+  </aside>
+{{ end }}
+
+{{ define "aside-all-widget" }}
+  <aside class="column is-one-thirds">
+    {{ partial "widget/friends.html" . }}
+    {{ partial "widget/related-posts.html" . }}
+
+    {{ partial "widget/categories.html" . }}
+    {{ partial "widget/tags.html" (dict "taxonomies" .Site.Taxonomies "view_tag_type" "before") }}
+
+    {{ partial "widget/archives.html" . }}
+    {{ partial "widget/recent-posts.html" . }}
+
+    {{ partial "widget/archives-github.html" . }}
+    {{ partial "widget/archives-gitlab.html" . }}
+
+    {{ partial "widget/oto-spies.html" . }}
+    {{ partial "widget/affiliates.html" . }}
+  </aside>
+{{ end }}

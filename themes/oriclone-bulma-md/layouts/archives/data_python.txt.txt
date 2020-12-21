@@ -1,0 +1,10 @@
+{{- define "main" -}}
+# Blogroll: Articles from epsi-rns.gitlab.io
+ARCHIVES_GITLAB = (
+{{- range (where .Site.Pages "Type" "post") -}}
+  {{- if .Date }}
+  ('{{ .Title }}', '{{ .RelPermalink }}'),
+  {{- end -}}
+{{- end }}
+)
+{{- end -}}

@@ -1,0 +1,93 @@
+
+  <nav role="navigation" aria-label="main navigation"
+       class="navbar is-fixed-top is-white maxwidth
+              white z-depth-3 hoverable"
+       id="navbar-vue-app">
+    <div class="navbar-brand">
+      <a class="navbar-item"
+         href="{{ .Site.BaseURL }}">
+        <img src="{{ "images/logo-gear.png" | absURL }}" 
+           alt="Home" />
+      </a>
+      <a class="navbar-item"
+         href="{{ "pages" | absURL }}">
+        Blog
+      </a>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          Archives
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item"
+             href="{{ "tags" | absURL }}">
+            <span class="fa fa-tags"></span>
+            &nbsp;By Tags
+          </a>
+          <a class="navbar-item"
+             href="{{ "categories" | absURL }}">
+            <span class="fa fa-folder"></span>
+            &nbsp;By Category
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item"
+             href="{{ "pages/archives" | absURL }}">
+            <span class="fa fa-calendar"></span>
+            &nbsp;Chronology
+          </a>
+        </div>
+      </div>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          About
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item"
+             href="{{ "ssg/2019/02/17/concept-ssg" | absURL }}">
+            <span class="fa fa-tags"></span>
+            &nbsp;SSG Concept
+          </a>
+          <a class="navbar-item"
+             href="{{ "frontend/2019/02/15/concept-css" | absURL }}">
+            <span class="fa fa-folder"></span>
+            &nbsp;CSS Concept
+          </a>
+          <hr class="navbar-divider">
+          <a class="navbar-item"
+             href="{{ "pages/about" | absURL }}">
+            <span class="fa fa-calendar"></span>
+            &nbsp;Me, The Author
+          </a>
+        </div>
+      </div>
+
+      <a role="button" class="navbar-burger burger" 
+         aria-label="menu" aria-expanded="false" data-target="navbarBulma"
+         @click="isOpen = !isOpen" v-bind:class="{'is-active': isOpen}">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBulma" class="navbar-menu"
+         v-bind:class="{'is-active': isOpen}">
+      <div class="navbar-start">
+      </div>
+
+      <div class="navbar-end">
+        <form class="is-marginless" action="/pages/search/" method="get">
+        <div class="navbar-item">
+          <input class="" type="text" name="q"
+            placeholder="Search..." aria-label="Search">
+          &nbsp;
+          <button class="button is-light" 
+            type="submit">Search</button>
+        </div>
+        </form>
+      </div>
+
+    </div>
+  </nav>

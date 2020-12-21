@@ -1,0 +1,23 @@
+{{ $color := "deep-orange" }}
+
+<section class="aside-wrapper {{ $color }}">
+  <div class="widget white z-depth-3 hoverable">
+
+    <div class="widget-header {{ $color }} lighten-4">
+      <strong>Categories</strong>
+      <span class="fa fa-folder is-pulled-right"></span>
+    </div>
+    
+    <div class="widget-body responsive-img">
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        {{ $path := $name | urlize }}
+        <a class="tag is-small is-dark
+                  {{ $color }} z-depth-1 hoverable p-b-5"
+           href="{{ printf "categories/%s" $path | absURL }}">
+          {{ $name }}&nbsp;<span class="fa fa-folder"></span>
+        </a>&nbsp;
+      {{ end }}
+    </div>
+
+  </div>
+</section>

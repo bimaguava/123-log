@@ -1,0 +1,30 @@
+{{ define "main" }}
+  {{ $color := "indigo" }}
+  <main role="main" 
+        class="column is-full">
+
+    {{- block "yaosb" . }}
+    <div id="sitedesc_image"></div>
+    {{- end }}
+
+
+    <section class="main-wrapper {{ $color }}">
+      <div class="blog white z-depth-3 hoverable">
+
+        <section class="blog-header {{ $color }} lighten-5">
+          {{ partial "page/section-header.html" . }}
+        </section>
+
+        <article class="blog-body" itemprop="articleBody">
+         {{ .Content }}
+
+         {{ $posts := where .Data.Pages "Type" "post" }}
+         {{ $dict := (dict "Color" $color "Posts" $posts) }}
+         {{ partial "index/by-month.html" $dict }}
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+{{ end }}

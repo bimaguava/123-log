@@ -1,0 +1,253 @@
+---
+type   : post
+title  : "CI/CD - Travis - Part One"
+date   : 2020-02-15T09:17:35+07:00
+slug   : ci-cd-travis-01
+categories: [devops]
+tags      : [git, ssg, deploy]
+keywords  : [static site, travis]
+author : epsi
+opengraph:
+  image: assets/site/images/topics/git.png
+
+toc    : "toc-2020-02-ci-cd-ssg"
+
+excerpt:
+  CI/CD for SSG using Travis.
+  This part applied deployment method for Eleventy as SSG test bed
+---
+
+### Preface
+
+> Goal: Deploy SSG using Travis.
+
+Most of the explanation doesn't require coding at all.
+Using figures below as an explanation would be sufficient.
+
+After explanation for dummies,
+there will be some kind of DevOps configuration using `travis.yml`.
+This a place to start learning for YAML engineer.
+
+#### Official Site
+
+* <https://travis-ci.com/>
+
+#### Table of Content
+
+* Preface: Table of Content
+
+* 1: Prepare Your Repo
+
+* 2: Prepare Your Jobs
+
+* What is Next ?
+
+-- -- --
+
+### 1: Prepare Your Repository
+
+Travis is a third party CI/CD.
+Travis can read from github/bitbucket repository,
+then build your favorite SSG,
+and write back to repository,
+or do something else, such as Amazon S3 thing.
+But unlike netlify or Zeit,
+Travis does not host anything.
+
+#### Sign In
+
+Your first attempt should be, creating account
+
+* <https://travis-ci.com/signin>
+
+![Travis: Sign-in][image-ss-travis-00]
+
+#### Supported Repository
+
+It is clear that Travis support these two git repositories:
+
+* <https://github.com/>
+
+* <https://bitbucket.org/> (beta)
+
+I have successfully build in github.
+But I never try Travis for bitbucket.
+I just do not have time to explore `Travis+Bitbucket` tier.
+
+Travis do not support gitlab.
+But do not worry, gitlab have their own internal CD/CD.
+
+What happened when you sign in to an account with empty jobs?
+Consider have a look at my bitbucket account.
+
+![Travis: Sign-in with bitbucket][image-ss-travis-01]
+
+For the rest of this guidance,
+I'm going to use my github account.
+This would looks different,
+because I already have some Travis jobs over there.
+
+![Travis: Sign-in with github][image-ss-travis-02]
+
+#### Practice
+
+Now you can make repository, with any name, for example:
+
+1. Jekyll:
+   * 🕷 Repo: <https://github.com/epsi-rns/travis-jekyll>
+   * 🕷 Site: <https://epsi-rns.github.io/travis-jekyll/>
+   * 🕷 Travis: <https://travis-ci.com/epsi-rns/travis-jekyll>
+
+2. Eleventy:
+   * 🕷 Repo: <https://github.com/epsi-rns/travis-11ty>
+   * 🕷 Site: <https://epsi-rns.github.io/travis-11ty/>
+   * 🕷 Travis: <https://travis-ci.com/epsi-rns/travis-11ty>
+
+3. Hexo:
+   * 🕷 Repo: <https://github.com/epsi-rns/travis-hexo>
+   * 🕷 Site: <https://epsi-rns.github.io/travis-hexo/>
+   * 🕷 Travis: <https://travis-ci.com/epsi-rns/travis-hexo>
+
+4. Pelican:
+   * 🕷 Repo: <https://github.com/epsi-rns/travis-pelican>
+   * 🕷 Site: <https://epsi-rns.github.io/travis-pelican/>
+   * 🕷 Travis: <https://travis-ci.com/epsi-rns/travis-pelican>
+  
+5. Hugo:
+   * 🕷 Repo: <https://github.com/epsi-rns/travis-hugo>
+   * 🕷 Site: <https://epsi-rns.github.io/travis-hugo/>
+   * 🕷 Travis: <https://travis-ci.com/epsi-rns/travis-hugo>
+
+![Github: Project Page Repository][image-ss-github-11ty]
+
+This is just an example,
+you should use your username account.
+and you should use your own repository.
+
+-- -- --
+
+### 2: Prepare Your Jobs
+
+Allright. I have a ready to use SSG, let's say eleventy,
+that I have put in `travis-11ty` repository on github account.
+What to do next 🤔?
+
+#### Example Configuration
+
+Example configuration is copied from.
+
+* <https://hexo.io/docs/github-pages.html>
+
+But it is altered for use with Eleventy, instead of Hexo.
+
+#### Travis Configuration
+
+Each SSG have a different configuration.
+For the sake of simplicity, consider ready to use `.travis.yml` configuration as below.
+I will explain the configuration later.
+
+{{< highlight yaml >}}
+language: node_js
+node_js:
+  - 8
+
+before_script:
+  - npm install @11ty/eleventy -g
+
+script: eleventy --pathprefix="/travis-11ty/"
+
+deploy:
+  local-dir: dist
+  provider: pages
+  skip-cleanup: true
+
+  # Set in travis-ci.org dashboard, marked secure
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: master
+{{< / highlight >}}
+
+Save this as `.travis.yml`.
+Add file, commit and push to `travis-11ty` repository.
+
+#### Trigger a Build
+
+How to create Jobs ?
+You should see a button with text trigger build on your dashboard.
+
+![Travis: Trigger a Build][image-ss-travis-03]
+
+Just click it. Your first build should be failed.
+Because you haven't set `$GITHUB_TOKEN` yet.
+And you also cannot set any environment variable such as `$GITHUB_TOKEN`
+for your jobs before you trigger a build.
+This is why your first job attempt failed.
+
+![Travis: Failed Jobs][image-ss-travis-04]
+
+#### Get Github Token
+
+You should get github token from your github account.
+Be aware that one token is used for all travis jobs.
+
+![Travis: Get Github Token][image-ss-travis-05]
+
+#### Set Github Token
+
+On Travis side, you should set `$GITHUB_TOKEN` as environment variable.
+
+![Travis: Set Github Token][image-ss-travis-06]
+
+#### Restart Build
+
+Hit the small `Restart Build` button. 
+
+![Travis: Restart Build Button][image-ss-travis-07b]
+
+You should see the build process started.
+
+![Travis: Processing build][image-ss-travis-07]
+
+#### Preview
+
+In my case. It works well. And the site is served at:
+
+* <https://epsi-rns.github.io/travis-11ty/>
+
+![Travis: Live Site][image-ss-travis-08]
+
+#### Job Log
+
+Even when your site is built successfully,
+it is recommeneded for beginner to see the job log.
+This is the heart of CI/CD.
+
+![Travis: Job Log][image-ss-travis-09]
+
+We have enough image, we are going to examine the YAML configuration,
+in the next part.
+
+-- -- --
+
+### What is Next ?
+
+Consider continue reading [ [CI/CD - Travis - Part Two][local-whats-next] ].
+Finishing this worktree feature guidance with examples.
+
+[//]: <> ( -- -- -- links below -- -- -- )
+
+[local-whats-next]:     {{< baseurl >}}/devops/2020/02/15/ci-cd-travis-02/
+
+[image-ss-github-11ty]: {{< baseurl >}}assets/posts/devops/2020/02/travis/05-github-travis-11ty.png
+[image-ss-travis-00]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-00-signin.png
+[image-ss-travis-01]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-01-signin-bitbucket.png
+[image-ss-travis-02]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-02-signin-github.png
+[image-ss-travis-03]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-03-trigger-a-build.png
+[image-ss-travis-04]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-04-master-errored.png
+[image-ss-travis-05]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-05-get-github-token.png
+[image-ss-travis-06]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-06-set-github-token.png
+[image-ss-travis-07]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-07-restart-build.png
+[image-ss-travis-07b]:  {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-07-restart-build-button.png
+[image-ss-travis-08]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-08-live-site.png
+[image-ss-travis-09]:   {{< baseurl >}}assets/posts/devops/2020/02/travis/05-travis-09-job-log.png

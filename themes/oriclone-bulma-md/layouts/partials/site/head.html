@@ -1,0 +1,20 @@
+
+  {{ partial "meta/html.html" . }}
+  <title>{{ .Page.Title | default .Site.Title }}</title>
+
+  {{/* Stylesheet */}}
+  <link rel="stylesheet" type="text/css"
+        href="{{ "css/bulma.css" | relURL }}">
+  <link rel="stylesheet" type="text/css"
+        href="{{ "css/helper.css" | relURL }}">
+  <link rel="stylesheet" type="text/css"
+        href="{{ "css/fontawesome.css" | relURL }}">
+  <link rel="stylesheet" type="text/css"
+        href="{{ "css/main.css" | relURL }}">
+
+  <link rel="shortcut icon" type="image/x-icon"
+        href="{{ "favicon.ico" | relURL }}" />
+
+  {{ partial "meta/seo.html" . }}
+  {{ partial "meta/opengraph.html" . }}
+  {{ partial "meta/twitter.html" . }}

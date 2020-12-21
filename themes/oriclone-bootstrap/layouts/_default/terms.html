@@ -1,0 +1,56 @@
+{{ define "main" }}
+<main role="main" 
+      class="container-fluid mb-3 p-3
+             bg-light rounded border border-dark shadow-hover">
+
+  <div class="">
+    {{ range $key, $value := .Data.Terms }}
+      {{ $postCount := len $value.Pages  }}
+      <a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}">
+      <span class="badge badge-dark">{{ $key }} 
+      <span class="badge badge-light">{{ $postCount }}</span></span></a>
+    {{ end }}
+  </div>
+  <br/>
+
+  <header>
+    <h2>{{ .Section }}</h2>
+  </header>
+
+  {{ .Content }}
+
+  <section class="row px-3" id="archive">
+    {{ range $key, $value := .Data.Terms }}
+    <div class="col-lg-4 col-md-6 col-sm-12">
+
+      <div class="card mb-3" id="{{ $key }}">
+        <div class="card-header bg-stripe-zero text-dark pb-0">
+          <p class="card-title">
+            {{ $.Data.Singular | humanize }}: 
+            <a href="{{ "/" | relLangURL }}{{ $.Data.Plural | urlize }}/{{ $key | urlize }}">
+            <span class="badge badge-light">{{ $key }}</span></a>
+          </p>
+        </div>
+        <div class="card-body py-2">
+
+          <div class="px-3">
+          {{ range $value.Pages }}
+          <div class="d-flex flex-row-reverse archive-list">
+            <div class="text-right text-nowrap">
+              <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{ .Date.Format "Jan 02, 2006" }}&nbsp;</time></div>
+            <div class="mr-auto"><a href="{{ .Permalink }}">
+              {{ .Title }}
+            </a></div>
+          </div>
+          {{ end }}
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    {{ end }}
+  </section>
+</main>
+{{ end }}

@@ -1,0 +1,35 @@
+{{ $color := "cyan" }}
+{{/* view_tag_type : 'before' or 'after' */}}
+
+<section class="aside-wrapper {{ $color }}">
+  <div class="widget white z-depth-3 hoverable">
+
+    <div class="widget-header {{ $color }} lighten-4">
+      <strong>Tags</strong>
+      <span class="fa fa-tag is-pulled-right"></span>
+    </div>
+    
+    <div class="widget-body responsive-img">
+    {{ if eq .view_tag_type "after" }}
+      {{ range $name, $taxonomy := .taxonomies.tags }}
+        {{ $path := $name | urlize }}
+        <a class="tag is-small is-light
+                  {{ $color }} z-depth-1 hoverable p-b-5"
+           href="{{ printf "tags/%s" $path | absURL }}">
+          {{ $name }}&nbsp;<span class="fa fa-tag"></span>
+        </a>&nbsp;
+      {{ end }}
+    {{ else }}
+      {{ range $name, $taxonomy := .taxonomies.tags }}
+        {{ $path := $name | urlize }}
+        <a class="tag is-small is-light
+                  {{ $color }} z-depth-1 hoverable p-b-5"
+           href="{{ printf "tags/%s" $path | absURL }}">
+          <span class="fa fa-tag"></span>&nbsp;{{ $name }}
+        </a>&nbsp;
+      {{ end }}
+    {{ end }}
+    </div>
+
+  </div>
+</section>

@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{- $posts := where .Site.Pages "Type" "post" -}}
+{{- $postCount := len $posts -}}
+{
+  {{ range $i, $e := $posts }}
+    "{{ .RelPermalink | urlize }}": {
+      "title": "{{ safeHTML $e.Title }}",
+      "content": "{{ safeHTML ($e.Params.excerpt | default $e.Summary) }}",
+      "url": " {{ .RelPermalink }}",
+      "author": "{{ safeHTML $e.Params.author }}",
+      "category": "{{ safeHTML $e.Section  }}"
+    }
+    {{- if not (eq (add $i 1) $postCount) }},{{ end -}}
+  {{ end }}
+}
+{{ end }}

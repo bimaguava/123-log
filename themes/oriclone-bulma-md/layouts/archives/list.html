@@ -1,0 +1,57 @@
+{{ define "main" }}
+  {{ $color := "brown" }}
+  <main role="main" 
+        class="column is-full">
+
+    {{- block "yaosb" . }}
+    <div id="sitedesc_image"></div>
+    {{- end }}
+
+    <section class="main-wrapper {{ $color }}">
+      <div class="blog white z-depth-3 hoverable">
+
+        <section class="blog-header {{ $color }} lighten-5">
+          {{ partial "page/blog-header.html" . }}
+        </section>
+
+        <article class="blog-body" itemprop="articleBody">
+
+          {{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
+          {{ $dict := (dict "p" $paginator "c" $color  "s" .Scratch) }}
+          {{ partial "pagination/06-screenreader.html" $dict }}
+
+          {{ .Content }}
+          {{ block "index" $dict }}{{ end }}
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+{{ end }}
+
+{{ define "index" }}
+  <div class="post-list">
+  {{ range .p.Pages }}
+    <div class="archive p-b-10">
+      {{ partial "index/blog-list.html" . }}
+    </div>
+  {{ end }}
+  </div>
+{{ end }}
+
+{{ define "pagination-steps" }}
+{{/*
+  You may choose one of our pagination:
+  
+  {{ $dict := (dict "p" $paginator "c" $color) }}
+  {{ partial "pagination/01-simple.html" $dict }}
+  {{ partial "pagination/02-number.html" $dict }}
+  
+  {{ $dict := (dict "p" $paginator "c" $color "s" .Scratch) }}  
+  {{ partial "pagination/03-adjacent.html" $dict}}
+  {{ partial "pagination/04-indicator.html" $dict }}
+  {{ partial "pagination/05-responsive.html" $dict }}
+  {{ partial "pagination/06-screenreader.html" $dict }}
+*/}}
+{{ end }}

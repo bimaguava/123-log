@@ -1,0 +1,14 @@
+<div class="card mb-3 shadow-hover">
+  <div class="card-header bg-stripe-zero text-dark pb-0">
+    <span class="fa fa-tag float-right"></span>
+    <p class="card-title">Categories</p>
+    <div class="clearfix"></div>
+  </div>
+  <div class="card-body py-2">
+    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+      <a href="{{ printf "categories/%s" $name | absURL }}">
+        <span class="badge badge-primary">{{ $name }} <span class="fa fa-folder"></span></span>
+      </a>&nbsp;
+    {{ end }}
+  </div>
+</div> 

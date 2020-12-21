@@ -1,0 +1,52 @@
+<div class="card mb-3 shadow-hover">
+  <div class="card-header bg-stripe-zero text-dark pb-0">
+    <span class="fa fa-archive float-right"></span>
+    <p class="card-title">Archives</p>
+    <div class="clearfix"></div>
+  </div>
+  <div class="card-body py-2">
+
+  {{ $posts := where .Site.Pages "Type" "post" }}
+  {{ $page_year   := .Page.Date.Format "2006" }}
+  {{ $page_month  := .Page.Date.Format "January" }}
+    
+  {{ range ($posts.GroupByDate "2006") }}  
+    {{ $year := .Key }}
+      <div class ="archive-year" id="{{ $year }}">
+        <a href="{{ "pages/archives" | absURL }}#{{ $year }}">
+        {{ $year }}</a>
+      </div>
+
+    {{ if eq $year $page_year }}
+      <ul class="card_archive">
+      {{ range (.Pages.GroupByDate "January") }}
+      {{ $month := .Key }}
+      <li class="list-month">
+        
+        <span id="{{ $year }}-{{ $month }}">
+              <a href="{{ "pages/archives" | absURL }}#{{ $year }}-{{ $month }}">
+              {{ $month }}</a> - {{ $year }}</span>
+
+        {{ if eq $month $page_month }}
+          <ul class="card_list">
+          {{ range $post_month := .Pages }}
+
+          <li>
+            <a href="{{ $post_month.Permalink }}">
+              {{ $post_month.Title }}
+            </a>
+          </li>
+          {{ end }}
+          </ul>
+        {{ end }}
+
+      </li>
+      {{ end }}
+      </ul>
+    {{ end }}
+
+  {{ end }}
+  </div>
+</div> 
+
+
