@@ -8,8 +8,10 @@ tags      : [azure, asd]
 excerpt:
   Login and installations Azure CLI
 ---
+### Preface
+> Goal: Login and installations Azure CLI
 
-Read:
+### Reading
 Follow the official documentation:
 - https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
 
