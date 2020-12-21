@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ $color := "teal" }}
-  <main role="main" 
+  <main role="main"z 
         class="column is-full">
 
     {{- block "yaosb" . }}
@@ -11,7 +11,7 @@
       <div class="widget white z-depth-3 hoverable">
 
         <div class="widget-header {{ $color }} lighten-4">
-          <form action="get" id="site_search">
+          <form action="get" id="search_site">
             <label for="search_box">Search</label>
             <input type="text" id="search_box" name="query">
             <input type="submit" value="search">
@@ -29,7 +29,5 @@
 {{ end }}
 
 {{ define "custom-javascript" }}
-    <script src="{{ "js/jquery.min.js" | relURL }}"></script>
-    <script src="{{ "js/lunr-0.7.1.min.js" | relURL }}"></script>
-    <script src="{{ "js/search-lunr-0.7.1.js" | relURL }}"></script>
+    <script src="{{ "js/search-native.js" | relURL }}"></script>
 {{ end }}

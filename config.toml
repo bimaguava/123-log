@@ -3,10 +3,12 @@
 
 baseURL      = "https://123log.netlify.app/"
 languageCode = "en-us"
-title        = "Yet Another Open Source Blog"
+title        = "123-log"
 theme        = "oriclone-bulma-md"
 
 Paginate     = 7
+
+buildFuture = true
 
 PygmentsCodeFences = true
 PygmentsStyle      = "monokai"
@@ -17,9 +19,9 @@ PygmentsStyle      = "monokai"
 [params]
   mainSections = ["post", "presentation"]
 
-  description = """
-    Learn and Discover Open Source with Daily Genuine Experience.\\
-    From Coding, Front End, Back End, Database, and Static Site Generator.\\
+  description = """\
+    Learn and Discover Open Source with Daily Genuine Experience.
+    From Coding, Front End, Back End, Database, and Static Site Generator.
     """
 
 # opengraphimage = "assets/site/images/logo-gear-opengraph.png"
@@ -39,6 +41,7 @@ PygmentsStyle      = "monokai"
   ssg        = ":section/:year/:month/:day/:slug"
   devops     = ":section/:year/:month/:day/:slug" 
   math       = ":section/:year/:month/:day/:slug"
+  design     = ":section/:year/:month/:day/:slug"
 
 [taxonomies]
   category = "categories"
@@ -62,3 +65,10 @@ PygmentsStyle      = "monokai"
     baseName    = "index"
     mediaType   = "text/plain"
     isPlainText = true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 3
+    style = "widget-list"

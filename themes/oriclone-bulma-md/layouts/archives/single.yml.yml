@@ -6,7 +6,7 @@
   {{- if .Date }}
 - id: {{ .Date.Format "06010204" }}
   title: "{{ .Title }}"
-  url: {{ .Permalink }}
+  url: {{ .RelPermalink }}
   {{ end -}}
 {{ end }}
 

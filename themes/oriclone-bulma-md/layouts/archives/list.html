@@ -11,17 +11,18 @@
       <div class="blog white z-depth-3 hoverable">
 
         <section class="blog-header {{ $color }} lighten-5">
-          {{ partial "page/blog-header.html" . }}
+{{ partial "page/blog-header.html" . }}
         </section>
 
         <article class="blog-body" itemprop="articleBody">
 
-          {{ $paginator := .Paginate (where .Site.Pages "Type" "post") }}
-          {{ $dict := (dict "p" $paginator "c" $color  "s" .Scratch) }}
-          {{ partial "pagination/06-screenreader.html" $dict }}
+{{ $posts := where .Site.Pages "Type" "in" site.Params.mainSections }}
+{{ $paginator := .Paginate ($posts ) }}
+{{ $dict := (dict "p" $paginator "c" $color  "s" .Scratch) }}
+{{ partial "pagination/06-screenreader.html" $dict }}
 
-          {{ .Content }}
-          {{ block "index" $dict }}{{ end }}
+{{ .Content }}
+{{ block "index" $dict }}{{ end }}
         </article>
 
       </div>

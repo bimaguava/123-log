@@ -1,6 +1,7 @@
 {{ define "main" }}
   {{ $color := "blue" }}
-  <main role="main" 
+  <main role="main"
+        id="main_toggler" 
         class="column is-two-thirds">
 
     <section class="main-wrapper {{ $color }}">
@@ -11,13 +12,17 @@
         </section>
 
         <article class="blog-body" itemprop="articleBody">
+          {{ partial "post/toggler.html" . }}
+
           {{- with .Page.Params.toc -}}
             {{ partial (print . ".html") . }}
           {{- end -}}
 
           <!--{{ partial "service/google-adsense.html" . }}-->
 
-          <div class="blog-content">
+          {{ partial "post/toc.html" . }}
+
+          <div class="blog-content m-t-10">
             {{ .Content }}
           </div>
 
@@ -33,7 +38,7 @@
 
         {{/*
         <section class="blog-body">
-        {% include service/disqus-comments.html %}
+         {% include service/disqus-comments.html %}
         </section>
         */}}
 
@@ -44,8 +49,9 @@
 {{ end }}
 
 {{ define "aside" }}
-  <aside class="column is-one-thirds">
-    {{ partial "widget/friends.html" . }}
+  <aside id="aside_toggler"
+         class="column is-one-thirds">
+
     {{ partial "widget/related-posts.html" . }}
 
     {{ partial "widget/categories.html" . }}
@@ -53,10 +59,7 @@
 
     {{ partial "widget/tags.html" (dict "taxonomies" .Site.Taxonomies "view_tag_type" "before") }}
     {{ partial "widget/recent-posts.html" . }}
-    {{ partial "widget/archives-github.html" . }}
-    {{ partial "widget/archives-bitbucket.html" . }}
 
-    {{ partial "widget/oto-spies.html" . }}
   </aside>
 {{ end }}
 

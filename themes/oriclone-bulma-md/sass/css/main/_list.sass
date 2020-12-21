@@ -4,12 +4,15 @@
 // -- -- -- -- --
 // Widget List
 
+nav#TableOfContents ul li:hover,
 ul.widget-list li:hover
   background: map-get($yellow, 'lighten-2')
 
+nav#TableOfContents ul,
 ul.widget-list
   padding: 0px
 
+nav#TableOfContents ul,
 ul.widget-list
   padding-left: 0
   list-style: none
@@ -17,6 +20,7 @@ ul.widget-list
   margin-left: 20px
 
 div.archive-item a:before,
+nav#TableOfContents ul li a:before,
 ul.widget-list li:before
   font-family: "Font Awesome 5 Free"
   font-weight: 900
@@ -31,6 +35,7 @@ ul li.list-month:before
   color: map-get($grey, 'darken-2')
   margin: 0 5px 0 0px
 
+nav#TableOfContents ul li:hover:before,
 ul.widget-list li:hover:before
   color: map-get($yellow, 'base')
 

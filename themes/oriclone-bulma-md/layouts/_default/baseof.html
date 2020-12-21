@@ -9,7 +9,7 @@
   {{ partial "service/google-analytics.html" . }}
   {{ partial "site/header.html" . }}
 
-  <div class="columns is-8 layout-base maxwidth">
+  <div class="columns is-8 layout-base maxwidth maxwidth_toggler">
       {{- block "main" . }}
       {{ .Content }}
       {{- end }}

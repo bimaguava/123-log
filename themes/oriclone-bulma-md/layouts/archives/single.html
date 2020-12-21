@@ -11,13 +11,13 @@
       <div class="blog white z-depth-3 hoverable">
 
         <section class="blog-header {{ $color }} lighten-5">
-          {{ partial "page/blog-header.html" . }}
+{{ partial "page/blog-header.html" . }}
         </section>
 
         <article class="blog-body" itemprop="articleBody">
          {{ .Content }}
          
-         {{ $posts := where .Site.Pages "Type" "post" }}
+         {{ $posts := where .Site.Pages "Type" "in" site.Params.mainSections }}
          {{ $dict := (dict "Color" $color "Posts" $posts) }}
          {{ partial "index/by-month.html" $dict }}
         </article>

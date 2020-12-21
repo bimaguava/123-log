@@ -20,7 +20,11 @@
 
         <article class="blog-body has-text-centered"
                  itemprop="articleBody">
-          {{ .Content }}
+          <div class="columns is-centered">
+            <div class="column is-half-desktop">
+              {{ .Content }}
+            </div>
+          </div>
         </article>
 
       </div>
