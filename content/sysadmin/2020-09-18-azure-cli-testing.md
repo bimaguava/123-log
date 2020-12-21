@@ -10,19 +10,17 @@ author : bima
 opengraph:
   image: assets/site/images/topics/git.png
 
-toc    : "toc-2020-02-ci-cd-ssg"
-
 excerpt:
-  Overview of CI/CD for SSG.
+  Login and installations Azure CLI
 ---
 
-# Official Reference
-https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
+Read:
+- https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
 
-# Installation
+### Installation
     curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
-# Login to Azure
+### Login to Azure
     /e/a/sources.list.d ❯❯❯ az login
     Opening in existing browser session.
     You have logged in. Now let us find all the subscriptions to which you have access...
