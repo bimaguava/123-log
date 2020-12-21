@@ -1,5 +1,5 @@
 {{- define "main" -}}
-# Blogroll: Articles from epsi-rns.gitlab.io
+# Blogroll: Articles from 123log.netlify.app
 ARCHIVES_GITLAB = (
 {{- range (where .Site.Pages "Type" "post") -}}
   {{- if .Date }}
