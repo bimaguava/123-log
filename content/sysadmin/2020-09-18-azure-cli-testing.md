@@ -1,3 +1,21 @@
+---
+type   : post
+title  : "Azure CLI test"
+date   : 2020-09-18T09:17:35+07:00
+slug   : ci-cd-overview
+categories: [sysadmin]
+tags      : [azure, asd]
+keywords  : [static site, overview]
+author : bima
+opengraph:
+  image: assets/site/images/topics/git.png
+
+toc    : "toc-2020-02-ci-cd-ssg"
+
+excerpt:
+  Overview of CI/CD for SSG.
+---
+
 # Official Reference
 https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
 
@@ -24,5 +42,5 @@ https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest
         }
     }
     ]
-    
+
     /e/a/sources.list.d ❯❯❯ 
