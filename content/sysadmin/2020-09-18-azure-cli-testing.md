@@ -3,13 +3,13 @@ type   : post
 title  : "Azure CLI testing"
 date   : 2020-09-18T09:17:35+07:00
 categories: [sysadmin]
-tags      : [azure, asd]
+tags      : [azure]
 
 excerpt:
   Login and installations Azure CLI
 ---
 ### Preface
-> Goal: Login and installations Azure CLI
+> Main idea: Login and installations Azure CLI
 
 ### Reading
 Follow the official documentation:
@@ -39,4 +39,4 @@ Follow the official documentation:
     }
     ]
 
-    /e/a/sources.list.d ❯❯❯ 
+    /e/a/sources.list.d ❯❯❯

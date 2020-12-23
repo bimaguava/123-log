@@ -1,0 +1,56 @@
+---
+label: Blog Post
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: datetime
+  name: updated
+  label: updated
+- name: draft
+  type: boolean
+  label: draft
+  default: true
+- type: tag_list
+  name: category
+  label: category
+- type: tag_list
+  name: tags
+  label: tags
+- type: tag_list
+  name: keywords
+  label: keywords
+- type: boolean
+  name: comments
+  label: comments
+  default: true
+- name: toc
+  type: boolean
+  label: Table of Contents
+  default: true
+pages:
+- source/_posts/network/cisco-etherchannel-configuration.md
+- source/_posts/network/cisco-implement-a-subnet-ipv6-addressing.md
+- source/_posts/network/cisco-link-state-protocol.md
+- source/_posts/network/cisco-ospf-introduction.md
+- source/_posts/network/cisco-ospfv2-determine-the-dr-and-bdr.md
+- source/_posts/network/cisco-ospfv2-single-area-configuration.md
+- source/_posts/network/cisco-ospfv2-single-area-point-to-point.md
+- source/_posts/network/cisco-ospfv2-single-area-verify.md
+- source/_posts/network/cisco-packet-tracer.md
+- source/_posts/network/cisco-perintah-perintah-basic-router-cisco.md
+- source/_posts/network/cisco-spanning-tree-protocol-stp.md
+- source/_posts/network/cisco-stp-looping-prevention.md
+- source/_posts/network/cisco-vlan-configuration.md
+- source/_posts/network/cisco-vlan-implementation.md
+- source/_posts/network/etherchannel_introduction.md
+- source/_posts/network/ipv6-what-the-heck-is-this.md
+- source/_posts/network/mikrotik-basic-command-line.md
+- source/_posts/network/mikrotik-membridgekan-beberapa-port.md
+- source/_posts/network/mikrotik-sebagai-repeater-dengan-setelan-roaming.md
+- source/_posts/network/mikrotik-sebagai-repeater.md
