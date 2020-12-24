@@ -19,7 +19,8 @@ Follow the official documentation:
     curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 ### Login to Azure
-    /e/a/sources.list.d ❯❯❯ az login
+    /e/a/sources.list.d ❯❯❯ az
+     login
     Opening in existing browser session.
     You have logged in. Now let us find all the subscriptions to which you have access...
     [
