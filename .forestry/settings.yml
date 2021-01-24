@@ -1,14 +1,29 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
-webhook_url: 
+admin_path:
+webhook_url:
 sections:
 - type: directory
   path: content
   label: Pages
   create: all
   match: "*"
+- type: directory
+  path: content/code
+  label: Code
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/computer
+  label: Computer
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/network
+  label: Network
+  create: all
+  match: "**/*"
 - type: directory
   path: content/sysadmin
   label: Sysadmin
