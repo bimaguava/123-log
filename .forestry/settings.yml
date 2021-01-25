@@ -27,6 +27,8 @@ sections:
 - type: directory
   path: content/security
   label: Security
+  create: all
+  match: "**/*"
 - type: directory
   path: content/sysadmin
   label: Sysadmin
