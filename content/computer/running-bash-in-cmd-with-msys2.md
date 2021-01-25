@@ -1,7 +1,6 @@
 +++
 category = ["computer"]
 date = 2020-09-20T17:00:00Z
-draft = true
 excerpt = "Run bash in Windows Command Prompt using msys2"
 tags = ["msys2"]
 title = "Running bash in CMD with msys2"
