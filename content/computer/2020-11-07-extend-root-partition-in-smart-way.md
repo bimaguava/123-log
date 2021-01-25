@@ -1,7 +1,6 @@
 +++
 categories = ["computer"]
 date = 2020-11-06T17:00:00Z
-draft = true
 excerpt = "This method is using Aomei and paragon using Windows system"
 tags = ["windows-tips"]
 title = "Extend root partition in smart way"
