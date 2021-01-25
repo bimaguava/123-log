@@ -1,10 +1,9 @@
 +++
 categories = ["sysadmin"]
 date = 2020-11-24T17:00:00Z
-draft = true
 excerpt = "Problem because internet connection"
 tags = ["kali-linux-error"]
-title = "2020-11-25 Kali Linux Error response from docker registry"
+title = "Kali Linux Error response from docker registry"
 type = "post"
 
 +++
