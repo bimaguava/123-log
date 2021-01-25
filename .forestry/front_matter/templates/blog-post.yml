@@ -28,6 +28,7 @@ fields:
   label: tags
 pages:
 - content/computer/2020-09-17-chsh-always-show-authentication-failure.md
+- content/computer/2020-10-21-controlling-cpu-speed-in-linux.md
 - content/computer/2020-11-23-moving-installed-program-to-local-disk-d.md
 - content/computer/2020-12-03-increase-volume-x220-in-windows-system.md
 - content/computer/2020-12-07-use-sharex-as-screen-recorder-ffmpeg-included.md
