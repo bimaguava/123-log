@@ -21,8 +21,8 @@ fields:
   label: draft
   default: false
 - type: tag_list
-  name: category
-  label: category
+  name: categories
+  label: categories
 - type: tag_list
   name: tags
   label: tags
