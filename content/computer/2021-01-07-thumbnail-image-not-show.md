@@ -1,7 +1,6 @@
 +++
 categories = ["computer"]
 date = 2021-01-06T17:00:00Z
-draft = true
 excerpt = "method how to solve thumbnail images not showing in explorer file manager"
 tags = ["windows-error"]
 title = "thumbnail image not show"

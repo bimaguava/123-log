@@ -1,7 +1,6 @@
 +++
 categories = ["computer"]
 date = 2020-11-22T17:00:00Z
-draft = true
 excerpt = "It's just working to move installed program (C:\\Program Files) to another space using robocopy"
 tags = ["windows-tips"]
 title = "Moving installed program to Local Disk D"
