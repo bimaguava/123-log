@@ -1,7 +1,6 @@
 +++
 categories = ["computer"]
 date = 2020-12-06T17:00:00Z
-draft = true
 excerpt = "Setup ShareX for screen/audio recorder"
 tags = ["sharex"]
 title = "Use shareX as Screen Recorder (FFmpeg included)"

@@ -1,7 +1,6 @@
 +++
 categories = ["computer"]
 date = 2020-12-02T17:00:00Z
-draft = true
 excerpt = "Increase volume till 150 with DynamiQ + EqualizerAPO64-1.2.1"
 tags = ["windows-tips"]
 title = "Increase volume X220 in Windows System"
