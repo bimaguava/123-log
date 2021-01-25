@@ -1,10 +1,9 @@
 +++
 categories = ["sysadmin"]
 date = 2020-11-24T17:00:00Z
-draft = true
 excerpt = "Problem "
 tags = ["kali-linux-error", "docker-error"]
-title = "2020-11-25 Kali Linux Error response from AppArmor Daemon (Docker installation)"
+title = "Kali Linux Error response from AppArmor Daemon (Docker installation)"
 type = "post"
 
 +++
