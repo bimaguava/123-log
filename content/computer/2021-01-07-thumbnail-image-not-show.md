@@ -4,7 +4,7 @@ date = 2021-01-06T17:00:00Z
 draft = true
 excerpt = "method how to solve thumbnail images not showing in explorer file manager"
 tags = ["windows-error"]
-title = "2021-01-07 thumbnail image not show"
+title = "thumbnail image not show"
 type = "post"
 
 +++
