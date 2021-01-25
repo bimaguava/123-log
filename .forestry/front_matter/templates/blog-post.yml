@@ -28,6 +28,7 @@ fields:
   label: tags
 pages:
 - content/computer/2020-09-17-chsh-always-show-authentication-failure.md
+- content/computer/2020-10-12-wayland-can-t-be-anydesk-or-vnc-or-something-you-need-xwayland.md
 - content/computer/2020-10-21-controlling-cpu-speed-in-linux.md
 - content/computer/2020-11-07-extend-root-partition-in-smart-way.md
 - content/computer/2020-11-23-moving-installed-program-to-local-disk-d.md
