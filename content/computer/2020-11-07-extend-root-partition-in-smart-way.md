@@ -1,9 +1,9 @@
 +++
-categories = []
-date = ""
+categories = ["computer"]
+date = 2020-11-06T17:00:00Z
 draft = true
-excerpt = ""
-tags = []
+excerpt = "This method is using Aomei and paragon"
+tags = ["windows-tips"]
 title = "2020-11-07 Extend root partition in smart way"
 type = "post"
 
