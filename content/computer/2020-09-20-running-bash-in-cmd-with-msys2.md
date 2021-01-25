@@ -1,5 +1,5 @@
 +++
-category = ["computer"]
+categories = ["computer"]
 date = 2020-09-20T17:00:00Z
 excerpt = "Run bash in Windows Command Prompt using msys2"
 tags = ["msys2"]
