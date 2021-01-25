@@ -1,7 +1,6 @@
 +++
 categories = ["computer"]
 date = 2020-09-16T17:00:00Z
-draft = true
 excerpt = "This error is when I want to set default shell"
 tags = ["linux-error"]
 title = "chsh always show \"Authentication failure\""
