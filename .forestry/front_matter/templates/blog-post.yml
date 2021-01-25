@@ -16,9 +16,6 @@ fields:
 - type: datetime
   name: date
   label: date
-#- type: datetime
-#  name: updated
-#  label: updated
 - name: draft
   type: boolean
   label: draft
@@ -29,14 +26,5 @@ fields:
 - type: tag_list
   name: tags
   label: tags
-#- type: tag_list
-#  name: keywords
-#  label: keywords
-#- type: boolean
-#  name: comments
-#  label: comments
-#  default: true
-#- name: toc
-#  type: boolean
-#  label: Table of Contents
-#  default: true
+pages:
+- content/computer/running-bash-in-cmd-with-msys2.md
