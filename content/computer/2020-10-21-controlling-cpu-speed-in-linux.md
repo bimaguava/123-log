@@ -1,7 +1,6 @@
 +++
 categories = ["computer"]
 date = 2020-10-20T17:00:00Z
-draft = true
 excerpt = " I want to use lowest frequency so just use indicator-cpufreq "
 tags = ["linux-tips"]
 title = "Controlling CPU speed in Linux"
