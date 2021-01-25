@@ -4,7 +4,7 @@ date = 2020-11-22T17:00:00Z
 draft = true
 excerpt = "It's just working to move installed program (C:\\Program Files) to another space using robocopy"
 tags = ["windows-tips"]
-title = "2020-11-23 Moving installed program to Local Disk D"
+title = "Moving installed program to Local Disk D"
 type = "post"
 
 +++
