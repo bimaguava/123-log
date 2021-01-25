@@ -27,4 +27,5 @@ fields:
   name: tags
   label: tags
 pages:
+- content/computer/2020-12-03-increase-volume-x220-in-windows-system.md
 - content/computer/2020-12-07-use-sharex-as-screen-recorder-ffmpeg-included.md
