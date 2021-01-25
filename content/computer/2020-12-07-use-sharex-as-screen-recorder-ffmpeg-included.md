@@ -4,7 +4,7 @@ date = 2020-12-06T17:00:00Z
 draft = true
 excerpt = "Setup ShareX for screen/audio recorder"
 tags = ["sharex"]
-title = "2020 12 07 Use shareX as Screen Recorder (FFmpeg included)"
+title = "Use shareX as Screen Recorder (FFmpeg included)"
 type = "post"
 
 +++
