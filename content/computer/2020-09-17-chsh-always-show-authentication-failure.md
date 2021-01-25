@@ -4,7 +4,7 @@ date = 2020-09-16T17:00:00Z
 draft = true
 excerpt = "This error is when I want to set default shell"
 tags = ["linux-error"]
-title = "2020-09-17: chsh always show \"Authentication failure\""
+title = "chsh always show \"Authentication failure\""
 type = "post"
 
 +++
