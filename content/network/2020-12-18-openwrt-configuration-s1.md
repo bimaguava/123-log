@@ -8,6 +8,7 @@ tags:
 - openwrt
 - eve-ng
 excerpt: Setup OpenWRT LEDE in Eve-NG Virtual Machine S1
+draft: true
 
 ---
 ### Preface
