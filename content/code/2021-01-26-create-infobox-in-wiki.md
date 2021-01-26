@@ -3,7 +3,7 @@ categories = ["code"]
 date = 2021-01-25T17:00:00Z
 excerpt = "Create infobox in wiki page from stratch using lua script"
 tags = ["wiki"]
-title = "2021-01-26-Create Infobox in wiki"
+title = "Create Infobox in wiki"
 type = "post"
 
 +++
