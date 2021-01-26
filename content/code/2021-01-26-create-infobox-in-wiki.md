@@ -16,7 +16,7 @@ type = "post"
 * Syntax writing - [https://id.wikipedia.org/wiki/Templat:Infobox](https://id.wikipedia.org/wiki/Templat:Infobox "https://id.wikipedia.org/wiki/Templat:Infobox")
 * CSS customization (in page-side) - [https://id.wikipedia.org/wiki/Templat:Infobox#Optional_CSS_styling](https://id.wikipedia.org/wiki/Templat:Infobox#Optional_CSS_styling "https://id.wikipedia.org/wiki/Templat:Infobox#Optional_CSS_styling")
 
-### How to?
+### How to
 
 Create and submit this module and template
 
