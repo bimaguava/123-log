@@ -22,11 +22,11 @@ Create and submit this module and template
 
 #### Template:Infobox
 
-Source code: [https://bimagv.miraheze.org/w/index.php?title=Template:Infobox](https://bimagv.miraheze.org/w/index.php?title=Template:Infobox "https://bimagv.miraheze.org/w/index.php?title=Template:Infobox")
+Source code: [https://bimagv.miraheze.org/w/index.php?title=Template:Infobox&action=edit](https://bimagv.miraheze.org/w/index.php?title=Template:Infobox&action=edit "https://bimagv.miraheze.org/w/index.php?title=Template:Infobox&action=edit")
 
 #### Module:Infobox
 
-Source code: [https://bimagv.miraheze.org/w/index.php?title=Module:Infobox](https://bimagv.miraheze.org/w/index.php?title=Module:Infobox "https://bimagv.miraheze.org/w/index.php?title=Module:Infobox")
+Source code: [https://bimagv.miraheze.org/w/index.php?title=Module:Infobox&action=edit](https://bimagv.miraheze.org/w/index.php?title=Module:Infobox&action=edit "https://bimagv.miraheze.org/w/index.php?title=Module:Infobox&action=edit")
 
 #### Module:Navbar
 
@@ -62,7 +62,6 @@ Source code: [https://bimagv.miraheze.org/w/index.php?title=Module:Navbar&action
     |belowstyle = background:#ddf;
     |below = Below text
     }}
-    
 
 ### Result
 
