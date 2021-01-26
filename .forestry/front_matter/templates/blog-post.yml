@@ -28,7 +28,7 @@ fields:
   label: tags
 pages:
 - content/code/2021-01-26-create-infobox-in-wiki.md
-- content/code/customize-blockquote-tag-in-wiki.md
+- content/code/2021-01-26-customize-blockquote-tag-in-wiki.md
 - content/computer/2020-09-17-chsh-always-show-authentication-failure.md
 - content/computer/2020-10-12-wayland-can-t-be-anydesk-or-vnc-or-something-you-need-xwayland.md
 - content/computer/2020-10-21-controlling-cpu-speed-in-linux.md

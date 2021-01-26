@@ -1,7 +1,7 @@
 +++
 categories = ["code"]
 date = 2021-01-25T17:00:00Z
-excerpt = "2021-01-26-How to edit html tag e.g: <blockquote> in wiki site"
+excerpt = "How to edit html tag e.g: <blockquote> in wiki site"
 tags = ["wiki"]
 title = "Customize blockquote tag in wiki"
 type = "post"
