@@ -1,13 +1,13 @@
 ---
 type: post
-title: pfSense Configuration in Eve-NG VM-S1
+title: Setup pfSense LAN/WAN interface
 date: 2020-12-18T18:11:35.000+07:00
 categories:
 - network
 tags:
 - pfsense
 - eve-ng
-excerpt: Setup pfSense in Eve-NG Virtual Machine S1
+excerpt: Setup pfSense interface to use static in WAN and dhcp server active in LAN
 
 ---
 ### Preface
