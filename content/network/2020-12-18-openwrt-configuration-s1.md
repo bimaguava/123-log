@@ -1,14 +1,16 @@
 ---
-type   : post
-title  : "OpenWRT LEDE Configuration in Eve-NG VM-S1"
-date   : 2020-12-18T18:11:35+07:00
-categories: [network]
-tags      : [openwrt, eve-ng]
+type: post
+title: OpenWRT LEDE Configuration in Eve-NG VM-S1
+date: 2020-12-18T18:11:35.000+07:00
+categories:
+- network
+tags:
+- openwrt
+- eve-ng
+excerpt: Setup OpenWRT LEDE in Eve-NG Virtual Machine S1
+draft: true
 
-excerpt:
-    Setup OpenWRT LEDE in Eve-NG Virtual Machine S1
 ---
-
 ### Preface
 >Main idea: Setup OpenWRT LEDE in Eve-NG Virtual Machine S1
 
