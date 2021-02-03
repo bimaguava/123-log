@@ -29,7 +29,7 @@ Goal:
 
 ### Illustration of FortiGate Policy
 
-basicly, when the firewall receives a connection packet, it analyzes the **source address**, **destination address**, and **service** (by port number).
+Like firewall in general, when the firewall receives a connection packet, it analyzes the **source address**, **destination address**, and **service** (by port number).
 
 It also registers the incoming interface, the outgoing interface it needs to use, and the time of day. Using this information, the FortiGate firewall attempts to locate a security policy that matches the packet.
 
