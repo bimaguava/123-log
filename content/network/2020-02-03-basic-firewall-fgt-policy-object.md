@@ -13,7 +13,8 @@ type = "post"
 
 ### Requisite
 
-* 
+* Setup LAN/WAN interface and IP
+* adding default static route in FortiGate
 
 ### Reading
 
