@@ -38,6 +38,10 @@ If a policy matches the parameters, then the FortiGate takes the required action
 * **_Accept_**, the traffic is allowed to proceed to the next step (**the policy permits communication sessions**). 
 * If the action is **_Deny_** or a match cannot be found, the traffic is not allowed to proceed. (**the policy blocks communication sessions**)
 
-Technically, this traffic contains
+Technically, this traffic (if uses IPv4) contains:
+
+* **_Internet_**: a policy allowing general Internet access to the LAN
+* **_Mobile_**: a policy allowing Internet access while applying web filtering for mobile devices. In this example, a wireless network has already been configured that is in the same subnet as the wired LAN.
+* **_Admin_**: a policy allowing the system administrator's PC (named SysAdminPC) to have full access
 
 ![](https://fortinetweb.s3.amazonaws.com/docs.fortinet.com/v2/resources/598118ae-ea1f-11e9-8977-00505692583a/images/163c545d1db7ea0bf7d84f4eb220a97e_diagram.png)
