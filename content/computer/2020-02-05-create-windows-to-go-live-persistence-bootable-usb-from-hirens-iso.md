@@ -11,7 +11,7 @@ type = "post"
 
 > My USB drive need to be persistence to be working with hirens boot in case repairing pc
 
-* This method can be applied to Windows 7/8/10 without fear, without stuck in a many hours with Haesle WinToUSB :v
+This method can be applied to Windows 7/8/10 without fear, without stuck in a many hours with Haesle WinToUSB :v
 
 ### Requirements
 
