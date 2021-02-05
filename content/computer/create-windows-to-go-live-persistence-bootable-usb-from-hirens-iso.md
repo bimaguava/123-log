@@ -38,12 +38,15 @@ type = "post"
 
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612517445/2021-02/123/2021-02-05--T09-29-31_ttjgbq.png)
 
-   This error indicate the F: partition (my USB drive) need to be partitioned.
+   This error indicate the F: partition (my USB drive) is not completely actived. Because My drive/disk partition is not MBR disk. The partition can be ACTIVE only for fixed MBR disk. See this error message!
 
-   The **\\EFI\\** directory with the boot files is created on the root of F:
+   ![](https://res.cloudinary.com/bimagv/image/upload/v1612518529/2021-02/123/2021-02-05--T09-43-36_khhlq2.png)
+
+   **Solved:**
+5. The **\\EFI\\** directory with the boot files is created on the root of F:
 
    That's all.
-5. Booting.
+6. Booting.
 
 ### Source
 
