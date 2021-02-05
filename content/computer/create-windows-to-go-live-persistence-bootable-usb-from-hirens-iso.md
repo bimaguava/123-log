@@ -1,7 +1,6 @@
 +++
 categories = ["computer"]
 date = 2021-02-04T17:00:00Z
-draft = true
 excerpt = "Method how to create persistance hirens boot in USB disk"
 tags = ["windows-tips"]
 title = "Create Windows To Go Live (persistence bootable USB) from Hirens iso"
