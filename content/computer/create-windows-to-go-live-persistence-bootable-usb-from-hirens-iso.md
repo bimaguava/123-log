@@ -30,17 +30,8 @@ type = "post"
 3. Ensure USB drive partition active! I need to make the Windows To Go partition active so my computer can boot from the **USB drive (F:)**. Just run **_compmgmt.msc_** to check it.
 
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612516443/2021-02/123/2021-02-05--T09-12-03_oburfv.png)
-4. Create Boot Files/Entries (UEFI and BIOS) to the USB Drive. Just run:
 
-       F:
-       cd \Windows\System32
-       bcdboot.exe F:\Windows /s F: /f all
-
-   ![](https://res.cloudinary.com/bimagv/image/upload/v1612517445/2021-02/123/2021-02-05--T09-29-31_ttjgbq.png)
-
-   **ERROR: Copying EFI  or BIOS file to root of the USB Drive FAILED!**
-
-   This error indicate the F: partition (my USB drive) is not completely actived. Because My drive/disk partition is not MBR disk. The partition can be ACTIVE only for fixed MBR disk. See this error message!
+   It's already actived. But in diskpart it show an error.
 
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612518529/2021-02/123/2021-02-05--T09-43-36_khhlq2.png)
 
@@ -49,18 +40,13 @@ type = "post"
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612519165/2021-02/123/2021-02-05--T09-55-19_qud96u.png)
 
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612519205/2021-02/123/2021-02-05--T09-57-40_i9koaa.png)
-
-   **Run again the command**
+4. Copy EFI & boot to usb drive using bcdboot. It will create new directory name **/EFI/** in the root of USB drive
 
        F:
        cd \Windows\System32
        bcdboot.exe F:\Windows /s F: /f all
 
    **_Note:_** _If any same error, it's need to format and back to steps 2_
-
-   The **\\EFI\\** directory with the boot files is created on the root of F:
-
-   That's all.
 5. Booting.
 
 ### Source
