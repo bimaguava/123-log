@@ -11,6 +11,8 @@ type = "post"
 
 > My USB drive need to be persistence to be working with hirens boot in case repairing pc
 
+* This method can be applied to Windows 7/8/10 without fear, without stuck in a many hours with Haesle WinToUSB :v
+
 ### Requirements
 
 * Hirens boot PE iso
@@ -45,9 +47,7 @@ type = "post"
        F:
        cd \Windows\System32
        bcdboot.exe F:\Windows /s F: /f all
-
-   **_ERROR:_** Something wrong with boot file in hirens.
-5. Booting.
+5. Booting to USB Drive.
 
 ### Source
 
