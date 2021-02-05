@@ -28,6 +28,6 @@ type = "post"
 
 ### Copy **\\source\\boot.wim** to media installation (USB disk) with **GimagesX**
 
-![](https://res.cloudinary.com/bimagv/image/upload/v1612515362/2021-01/123/2021-02-05--T08-13-58_uqps04.png)
+![](https://res.cloudinary.com/bimagv/image/upload/v1612515586/2021-02/123/2021-02-05--T08-13-58_osmsik.png)
 
-![](https://res.cloudinary.com/bimagv/image/upload/v1612515463/2021-01/123/2021-02-05--T07-59-13_oynjap.png)
+![](https://res.cloudinary.com/bimagv/image/upload/v1612515591/2021-02/123/2021-02-05--T07-59-13_mqeqzj.png)
