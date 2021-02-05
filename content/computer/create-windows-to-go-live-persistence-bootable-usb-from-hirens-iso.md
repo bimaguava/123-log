@@ -24,10 +24,10 @@ type = "post"
 
 ### Steps
 
-### extract hirens iso with poweriso or another program like that
+1. Extract hirens iso with **poweriso** or another program like that
+2. Copy **_\\source\\boot.wim_** to media installation (USB disk) with **GimagesX**
 
-### Copy **\\source\\boot.wim** to media installation (USB disk) with **GimagesX**
+   ![](https://res.cloudinary.com/bimagv/image/upload/v1612515586/2021-02/123/2021-02-05--T08-13-58_osmsik.png)
 
-![](https://res.cloudinary.com/bimagv/image/upload/v1612515586/2021-02/123/2021-02-05--T08-13-58_osmsik.png)
-
-![](https://res.cloudinary.com/bimagv/image/upload/v1612515591/2021-02/123/2021-02-05--T07-59-13_mqeqzj.png)
+   ![](https://res.cloudinary.com/bimagv/image/upload/v1612515591/2021-02/123/2021-02-05--T07-59-13_mqeqzj.png)
+3. asd
