@@ -36,6 +36,10 @@ type = "post"
        cd \Windows\System32
        bcdboot.exe F:\Windows /s F: /f all
 
+   ![](https://res.cloudinary.com/bimagv/image/upload/v1612517445/2021-02/123/2021-02-05--T09-29-31_ttjgbq.png)
+
+   This error indicate the F: partition (my USB drive) need to be partitioned.
+
    The **\\EFI\\** directory with the boot files is created on the root of F:
 
    That's all.
