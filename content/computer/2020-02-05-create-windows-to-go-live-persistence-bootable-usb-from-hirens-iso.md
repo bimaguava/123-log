@@ -13,6 +13,8 @@ type = "post"
 
 This method can be applied to Windows 7/8/10 without fear, without stuck in a many hours with Haesle WinToUSB :v
 
+In my opinion, this is the best way to create Windows Live (To Go) in USB Drive in my case Sandisk 32GB.
+
 ### Requirements
 
 * Hirens boot PE iso
