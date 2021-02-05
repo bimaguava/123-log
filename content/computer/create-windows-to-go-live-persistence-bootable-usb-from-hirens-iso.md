@@ -32,8 +32,9 @@ type = "post"
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612516443/2021-02/123/2021-02-05--T09-12-03_oburfv.png)
 4. Create Boot Files/Entries on the USB Drive and run:
 
-       cd F:
-       
+       F:
+       cd \Windows\System32
+       bcdboot.exe F:\Windows /s F: /f all
 5. sd
 
 ### Source
