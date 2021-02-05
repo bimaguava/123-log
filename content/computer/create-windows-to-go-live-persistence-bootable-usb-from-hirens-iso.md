@@ -23,7 +23,7 @@ type = "post"
 * GimagesX (It will allow you to work with WIM files from the Windows installation media and create a Windows To Go drive without needing the Microsoft’s official Windows-To-Go-creator tool, or the Windows AIK or ADK (Windows Assessment and Deployment Kit)
 * Poweriso
 
-### Actually steps
+### Steps
 
 * extract hirens iso with poweriso or another program like that
 * Copy **\\source\\boot.wim** to media installation (USB disk) with **GimagesX**
