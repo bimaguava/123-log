@@ -56,6 +56,8 @@ type = "post"
        cd \Windows\System32
        bcdboot.exe F:\Windows /s F: /f all
 
+   **_Note:_** _If any same error, it's need to format and back to steps 2_
+
    The **\\EFI\\** directory with the boot files is created on the root of F:
 
    That's all.
