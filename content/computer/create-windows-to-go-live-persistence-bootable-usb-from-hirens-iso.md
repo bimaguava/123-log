@@ -38,6 +38,8 @@ type = "post"
 
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612517445/2021-02/123/2021-02-05--T09-29-31_ttjgbq.png)
 
+   **COPY EFI  or BIOS file to root of the USB Drive FAILED!**
+
    This error indicate the F: partition (my USB drive) is not completely actived. Because My drive/disk partition is not MBR disk. The partition can be ACTIVE only for fixed MBR disk. See this error message!
 
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612518529/2021-02/123/2021-02-05--T09-43-36_khhlq2.png)
