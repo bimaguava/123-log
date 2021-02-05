@@ -55,10 +55,11 @@ type = "post"
        F:
        cd \Windows\System32
        bcdboot.exe F:\Windows /s F: /f all
-5. The **\\EFI\\** directory with the boot files is created on the root of F:
+
+   The **\\EFI\\** directory with the boot files is created on the root of F:
 
    That's all.
-6. Booting.
+5. Booting.
 
 ### Source
 
