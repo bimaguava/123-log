@@ -42,7 +42,11 @@ type = "post"
 
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612518529/2021-02/123/2021-02-05--T09-43-36_khhlq2.png)
 
-   **Solved:**
+   **Solved:** My USB Drive partition type is GPT. It's need to be converted!
+
+   ![](https://res.cloudinary.com/bimagv/image/upload/v1612519165/2021-02/123/2021-02-05--T09-55-19_qud96u.png)
+
+   ![](https://res.cloudinary.com/bimagv/image/upload/v1612519205/2021-02/123/2021-02-05--T09-57-40_i9koaa.png)
 5. The **\\EFI\\** directory with the boot files is created on the root of F:
 
    That's all.
