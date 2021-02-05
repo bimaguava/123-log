@@ -46,7 +46,7 @@ type = "post"
        cd \Windows\System32
        bcdboot.exe F:\Windows /s F: /f all
 
-   **_Note:_** _If any same error, it's need to format and back to steps 2_
+   **_ERROR:_** Something wrong with boot file in hirens.
 5. Booting.
 
 ### Source
