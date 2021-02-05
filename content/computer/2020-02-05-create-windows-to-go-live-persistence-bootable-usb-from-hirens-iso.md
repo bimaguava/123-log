@@ -16,7 +16,7 @@ This method can be applied to Windows 7/8/10 without fear, without stuck in a ma
 ### Requirements
 
 * Hirens boot PE iso
-* GimagesX (It will allow you to work with WIM files from the Windows installation media and create a Windows To Go drive without needing the Microsoft’s official Windows-To-Go-creator tool, or the Windows AIK or ADK (Windows Assessment and Deployment Kit)
+* GimagesX (It will allow you to work with WIM files from the Windows installation media and create a Windows To Go drive **without** needing the Microsoft’s official Windows-To-Go-creator tool, or the Windows AIK or ADK (Windows Assessment and Deployment Kit)
 * Poweriso
 
 ### Steps
