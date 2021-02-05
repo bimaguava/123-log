@@ -48,9 +48,11 @@ In my opinion, this is the best way to create Windows Live (To Go) in USB Drive 
 
        F:
        cd \Windows\System32
-       bcdboot.exe F:\Windows /s F: /f all
+       bcdboot.exe F:\Windows /s F: /v
+       bcdboot.exe F:\Windows /s F: /f ALL /v
 5. Booting to USB Drive.
 
 ### Source
 
 * Windows To Go ssing GimagesX (GUI) [https://consciousvibes.com/how-to-create-a-windows-to-go-live-bootable-usb-drive/](https://consciousvibes.com/how-to-create-a-windows-to-go-live-bootable-usb-drive/ "https://consciousvibes.com/how-to-create-a-windows-to-go-live-bootable-usb-drive/")
+* Read this [https://www.rmprepusb.com/tutorials/win8togo](https://www.rmprepusb.com/tutorials/win8togo "https://www.rmprepusb.com/tutorials/win8togo")
