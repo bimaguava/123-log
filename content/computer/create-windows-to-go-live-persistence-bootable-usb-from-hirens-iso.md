@@ -30,7 +30,7 @@ type = "post"
 3. Ensure USB drive partition active! I need to make the Windows To Go partition active so my computer can boot from the **USB drive (F:)**. Just run **_compmgmt.msc_** to check it.
 
    ![](https://res.cloudinary.com/bimagv/image/upload/v1612516443/2021-02/123/2021-02-05--T09-12-03_oburfv.png)
-4. Create Boot Files/Entries on the USB Drive and run:
+4. Create Boot Files/Entries (UEFI and BIOS) on the USB Drive. Just run:
 
        F:
        cd \Windows\System32
