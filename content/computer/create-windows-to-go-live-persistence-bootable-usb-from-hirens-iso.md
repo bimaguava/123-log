@@ -14,7 +14,8 @@ type = "post"
 
 ### Reading
 
-* sd
+* Windows To Go ssing GimagesX (GUI) [https://consciousvibes.com/how-to-create-a-windows-to-go-live-bootable-usb-drive/](https://consciousvibes.com/how-to-create-a-windows-to-go-live-bootable-usb-drive/ "https://consciousvibes.com/how-to-create-a-windows-to-go-live-bootable-usb-drive/")
+* Windows AIK [https://www.youtube.com/watch?v=sCX39ADVLHY](https://www.youtube.com/watch?v=sCX39ADVLHY "https://www.youtube.com/watch?v=sCX39ADVLHY")
 
 ### Requirements
 
@@ -25,4 +26,4 @@ type = "post"
 ### Actually steps
 
 * extract hirens iso with poweriso or another program like that
-* Copy **\\source\\boot.wim** to media installation (USB disk) with **GimagesX**  
+* Copy **\\source\\boot.wim** to media installation (USB disk) with **GimagesX**
