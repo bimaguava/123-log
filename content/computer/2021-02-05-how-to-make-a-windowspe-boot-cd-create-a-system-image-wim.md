@@ -3,7 +3,7 @@ categories = ["computer"]
 date = 2021-02-04T17:00:00Z
 excerpt = "I need to make iso from this to make deployment to other installation media"
 tags = ["windows-tips"]
-title = "How to make a WindowsPE boot CD"
+title = "How to make a WindowsPE boot CD and other interest link in below"
 type = "post"
 
 +++
@@ -37,4 +37,7 @@ Read:
 
 * Create bootable usb from current Windows 10 using freemium tools (iSumsoft) or using ADK (maybe need 6.7GB Space to setup environment and Workbench :v) [https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html](https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html "https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html")
 
-### Reference
+### Interest link
+
+* How to create, managing images file using MDT [https://www.youtube.com/watch?v=oWRvQgCi4aI](https://www.youtube.com/watch?v=oWRvQgCi4aI "https://www.youtube.com/watch?v=oWRvQgCi4aI")
+* 
