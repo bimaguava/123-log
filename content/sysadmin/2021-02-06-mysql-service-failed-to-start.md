@@ -7,3 +7,10 @@ title = "MySQL service failed to start"
 type = "post"
 
 +++
+### Preface
+
+> I can't start MySQL service with new installation
+
+### Main Problem
+
+I opened **services.msc** and going to start service
