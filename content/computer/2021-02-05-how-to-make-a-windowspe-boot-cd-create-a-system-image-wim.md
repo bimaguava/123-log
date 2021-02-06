@@ -13,9 +13,13 @@ type = "post"
 
 ### Method
 
+The method 
+
 #### Windows 7
 
 using Windows AIK (Assessment Installation Kit) it's about 2GB
+
+Read: [https://www.youtube.com/watch?v=sCX39ADVLHY](https://www.youtube.com/watch?v=sCX39ADVLHY "https://www.youtube.com/watch?v=sCX39ADVLHY")
 
 #### Windows 10
 
