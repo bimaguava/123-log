@@ -26,7 +26,7 @@ type = "post"
 * 192.168.190.0/24
 * 192.168.160.0/30
 
-### Remote the Network
+### Get directly connected to Eve-ng Lab Workspace
 
 Eve-NG Lab is locate in another virtualization (Overlay). In other case I can call it part of Software Defined Network. Different with Eve-NG VM network. it's locate in surface network which directly connected to VMnet1 adapter (192.168.137.1)
 
