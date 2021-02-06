@@ -37,6 +37,22 @@ Thats problem.
 
 ### Indication
 
-Fail in installation of MySQL Server. It cause services not created perfectly
+Fail in installation of MySQL Server. It cause services not created perfectly. In the past, I installed MySQL Server full edition with Workbench. Maybe I will recomended to do installation in minimal edition (only MySQL Server). 
 
-### s
+### Solved
+
+Reinstall MySQL Server
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612574628/2021-02/123/2021-01-24--T11-14-24_f1idnm.png)
+
+Once the installation completed, it will be created new services (**MySQL80**) with Status "Started"
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612574844/2021-02/123/2021-01-24--T11-45-10_tzqa8f.png)
+
+Perfect!
+
+How MySQL service to be remote?
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612574917/2021-02/123/2021-01-24--T11-47-03_iepwuu.png)
+
+It's running.
