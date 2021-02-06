@@ -18,7 +18,7 @@ In my opinion, this is the best way to create Windows Live (To Go) in USB Drive 
 ### Requirements
 
 * Hirens boot PE iso
-* GimagesX (It will allow you to work with WIM files from the Windows installation media and create a Windows To Go drive **without** needing the Microsoft’s official Windows-To-Go-creator tool, or the Windows AIK or ADK (Windows Assessment and Deployment Kit)
+* GimagesX (It will allow you to work with WIM files from the Windows installation media and create a Windows To Go drive **without** needing the Microsoft’s official Windows-To-Go-creator tool aka **Windows AIK (for Windows 7)** or **Windows ADK** (**for Windows 10**)
 * Poweriso
 
 ### Steps
