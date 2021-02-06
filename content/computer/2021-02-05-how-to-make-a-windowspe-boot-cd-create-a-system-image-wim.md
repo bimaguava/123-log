@@ -17,12 +17,12 @@ The method
 
 #### Deploy using Windows 7 machine
 
-using Windows AIK (Assessment Installation Kit) it's about 2GB
+Requiring Windows AIK (Assessment Installation Kit) it's about 2GB
 
 Read: [https://www.youtube.com/watch?v=sCX39ADVLHY](https://www.youtube.com/watch?v=sCX39ADVLHY "https://www.youtube.com/watch?v=sCX39ADVLHY")
 
 #### Deploy using Windows 10 machine
 
-using Windows ADK (Assessment and Deployment Kit) it's about 20MB
+Requiring Windows ADK (Assessment and Deployment Kit) it's about 20MB
 
 Read: [https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html](https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html "https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html")
