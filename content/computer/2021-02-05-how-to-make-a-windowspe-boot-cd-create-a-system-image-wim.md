@@ -11,20 +11,26 @@ type = "post"
 
 > Main idea: I need to make iso from this to make deployment to other installation media
 
+**If I talk this in generally**, the things is how about current Windows services (7/8/10/Server) can be deploy to another VM/Machine to **replace**, **migrate**, or **make new installation** on fresh system.
+
+In other needs **Windows Automatic Deployment** used to customize Windows images (.wim, .esd, etc) for large-scale deployment e.g: Virtualization, Server or Data Center.
+
+In other needs **Windows Automatic Deployment** 
+
 ### Method
 
 Depends on requirement and needs how to deploy the Windows system to another media installation.
 
-The things how about current Windows services (7/8/10/Server) can be deploy to another VM/Machine to **replace**, **migrate**, or **make new installation** on fresh system.
-
-#### Deploy using Windows 7 machine
+#### Deploy using Windows 7 machine (Irrelavant in 2020)
 
 Requiring Windows AIK (Assessment Installation Kit) it's about 2GB
 
 Read: [https://www.youtube.com/watch?v=sCX39ADVLHY](https://www.youtube.com/watch?v=sCX39ADVLHY "https://www.youtube.com/watch?v=sCX39ADVLHY")
 
-#### Deploy using Windows 10 machine
+#### Deploy using Windows 10 machine (Recommended)
 
 Requiring Windows ADK (Assessment and Deployment Kit) it's about 20MB and requiring 6.5GB space of hardisk to create workspace or Deployment Workbench.
 
-Read: [https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html](https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html "https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html")
+Read:
+
+* Create bootable usb from current Windows 10 [https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html](https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html "https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html")
