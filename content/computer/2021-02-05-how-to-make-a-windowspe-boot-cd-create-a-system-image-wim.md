@@ -15,7 +15,7 @@ type = "post"
 
 In other needs **Windows Automatic Deployment** used to customize Windows images (.wim, .esd, etc) for large-scale deployment e.g: Virtualization, Server or Data Center.
 
-In other needs **Windows Automatic Deployment** 
+In other needs **Windows Automatic Deployment** tools used to test the quality and performance of your system and applications running on it.
 
 ### Method
 
