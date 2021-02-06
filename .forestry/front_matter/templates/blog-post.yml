@@ -42,4 +42,4 @@ pages:
 - content/network/2020-02-03-basic-firewall-fgt-policy-object.md
 - content/sysadmin/2020-11-25-kali-linux-error-response-from-apparmor-daemon-docker-installation.md
 - content/sysadmin/2020-11-25-kali-linux-error-response-from-docker-registry.md
-- content/sysadmin/mysql-service-failed-to-start.md
+- content/sysadmin/2021-02-06-mysql-service-failed-to-start.md
