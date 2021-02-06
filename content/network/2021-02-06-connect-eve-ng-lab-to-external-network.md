@@ -7,3 +7,8 @@ title = "Connect Eve-NG lab to external network"
 type = "post"
 
 +++
+### Preface
+
+> Main idea: Adding static route to adapter used for eve-ng VM to connect external network
+
+### Address
