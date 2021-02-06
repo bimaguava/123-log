@@ -32,4 +32,6 @@ Eve-NG Lab is locate in another virtualization (Overlay). In other case I can ca
 
 So, theris connecting the network lab to external network is not recommended because can break essence of the Lab workspace. Except, there are other different needs.
 
+Using host or client to manage web admin or something like that is currently option.
+
 ### 
