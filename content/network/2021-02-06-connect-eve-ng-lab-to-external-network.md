@@ -28,4 +28,4 @@ type = "post"
 
 ### Explanation
 
-Eve-NG Lab is locate in another virtualization, in other case I can call it part of Software Defined Network.
+Eve-NG Lab is locate in another virtualization (Overlay). In other case I can call it part of Software Defined Network. Different with Eve-NG VM network. it's locate in surface network which directly connected to VMnet1 adapter (192.168.137.1)
