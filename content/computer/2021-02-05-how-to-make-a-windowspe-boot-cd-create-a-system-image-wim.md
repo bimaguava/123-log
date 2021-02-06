@@ -39,5 +39,10 @@ Read:
 
 ### Interest link
 
-* How to create, managing images file using MDT [https://www.youtube.com/watch?v=oWRvQgCi4aI](https://www.youtube.com/watch?v=oWRvQgCi4aI "https://www.youtube.com/watch?v=oWRvQgCi4aI")
-* 
+* How to create, managing images file using MDT (Windows Server administration) [https://www.youtube.com/watch?v=oWRvQgCi4aI](https://www.youtube.com/watch?v=oWRvQgCi4aI "https://www.youtube.com/watch?v=oWRvQgCi4aI")
+* Debloat Windows 10 with customize images [https://www.youtube.com/watch?v=PdKMiFKGQuc](https://www.youtube.com/watch?v=PdKMiFKGQuc "https://www.youtube.com/watch?v=PdKMiFKGQuc")
+
+Don't miss this!
+
+* Create **autountended.xml** in Windows Server 2012 R2 [https://www.youtube.com/watch?v=n90Kli9u4CM](https://www.youtube.com/watch?v=n90Kli9u4CM "https://www.youtube.com/watch?v=n90Kli9u4CM")
+* Unattended installation in Windows Server 2016 with ADK, MDT, & WDS [https://www.youtube.com/watch?v=McmNSsiud5E](https://www.youtube.com/watch?v=McmNSsiud5E "https://www.youtube.com/watch?v=McmNSsiud5E")
