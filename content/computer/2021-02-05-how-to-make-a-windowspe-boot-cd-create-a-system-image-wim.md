@@ -15,6 +15,8 @@ type = "post"
 
 Depends on requirement and needs how to deploy the Windows system to another media installation.
 
+The things how about current Windows services (7/8/10/Server) can be deploy to another VM/Machine to **replace**, **migrate**, or **make new installation** on fresh system.
+
 #### Deploy using Windows 7 machine
 
 Requiring Windows AIK (Assessment Installation Kit) it's about 2GB
