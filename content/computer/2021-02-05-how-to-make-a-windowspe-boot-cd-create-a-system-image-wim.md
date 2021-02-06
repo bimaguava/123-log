@@ -2,7 +2,7 @@
 categories = ["computer"]
 date = 2021-02-04T17:00:00Z
 excerpt = "I need to make iso from this to make deployment to other installation media"
-tags = ["windows-tips"]
+tags = ["windows-tips", "windows-adk", "windows-aik"]
 title = "How to make a WindowsPE boot CD and other interest link in below"
 type = "post"
 
