@@ -23,6 +23,6 @@ Read: [https://www.youtube.com/watch?v=sCX39ADVLHY](https://www.youtube.com/watc
 
 #### Deploy using Windows 10 machine
 
-Requiring Windows ADK (Assessment and Deployment Kit) it's about 20MB and requiring 6.5GB space of hardisk to create workspace
+Requiring Windows ADK (Assessment and Deployment Kit) it's about 20MB and requiring 6.5GB space of hardisk to create workspace.
 
 Read: [https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html](https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html "https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html")
