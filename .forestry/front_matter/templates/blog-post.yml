@@ -40,7 +40,7 @@ pages:
 - content/computer/2021-01-07-thumbnail-image-not-show.md
 - content/computer/2021-02-05-how-to-make-a-windowspe-boot-cd-create-a-system-image-wim.md
 - content/network/2020-02-03-basic-firewall-fgt-policy-object.md
-- content/network/connect-eve-ng-lab-to-external-network.md
+- content/network/2021-02-06-connect-eve-ng-lab-to-external-network.md
 - content/sysadmin/2020-11-25-kali-linux-error-response-from-apparmor-daemon-docker-installation.md
 - content/sysadmin/2020-11-25-kali-linux-error-response-from-docker-registry.md
 - content/sysadmin/2021-02-06-mysql-service-failed-to-start.md
