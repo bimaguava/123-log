@@ -28,3 +28,15 @@ Or sometimes can be started.
 But, it show the unconditional error when I remote with telnet like this screenshoot.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612574300/2021-02/123/2021-01-24--T10-41-18_mdbodp.png)
+
+Also, not working when remote with MySQL Workbench.
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612574398/2021-02/123/2021-01-24--T10-53-01_xrxujr.png)
+
+Thats problem.
+
+### Indication
+
+Fail in installation of MySQL Server. It cause services not created perfectly
+
+### s
