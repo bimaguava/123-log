@@ -3,7 +3,7 @@ categories = ["network"]
 date = 2021-02-06T15:00:00Z
 excerpt = "Adding static route to adapter used for eve-ng VM to connect external network"
 tags = ["eve-ng"]
-title = "Connect Eve-NG lab to external network"
+title = "Connect Eve-NG node to external network"
 type = "post"
 
 +++
@@ -25,3 +25,7 @@ type = "post"
 * 10.0.0.0/30
 * 192.168.190.0/24
 * 192.168.160.0/30
+
+### Explanation
+
+Eve-NG Lab is locate in another virtualization, in other case I can call it part of Software Defined Network.
