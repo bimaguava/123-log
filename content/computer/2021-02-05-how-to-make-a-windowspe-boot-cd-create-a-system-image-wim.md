@@ -15,8 +15,10 @@ type = "post"
 
 #### Windows 7
 
-using Windows AIK (Assessment Installation Kit)
+using Windows AIK (Assessment Installation Kit) it's about 2GB
 
 #### Windows 10
 
-using Windows ADK (Assessment and Deployment Kit)
+using Windows ADK (Assessment and Deployment Kit) it's about 20MB
+
+Read: [https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html](https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html "https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html")
