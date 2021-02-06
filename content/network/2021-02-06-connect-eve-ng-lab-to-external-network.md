@@ -11,4 +11,17 @@ type = "post"
 
 > Main idea: Adding static route to adapter used for eve-ng VM to connect external network
 
-### Address
+### Foreign Network list
+
+#### ESC. Mangga Dua
+
+* 192.168.1.0/24
+* 10.10.10.0/30
+* 192.168.195.0/24
+* 192.168.175.0/24
+
+#### EIN
+
+* 10.0.0.0/30
+* 192.168.190.0/24
+* 192.168.160.0/30
