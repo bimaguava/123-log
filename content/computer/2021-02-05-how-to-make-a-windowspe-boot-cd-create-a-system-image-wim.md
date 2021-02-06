@@ -13,7 +13,7 @@ type = "post"
 
 ### Method
 
-The method 
+Depends on requirement and needs how to deploy the Windows system to another media installation.
 
 #### Deploy using Windows 7 machine
 
