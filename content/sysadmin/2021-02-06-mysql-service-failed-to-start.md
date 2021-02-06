@@ -56,3 +56,7 @@ How MySQL service to be remote?
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612574917/2021-02/123/2021-01-24--T11-47-03_iepwuu.png)
 
 It's running.
+
+### Conclusion
+
+Install first MySQL Server first, Workbench later.
