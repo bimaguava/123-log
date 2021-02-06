@@ -25,9 +25,9 @@ Depends on requirement and needs how to deploy the Windows system to another med
 
 Requiring Windows AIK (Assessment Installation Kit) it's about 2GB
 
-Read: 
+Read:
 
-* How to make a WindowsPE boot CD using command line [https://www.youtube.com/watch?v=sCX39ADVLHY](https://www.youtube.com/watch?v=sCX39ADVLHY "https://www.youtube.com/watch?v=sCX39ADVLHY")
+* How to make a WindowsPE boot CD using command line [https://www.youtube.com/watch?v=sCX39ADVLHY](https://www.youtube.com/watch?v=sCX39ADVLHY "https://www.youtube.com/watch?v=sCX39ADVLHY") Final video they create .iso file and it can be copy to USB Drive and get ready for booting.
 
 #### Deploy using Windows 10 machine (Recommended)
 
@@ -36,3 +36,5 @@ Requiring Windows ADK (Assessment and Deployment Kit) it's about 20MB and requir
 Read:
 
 * Create bootable usb from current Windows 10 using freemium tools (iSumsoft) or using ADK (maybe need 6.7GB Space to setup environment and Workbench :v) [https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html](https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html "https://www.isumsoft.com/windows-10/how-to-create-winpe-bootable-usb-disk.html")
+
+### Reference
