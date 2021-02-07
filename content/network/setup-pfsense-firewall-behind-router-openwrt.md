@@ -42,3 +42,7 @@ So, after that the physical interface LAN (Zone to_pF) is interface as pfSense g
 To do this, it's need to be allow **IPv4-tcp, udp, icmp** from **any host** or ip address  in the internet Via **any routers** or gateway. This is how gonna be look at.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612698154/2021-02/123/2021-02-07--T11-32-56_brqkii.png)
+
+It's done! don't forget to enable OpenWRT firewall at System>Startup.
+
+### 
