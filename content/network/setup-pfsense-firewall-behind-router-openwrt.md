@@ -9,7 +9,7 @@ type = "post"
 +++
 ### Preface
 
-> pfSense configuration to allow inbound traffic for internet connection in client-side and  implement a remote site
+> pfSense configuration to allow inbound traffic for internet connection in client-side and also implement a remote site
 
 ### Lab Actually
 
