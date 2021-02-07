@@ -21,4 +21,4 @@ pfSense can connect to the internet.
 
 To to this, the router (OpenWRT) must complete basic initial config as minimal requirement to control network traffic flow. Like this:
 
-* interface-wan->
+![](https://res.cloudinary.com/bimagv/image/upload/v1612696330/2021-02/123/2021-02-07--T11-11-37_ymgb5i.png)
