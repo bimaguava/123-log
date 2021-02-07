@@ -23,10 +23,14 @@ To to this, the router (OpenWRT) must complete basic initial config as minimal r
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612696330/2021-02/123/2021-02-07--T11-11-37_ymgb5i.png)
 
-**WAN interface** (Zona_W_AN) must be **Masquarade** and the Source zones match forwarded traffic from other zones **targeted at "Zona to**_**_pF"**
+**WAN interface** (Zona_W_AN) must be **Masquarade** and the Source zones match forwarded traffic from other zones_ 
+
+**WAN interface's source zone targeted at "Zona to_pF"**
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612697078/2021-02/123/2021-02-07--T11-24-01_wwxnmv.png)
 
-And then, **LAN interface** (Zona to_pF) must be setup for _Destination zones_ match forwarded traffic from other zones **targeted at "Zona_WAN"**
+And then, **LAN interface** (Zona to_pF) must be setup for _Destination zones_ match forwarded traffic from other zones.
+
+**LAN interface's destination zones targeted at "Zona_WAN"**
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612697254/2021-02/123/2021-02-07--T11-25-40_fwt29h.png)
