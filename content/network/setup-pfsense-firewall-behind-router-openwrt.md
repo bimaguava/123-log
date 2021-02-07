@@ -11,6 +11,14 @@ type = "post"
 
 > pfSense configuration to allow inbound traffic for internet connection in client-side and also implement a remote site
 
+As a Firewall pfSense will be block all connection in LAN interface, _except_ it's web configuration :xD
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612716092/2021-02/123/2021-02-07--T16-40-26_xauyhl.png)
+
+Also his block all traffic comes from WAN interface. So if you ping pfSense from WAN interface you get 100% packet loss :v.
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612715981/2021-02/123/2021-02-07--T16-21-31_kan6r9.png)
+
 ### Lab Actually
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612686474/2021-02/123/2021-02-07--T08-26-41_davjju.png)
@@ -61,7 +69,13 @@ I know, In a fact pfSense is a router! But, as a firewall his will block any tra
 
 One of that must be configured or to be opened is client internet connection.
 
+**This screenshoot indicate client need to access ICMP Protocol**
+
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612704417/2021-02/123/2021-02-07--T13-24-02_cmcbga.png)
+
+**And this screenshoot indicate client need to access DNS (53), HTTP (80), HTTPS (443) port**
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612716137/2021-02/123/2021-02-07--T16-39-06_uahiah.png)
 
 So, follow this
 
@@ -128,7 +142,7 @@ This is why the client still not get the internet access. Sorry, I'm forget this
 
 So, lets add rule for WAN interface.
 
-#### Create rule (in WAN interface firewall) to icmp traffic
+#### Create rule (in LAN interface firewall) to icmp traffic (sorry I'm forgot)
 
 pfSense interface need to be ping from OpenWRT (to be run his routing table) for client can access to the internet.
 
