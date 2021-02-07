@@ -73,9 +73,15 @@ In case rule to allowing internet access (https, http, dns) his need to know **w
 
 And **what is service or port to be asssign in rule**. It's called **Destination.**
 
-First, I need to be setup **Source addresses** which is will be grouped in firewall rule as **"Alliases"**.
+First, I need to be setup **Source** which is will be grouped in firewall rule as **"Alliases"**.
 
-So, go to Firewall>Rules>Aliases
+It will grouped base on the directly connected port (LAN port/e1)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612712133/2021-02/123/2021-02-07-T15-34-37_skecbi.png)
+
+I will create an aliases name: **ein_floor1**
+
+So, go to Firewall>Aliases>Port
 
 That's all. Now I have grouped user who connected pfSense from LAN cable.
 
