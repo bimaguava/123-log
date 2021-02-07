@@ -11,7 +11,7 @@ type = "post"
 
 > pfSense configuration to allow inbound traffic for internet connection in client-side and also implement a remote site
 
-As a Firewall pfSense will be block all connection in LAN interface, _except_ it's web configuration :xD
+As a Firewall pfSense will be block all connection in LAN interface, _except_ it's web configuration :xD (because it's directly connected to pfSense)
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612716092/2021-02/123/2021-02-07--T16-40-26_xauyhl.png)
 
