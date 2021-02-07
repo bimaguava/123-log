@@ -17,7 +17,7 @@ type = "post"
 
 ### Prerequisite: Connecting Firewall to the internet
 
-> pfSense can connect to the internet and have an access to implement
+> pfSense can get connection to the internet
 
 To do this, OpenWRT must be configured such as intial config, static route (to client-side), default route (internet), setup Firewall Zones and PortForward Firewall rules.
 
