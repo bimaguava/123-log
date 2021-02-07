@@ -164,6 +164,8 @@ I know this
 
 OpenWRT can ping client network (192.168.190.0/24) and all pfSense interface because it (EXACTLY) still blocked by default.
 
+So, his routing table will not work :D
+
 Follow Step 2 to setup Remote Access VPN to allow computers at external network or internet access pfSense web configuration.
 
 ### Step 2: Setup Remote Access in pfSense
