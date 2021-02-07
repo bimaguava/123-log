@@ -58,3 +58,9 @@ in network 192.168.190.0/24 client can ping gateway (192.168.137.1) and physical
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612704417/2021-02/123/2021-02-07--T13-24-02_cmcbga.png)
 
 #### Allow Echo Request (ping access to pfSense interface)
+
+But wait... is this necessary?
+
+maybe, this is needed for other needs. Skip for now.
+
+#### 
