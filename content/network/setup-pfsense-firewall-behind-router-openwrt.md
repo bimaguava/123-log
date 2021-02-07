@@ -140,9 +140,7 @@ Sorry, I'm forget this one haha...
 
 So, lets add rule for WAN interface.
 
-#### Create rule (in LAN interface firewall) to icmp traffic (sorry I'm forgot)
-
-pfSense interface need to be ping from OpenWRT (to be run his routing table) for client can access to the internet.
+#### Create rule (in LAN interface firewall) to ICMP Protocol traffic (sorry I'm forgot this)
 
 Follow Step 2 to setup Remote Access VPN to allow computers at external network or internet access pfSense web configuration.
 
