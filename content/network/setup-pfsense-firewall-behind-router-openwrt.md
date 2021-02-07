@@ -1,7 +1,7 @@
 +++
 categories = ["network"]
 date = 2021-02-06T17:00:00Z
-excerpt = "pfSense configuration to allow inbound traffic for internet and remote connection in client-side "
+excerpt = "pfSense configuration to allow inbound traffic for internet and remote connection in client-side and also implement a remote access "
 tags = ["pfsense", "openwrt"]
 title = "Setup pfSense - Firewall behind Router (OpenWRT)"
 type = "post"
@@ -9,7 +9,7 @@ type = "post"
 +++
 ### Preface
 
-> pfSense configuration to allow inbound traffic for internet connection in client-side and remote site
+> pfSense configuration to allow inbound traffic for internet connection in client-side and  implement a remote site
 
 ### Lab Actually
 
@@ -17,7 +17,7 @@ type = "post"
 
 ### Prerequisite: Connecting Firewall to the internet
 
-> pfSense can connect to the internet and have an access to implement a remote access.
+> pfSense can connect to the internet and have an access to implement
 
 To do this, OpenWRT must be configured such as intial config, static route (to client-side), default route (internet), setup Firewall Zones and PortForward Firewall rules.
 
