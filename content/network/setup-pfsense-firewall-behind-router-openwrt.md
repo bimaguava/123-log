@@ -152,6 +152,18 @@ So, in Step 1 (LAN interface rules) we have all this rule.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612716837/2021-02/123/2021-02-07--T16-52-47_cmxacc.png)
 
+Wait...................
+
+I'm forgot something :v
+
+#### Create rule (in WAN interface firewall) to ICMP Protocol traffic (sorry I'm forgot 2 time)
+
+So, this is last time I forget, maybe :v
+
+I know this
+
+OpenWRT can ping client network (192.168.190.0/24) and all pfSense interface because it (EXACTLY) still blocked by default.
+
 Follow Step 2 to setup Remote Access VPN to allow computers at external network or internet access pfSense web configuration.
 
 ### Step 2: Setup Remote Access in pfSense
