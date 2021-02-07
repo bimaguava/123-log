@@ -63,18 +63,43 @@ in network 192.168.190.0/24 client which is configured by DHCP can ping his gate
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612704417/2021-02/123/2021-02-07--T13-24-02_cmcbga.png)
 
-So, follow this step!
+So, follow this
 
-#### Allow Echo Request (ping access to pfSense WAN interface)
+#### Create LAN Group Aliases
 
-But wait... is this necessary?
+In case rule to allowing internet access (https, http, dns) his need to know who is the man will be applied to this LAN rule. This man It's called **Source**.
 
-maybe, this is needed for other needs. Skip for now. I will do it later in another section.
+And what is service or port to be asssign in rule. It's called **Destination.**
 
-#### Allow Nat inside
+First, I need to be setup **Source addresses** will be grouped in can called in firewall rule as **"Alliases"**.
 
-l
+Go to Firewall>Rules>Aliases
+
+That's all. Now I have grouped user who connected pfSense from LAN cable.
+
+#### Create rule (in LAN interface firewall) to allow dns, https and http traffic
+
+Enter Firewall>Rules>LAN menu and create new rules with "action: passed" to allow the spesific traffic, "Interface: LAN", "Address Family: IPv4" and "protocol: TCP/UDP".
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612707733/2021-02/123/2021-02-07--T14-14-36_miq0si.png)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612708709/2021-02/123/2021-02-07--T14-32-24_o5z8bo.png)
+
+I
+
+So, first rule to allow DNS  
+![](https://res.cloudinary.com/bimagv/image/upload/v1612709502/2021-02/123/2021-02-07--T14-50-50_an4xj5.png)
+
+Second, rule to allow HTTPS
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612709743/2021-02/123/2021-02-07--T14-54-04_cjemwz.png)
+
+Third, rule to allow HTTP
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612709785/2021-02/123/2021-02-07--T14-54-54_qfn5iu.png)
+
+Rules all we have
 
 ### 2. Setup Remote Access in pfSense
 
-As a what i told in beginning. I wanna setup pfSense to be have a connection to external network or internet. 
+As a what i told in beginning. I wanna setup pfSense to be have a connection to external network or internet.
