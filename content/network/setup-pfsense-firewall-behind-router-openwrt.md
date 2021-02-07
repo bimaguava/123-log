@@ -55,6 +55,8 @@ Now, pfSense can get a internet connection and have an access from OpenWRT route
 
 ### 1. Setup pfSense to allow inbound traffic for client internet connection
 
+I know, In a fact pfSense is a router! But, as a firewall his will block any trafic by default. So, it will be my work to opened just **only** what I needs.
+
 in network 192.168.190.0/24 client which is configured by DHCP can ping gateway (192.168.137.1) and physical AP in my home (192.168.0.1) but not for internet access.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612704417/2021-02/123/2021-02-07--T13-24-02_cmcbga.png)
