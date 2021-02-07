@@ -81,7 +81,13 @@ It will grouped base on the directly connected port (LAN port/e1)
 
 I will create an aliases name: **ein_floor1**
 
-So, go to Firewall>Aliases>Port
+So, go to Firewall>Aliases>Port and create new aliases with
+
+* "name: ein_floor1"
+* "Type: port(s)" (it's contain "s" which allows for the future to extend another connection for different pfSense port)
+* "Port: LAN" (now just only need LAN interface)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612712450/2021-02/123/2021-02-07--T15-39-14_hfz7yg.png)
 
 That's all. Now I have grouped user who connected pfSense from LAN cable.
 
