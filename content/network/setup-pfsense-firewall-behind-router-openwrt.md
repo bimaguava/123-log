@@ -11,7 +11,7 @@ type = "post"
 
 > pfSense configuration to allow inbound traffic for internet connection in client-side and remote site
 
-### Actually lab
+### Lab Actually
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612686474/2021-02/123/2021-02-07--T08-26-41_davjju.png)
 
