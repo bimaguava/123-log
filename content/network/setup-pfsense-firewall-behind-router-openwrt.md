@@ -112,6 +112,16 @@ Third, rule to allow HTTP
 
 That's rules all we have. Now, grouped client in LAN network (192.168.190.0/24) can access internet.
 
+![](https://res.cloudinary.com/bimagv/image/upload/v1612714679/2021-02/123/2021-02-07--T16-16-43_tcivnw.png)
+
+Wow, it still not get internet access :v 
+
+Wait I must check up connection in OpenWRT router...
+
+Oooouh...
+
+Amazing!!! OpenWRT have routing table to client but, by default pfSense block connection from WAN interface :v
+
 Follow Step 2 to setup Remote Access VPN to allow computers at external network or internet access pfSense web configuration.
 
 ### Step 2: Setup Remote Access in pfSense
