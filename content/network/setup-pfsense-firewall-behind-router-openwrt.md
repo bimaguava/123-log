@@ -124,7 +124,13 @@ Amazing!!! OpenWRT have routing table to client but, by default pfSense block co
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612714928/2021-02/123/2021-02-07--T16-21-31_p2l0ls.png)
 
-this is why the client still not get the internet access.
+This is why the client still not get the internet access. Sorry, I'm forget this one haha...
+
+So, lets add rule for WAN interface.
+
+#### Create rule (in WAN interface firewall) to icmp traffic
+
+pfSense interface need to be ping from OpenWRT (to be run his routing table) for client can access to the internet.
 
 Follow Step 2 to setup Remote Access VPN to allow computers at external network or internet access pfSense web configuration.
 
