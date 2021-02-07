@@ -53,7 +53,7 @@ Now, pfSense can get a internet connection and have an access from OpenWRT route
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612704341/2021-02/123/2021-02-07--T13-25-23_c2f2dn.png)
 
-### Step1: Setup pfSense to allow inbound traffic for client internet connection
+### Step 1: Setup pfSense to allow inbound traffic for client internet connection
 
 I know, In a fact pfSense is a router! But, as a firewall his will block any trafic by default. So, it will be my work to opened just **only** what I needs.
 
