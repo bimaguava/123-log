@@ -55,7 +55,7 @@ And let's see..
 
 Now I'm clear with prerequisite, my pfSense can get a internet connection and have an access from OpenWRT router to implement a Remote Access VPN.
 
-Next is follow this steps to get and manage internet for client.
+Next is follow this 2 steps to get and manage internet for client and implement Remote Access.
 
 ### Step 1: Setup pfSense to allow inbound traffic for client internet connection
 
