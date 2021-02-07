@@ -53,7 +53,7 @@ Now, pfSense can get a internet connection and have an access from OpenWRT route
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612704341/2021-02/123/2021-02-07--T13-25-23_c2f2dn.png)
 
-### Setup pfSense to allow inbound traffic for client internet connection
+### 1. Setup pfSense to allow inbound traffic for client internet connection
 
 in network 192.168.190.0/24 client which is configured by DHCP can ping gateway (192.168.137.1) and physical AP in my home (192.168.0.1) but not for internet access.
 
@@ -68,3 +68,7 @@ But wait... is this necessary?
 maybe, this is needed for other needs. Skip for now. I will do it later in another section.
 
 #### Allow Nat inside
+
+l
+
+### 2. Setup Remote Access in pFsense
