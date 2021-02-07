@@ -110,7 +110,7 @@ Third, rule to allow HTTP
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612709785/2021-02/123/2021-02-07--T14-54-54_qfn5iu.png)
 
-That's rules all we have. Now, grouped client in LAN network can access internet.
+That's rules all we have. Now, grouped client in LAN network (192.168.190.0/24) can access internet.
 
 Follow Step 2 to setup Remote Access VPN to allow computers at external network or internet access pfSense web configuration.
 
