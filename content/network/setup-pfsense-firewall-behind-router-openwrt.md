@@ -49,4 +49,14 @@ It's done! don't forget to enable OpenWRT firewall at System>Startup.
 
 Now, pfSense can get a internet connection and have an access from OpenWRT router to implement a Remote Access VPN.
 
-### PfSense - Allow 
+![](https://res.cloudinary.com/bimagv/image/upload/v1612704341/2021-02/123/2021-02-07--T13-25-23_c2f2dn.png)
+
+### Setup pfSense to allow inbound traffic for client internet connection
+
+in network 192.168.190.0/24 client can ping gateway (192.168.137.1) and physical AP in my home (192.168.0.1) but not for internet access.
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612704417/2021-02/123/2021-02-07--T13-24-02_cmcbga.png)
+
+#### PfSense - Allow Echo Request (ping access to pfSense interface)
+
+### pfSense - 
