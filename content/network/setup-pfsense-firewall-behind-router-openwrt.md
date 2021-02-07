@@ -67,7 +67,7 @@ So, follow this
 
 #### Create LAN Group Aliases
 
-> I recomended to do this because it will be completely easier for manage something for a lots of user in different connection and needs. So, implement a group or Aliases will be good for access management :v
+> I recomended to do this because it will be completely easier for manage something for a lots of user in different connection and needs. So, implement a group or Aliases will be simplify your access management :v
 
 In case rule to allowing internet access (https, http, dns) his need to know **who is the man will be applied to this LAN rule (address, group, aliases, or something)**. This man It's called **Source**.
 
@@ -75,7 +75,7 @@ And **what is service or port to be asssign in rule**. It's called **Destination
 
 First, I need to be setup **Source** which is will be grouped in firewall rule as **"Alliases"**.
 
-It will grouped base on the directly connected port (LAN port/e1)
+It will grouped base on the directly connected port (LAN port/vtnet1)
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612712133/2021-02/123/2021-02-07-T15-34-37_skecbi.png)
 
@@ -85,7 +85,7 @@ So, go to Firewall>Aliases>Port and create new aliases with
 
 * "name: ein_floor1"
 * "Type: port(s)" (it's contain "s" which allows for the future to extend another connection for different pfSense port)
-* "Port: LAN" (now just only need LAN interface)
+* "Port: vtnet1" (now just only need LAN/vtnet1 interface)
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612712450/2021-02/123/2021-02-07--T15-39-14_hfz7yg.png)
 
