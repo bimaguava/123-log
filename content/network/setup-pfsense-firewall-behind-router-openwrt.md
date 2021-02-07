@@ -19,7 +19,7 @@ type = "post"
 
 pfSense can connect to the internet.
 
-To to this, the router (OpenWRT) must complete basic initial config as minimal requirement to control network traffic flow. Look at this Firewall Zone configuration.
+#### Configure Firewall - Zones (interface)
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612696330/2021-02/123/2021-02-07--T11-11-37_ymgb5i.png)
 
@@ -34,3 +34,11 @@ And then, **LAN interface** (Zona to_pF) must be setup for _Destination zones_ m
 **LAN interface's destination zones targeted at "Zona_WAN"**
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612697254/2021-02/123/2021-02-07--T11-25-40_fwt29h.png)
+
+#### Configure Firewall - Port Forwards
+
+So, after that the physical interface LAN (Zone to_pF) is interface as pfSense gateway to be Remote Access or allows remote computers on the Internet/external network to be remoted pfSense or client host.
+
+To do this, it's need to be allow **IPv4-tcp, udp, icmp** from **any host** or ip address  in the internet Via **any routers** or gateway. This is how gonna be look at.
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612698154/2021-02/123/2021-02-07--T11-32-56_brqkii.png)
