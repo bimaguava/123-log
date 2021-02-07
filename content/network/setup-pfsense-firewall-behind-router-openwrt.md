@@ -45,6 +45,6 @@ To do this, it's need to be allow **IPv4-tcp, udp, icmp** from **any host** or i
 
 It's done! don't forget to enable OpenWRT firewall at System>Startup.
 
-Now, pfSense can get a internet connection and pfSense have an access from OpenWRT router to implement a Remote Access VPN.
+Now, pfSense can get a internet connection and have an access from OpenWRT router to implement a Remote Access VPN.
 
 ### 
