@@ -15,7 +15,7 @@ type = "post"
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612686474/2021-02/123/2021-02-07--T08-26-41_davjju.png)
 
-### Prerequisite
+### Prerequisite: Connecting Firewall to the internet
 
 > pfSense can connect to the internet and have an access to implement a remote access.
 
@@ -53,7 +53,7 @@ Now, pfSense can get a internet connection and have an access from OpenWRT route
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612704341/2021-02/123/2021-02-07--T13-25-23_c2f2dn.png)
 
-### 1. Setup pfSense to allow inbound traffic for client internet connection
+### Step1: Setup pfSense to allow inbound traffic for client internet connection
 
 I know, In a fact pfSense is a router! But, as a firewall his will block any trafic by default. So, it will be my work to opened just **only** what I needs.
 
@@ -87,8 +87,6 @@ Enter Firewall>Rules>LAN menu and create new rules with "action: passed" to allo
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612708709/2021-02/123/2021-02-07--T14-32-24_o5z8bo.png)
 
-I
-
 So, first rule to allow DNS  
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612709502/2021-02/123/2021-02-07--T14-50-50_an4xj5.png)
 
@@ -102,6 +100,6 @@ Third, rule to allow HTTP
 
 Rules all we have
 
-### 2. Setup Remote Access in pfSense
+### Step 2: Setup Remote Access in pfSense
 
 As a what i told in beginning. I wanna setup pfSense to be have a connection to external network or internet.
