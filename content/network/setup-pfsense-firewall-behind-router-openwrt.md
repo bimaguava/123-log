@@ -84,12 +84,12 @@ I will create an aliases name: **ein_floor1**
 So, go to Firewall>Aliases>Port and create new aliases with
 
 * "name: ein_floor1"
-* "Type: port(s)" (it's contain "s" which allows for the future to extend another connection for different pfSense port)
-* "Port: vtnet1" (now just only need LAN/vtnet1 interface)
+* "Type: network(s)"
+* "Port: vtnet1"
 
-![](https://res.cloudinary.com/bimagv/image/upload/v1612712450/2021-02/123/2021-02-07--T15-39-14_hfz7yg.png)
+![](https://res.cloudinary.com/bimagv/image/upload/v1612713359/2021-02/123/2021-02-07--T15-53-35_cpovmt.png)
 
-That's all. Now I have grouped user who connected pfSense from LAN cable.
+That's all. Now I have grouped for lan network (192.168.190.0/24)
 
 #### Create rule (in LAN interface firewall) to allow dns, https and http traffic
 
