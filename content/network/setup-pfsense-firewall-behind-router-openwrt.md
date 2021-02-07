@@ -75,4 +75,6 @@ maybe, this is needed for other needs. Skip for now. I will do it later in anoth
 
 l
 
-### 2. Setup Remote Access in pFsense
+### 2. Setup Remote Access in pfSense
+
+As a what i told in beginning. I wanna setup pfSense to be have a connection to external network or internet. 
