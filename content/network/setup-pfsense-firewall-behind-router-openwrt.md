@@ -128,19 +128,23 @@ That's rules all we have. Now, grouped client in LAN network (192.168.190.0/24) 
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612714679/2021-02/123/2021-02-07--T16-16-43_tcivnw.png)
 
-Wow, it still not get internet access :v 
+Wow, it still not get internet access :v
 
 Wait I must check up ...
 
 Oooouh ...
 
-Amazing!!! ICMP Protocol not in rule!!! This is why the client still not get the internet access. 
+Amazing!!! ICMP Protocol not in rule!!! This is why the client still not get the internet access.
 
-Sorry, I'm forget this one haha... 
+Sorry, I'm forget this one haha...
 
 So, lets add rule for WAN interface.
 
 #### Create rule (in LAN interface firewall) to ICMP Protocol traffic (sorry I'm forgot this)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612716603/2021-02/123/2021-02-07--T16-49-02_g8vjrn.png)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612716623/2021-02/123/2021-02-07--T16-49-33_uvkzkb.png)
 
 Follow Step 2 to setup Remote Access VPN to allow computers at external network or internet access pfSense web configuration.
 
