@@ -21,7 +21,9 @@ type = "post"
 
 To do this, OpenWRT must be configured such as intial config, static route (to client-side), default route (internet), setup Firewall Zones and PortForward Firewall rules.
 
-#### Configure Firewall - Zones (interface)
+pfSense too, it's need to configure basic things like LAN/WAN/OPT1 interface and default gateway.
+
+#### OpenWRT: Configure Zones (interface) Firewall
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612696330/2021-02/123/2021-02-07--T11-11-37_ymgb5i.png)
 
@@ -37,7 +39,7 @@ And then, **LAN interface** (Zona to_pF) must be setup for _Destination zones_ m
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612697254/2021-02/123/2021-02-07--T11-25-40_fwt29h.png)
 
-#### Configure Firewall - Port Forwards
+#### OpenWRT: Configure Port Forwards Firewall
 
 So, after that the physical interface LAN (Zone to_pF) is interface as pfSense gateway to be Remote Access or allows remote computers on the Internet/external network to be remoted pfSense or client host.
 
