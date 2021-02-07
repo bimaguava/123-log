@@ -19,6 +19,8 @@ type = "post"
 
 > pfSense can connect to the internet and have an access to implement a remote access.
 
+To do this, OpenWRT must be configured such as intial config, static route (to client-side), default route (internet), setup Firewall Zones and PortForward Firewall rules.
+
 #### Configure Firewall - Zones (interface)
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612696330/2021-02/123/2021-02-07--T11-11-37_ymgb5i.png)
@@ -47,4 +49,4 @@ It's done! don't forget to enable OpenWRT firewall at System>Startup.
 
 Now, pfSense can get a internet connection and have an access from OpenWRT router to implement a Remote Access VPN.
 
-### 
+### PfSense - Allow 
