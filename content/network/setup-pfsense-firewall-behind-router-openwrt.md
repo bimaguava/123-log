@@ -67,13 +67,15 @@ So, follow this
 
 #### Create LAN Group Aliases
 
-In case rule to allowing internet access (https, http, dns) his need to know who is the man will be applied to this LAN rule. This man It's called **Source**.
+> I recomended to do this because it will be completely easier for manage something for a lots of user in different connection and needs. So, implement a group or Aliases will be good for access management :v
 
-And what is service or port to be asssign in rule. It's called **Destination.**
+In case rule to allowing internet access (https, http, dns) his need to know **who is the man will be applied to this LAN rule (address, group, aliases, or something)**. This man It's called **Source**.
 
-First, I need to be setup **Source addresses** will be grouped in can called in firewall rule as **"Alliases"**.
+And **what is service or port to be asssign in rule**. It's called **Destination.**
 
-Go to Firewall>Rules>Aliases
+First, I need to be setup **Source addresses** which is will be grouped in firewall rule as **"Alliases"**.
+
+So, go to Firewall>Rules>Aliases
 
 That's all. Now I have grouped user who connected pfSense from LAN cable.
 
