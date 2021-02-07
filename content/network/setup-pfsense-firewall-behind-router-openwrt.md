@@ -130,15 +130,13 @@ That's rules all we have. Now, grouped client in LAN network (192.168.190.0/24) 
 
 Wow, it still not get internet access :v 
 
-Wait I must check up connection in OpenWRT router...
+Wait I must check up ...
 
-Oooouh...
+Oooouh ...
 
-Amazing!!! OpenWRT have routing table to client but, by default pfSense block connection from WAN interface :v
+Amazing!!! ICMP Protocol not in rule!!! This is why the client still not get the internet access. 
 
-![](https://res.cloudinary.com/bimagv/image/upload/v1612714928/2021-02/123/2021-02-07--T16-21-31_p2l0ls.png)
-
-This is why the client still not get the internet access. Sorry, I'm forget this one haha...
+Sorry, I'm forget this one haha... 
 
 So, lets add rule for WAN interface.
 
