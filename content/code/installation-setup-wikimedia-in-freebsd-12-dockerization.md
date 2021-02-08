@@ -16,4 +16,16 @@ type = "post"
     cd @HOME/bin
     git clone https://github.com/anicetkeric/ci-docker-stack
 
+### Creating local environment
+
+    mkdir -p $HOME/bin/ci-docker-stack/nginx/etc/ssl
+    mkdir -p $HOME/bin/ci-docker-stack/mediawiki/data/db
+    mkdir -p $HOME/bin/ci-docker-stack/jenkins/data
+    mkdir -p $HOME/ci-docker-stack/jenkins/data
+    mkdir -p $HOME/ci-docker-stack/mediawiki/data/images
+    mkdir -p $HOME/bin/ci-docker-stack/nginx/web
+    mkdir -p $HOME/bin/ci-docker-stack/mediawiki/data/images
+
 ### Docker Compose
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612806157/2021-02/123/Screen_2021-02-08_23-36-56_av1iji.png)
