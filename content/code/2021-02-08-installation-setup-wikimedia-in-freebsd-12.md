@@ -7,3 +7,6 @@ title = "Installation & Setup Wikimedia in FreeBSD 12"
 type = "post"
 
 +++
+### Reference
+
+* [https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_FreeBSD](https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_FreeBSD "https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_FreeBSD")
