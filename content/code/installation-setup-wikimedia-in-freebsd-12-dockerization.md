@@ -14,7 +14,7 @@ type = "post"
 ### Cloning repository
 
     cd @HOME/bin
-    git clone https://github.com/anicetkeric/ci-docker-stack
+    git clone https://github.com/bimsky/ci-docker-stack
 
 ### Creating local environment
 
