@@ -36,3 +36,9 @@ type = "post"
     docker-compose up -d
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612806157/2021-02/123/Screen_2021-02-08_23-36-56_av1iji.png)
+
+### Mediawiki installation
+
+#### 
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612806740/2021-02/123/Screen_2021-02-08_23-41-19_gef3vf.png)
