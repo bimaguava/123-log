@@ -11,4 +11,9 @@ type = "post"
 
 > Main idea: Create Wiki on docker
 
+### Cloning repository
+
+    cd @HOME/bin
+    git clone https://github.com/anicetkeric/ci-docker-stack
+
 ### Docker Compose
