@@ -13,6 +13,8 @@ type = "post"
 
 ### Nginx
 
+![](https://res.cloudinary.com/bimagv/image/upload/v1612774175/2021-02/123/2021-02-08--T08-49-02_av56s2.png)
+
 ### MySQL Server
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612774012/2021-02/123/2021-02-08--T08-16-20_sfm6ao.png)
