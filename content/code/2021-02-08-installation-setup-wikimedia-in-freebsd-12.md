@@ -7,6 +7,12 @@ title = "Installation & Setup Wikimedia in FreeBSD 12"
 type = "post"
 
 +++
+### Preface
+
+> Main idea: Create Wiki in FreeBSD local server
+
+### 
+
 ### Reference
 
 * [https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_FreeBSD](https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_FreeBSD "https://www.mediawiki.org/wiki/Manual:Running_MediaWiki_on_FreeBSD")
