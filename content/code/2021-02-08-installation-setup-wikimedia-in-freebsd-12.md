@@ -11,7 +11,23 @@ type = "post"
 
 > Main idea: Create Wiki in FreeBSD local server
 
-### 
+### Nginx
+
+### MySQL Server
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612774012/2021-02/123/2021-02-08--T08-16-20_sfm6ao.png)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612774026/2021-02/123/2021-02-08--T08-32-40_kxwpcb.png)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612774039/2021-02/123/2021-02-08--T08-34-17_fsej2m.png)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612774055/2021-02/123/2021-02-08--T08-39-16_omvwhp.png)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612774068/2021-02/123/2021-02-08--T08-40-03_ljuslo.png)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612774080/2021-02/123/2021-02-08--T08-41-06_p5qk5z.png)
+
+### Wikimedia
 
 ### Reference
 
