@@ -31,7 +31,11 @@ type = "post"
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612774080/2021-02/123/2021-02-08--T08-41-06_p5qk5z.png)
 
-#### Wikimedia
+#### PHP
+
+#### Mediawiki
+
+### Setup Mediawiki
 
 ### Reference
 
