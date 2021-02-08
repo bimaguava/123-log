@@ -11,6 +11,4 @@ type = "post"
 
 > Main idea: Create Wiki on docker
 
-### Installation
-
-* 
+### Docker Compose
