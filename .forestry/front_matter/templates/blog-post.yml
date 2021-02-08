@@ -29,7 +29,7 @@ fields:
 pages:
 - content/code/2021-01-26-create-infobox-in-wiki.md
 - content/code/2021-01-26-customize-blockquote-tag-in-wiki.md
-- content/code/installation-setup-wikimedia-in-freebsd-12.md
+- content/code/2021-02-08-installation-setup-wikimedia-in-freebsd-12.md
 - content/computer/2020-02-05-create-windows-to-go-live-persistence-bootable-usb-from-hirens-iso.md
 - content/computer/2020-09-17-chsh-always-show-authentication-failure.md
 - content/computer/2020-10-12-wayland-can-t-be-anydesk-or-vnc-or-something-you-need-xwayland.md
