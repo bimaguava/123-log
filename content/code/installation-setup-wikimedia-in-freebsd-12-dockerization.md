@@ -11,6 +11,11 @@ type = "post"
 
 > Main idea: Create Wiki on docker
 
+### Requirements
+
+* docker
+* docker-compose
+
 ### Cloning repository
 
     cd @HOME/bin
