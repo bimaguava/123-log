@@ -1,9 +1,9 @@
 +++
 categories = ["code"]
 date = 2021-02-07T17:05:00Z
-excerpt = "importing wikimedia templatelinks dump to own wiki"
+excerpt = "importing mediawiki templatelinks dump to own wiki"
 tags = ["wiki"]
-title = "Import dump file from wikimedia"
+title = "Import dump file from mediawiki"
 type = "post"
 
 +++
