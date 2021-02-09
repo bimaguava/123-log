@@ -11,6 +11,10 @@ type = "post"
 
 > importing mediawiki templatelinks dump to own wiki
 
+using backup wiki, is theris many option to extract the data. one of that is SQL
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1612859527/2021-02/123/Screen_2021-02-09_15-31-25X_meeknq.png)
+
 ### Remote my wiki database
 
     ↪ mysql -u root -h 172.24.0.2 -p
