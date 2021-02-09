@@ -31,14 +31,11 @@ using backup wiki, is theris many option to extract the data. One of that is SQL
     
     Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-look the database
-
-    mysql> use my_wiki
-    Reading table information for completion of table and column names
-    You can turn off this feature to get a quicker startup with -A
-    Database changed
+### 
 
 ### Reference
 
 * [https://en.wikipedia.org/wiki/Wikipedia:Database_download](https://en.wikipedia.org/wiki/Wikipedia:Database_download "https://en.wikipedia.org/wiki/Wikipedia:Database_download")
 * [https://dumps.wikimedia.org/enwiki/20201101/](https://dumps.wikimedia.org/enwiki/20201101/ "https://dumps.wikimedia.org/enwiki/20201101/")
+* [https://serverfault.com/questions/137965/how-do-i-load-a-sql-gz-file-to-my-database-importing](https://serverfault.com/questions/137965/how-do-i-load-a-sql-gz-file-to-my-database-importing "https://serverfault.com/questions/137965/how-do-i-load-a-sql-gz-file-to-my-database-importing")
+* [https://www.mediawiki.org/wiki/Manual:Restoring_a_wiki_from_backup](https://www.mediawiki.org/wiki/Manual:Restoring_a_wiki_from_backup "https://www.mediawiki.org/wiki/Manual:Restoring_a_wiki_from_backup")
