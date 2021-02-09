@@ -11,7 +11,7 @@ type = "post"
 
 > importing mediawiki templatelinks dump to own wiki
 
-using backup wiki, is theris many option to extract the data. one of that is SQL
+using backup wiki, is theris many option to extract the data. One of that is SQL database backup.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612859527/2021-02/123/Screen_2021-02-09_15-31-25X_meeknq.png)
 
