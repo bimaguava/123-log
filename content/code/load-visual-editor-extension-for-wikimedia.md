@@ -7,3 +7,6 @@ title = "Load Visual Editor Extension for Wikimedia"
 type = "post"
 
 +++
+### Reference
+
+* [https://github.com/wikimedia/mediawiki-extensions-VisualEditor](https://github.com/wikimedia/mediawiki-extensions-VisualEditor "https://github.com/wikimedia/mediawiki-extensions-VisualEditor")
