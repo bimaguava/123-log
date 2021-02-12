@@ -19,11 +19,11 @@ So, I try with sql.gz file. it's about 3GB dump file.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1613146520/2021-02/123/Screen_2021-02-12_06-27_eddinw.png)
 
-But, in my machine (X220) need about 3 days and it still not completed :v I think thereis not only one way to import sql data.
+But, in my machine (X220) need about **3 days** and it still not completed :v I think thereis not only one way to import sql data. I mean It should be import with another setup such as innoDB.
 
-In wiki case, I'm just extract a spesific data into the xml file. I think it doesn't need extra long time.
+In wiki case, I'm just using a spesific dump file in xml. I think it doesn't need extra long time as an example.
 
-### R
+### Example dump file in xml
 
 ### 
 
