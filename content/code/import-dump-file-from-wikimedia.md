@@ -11,11 +11,17 @@ type = "post"
 
 > importing mediawiki templatelinks dump to own wiki
 
-using backup wiki, is theris many option to extract the data. One of that is SQL database backup.
+Doing backup in wiki site is many option to extract the data. One of that is SQL database backup.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612859527/2021-02/123/Screen_2021-02-09_15-31-25X_meeknq.png)
 
-it's bigger
+So, I try with sql.gz file. it's about 3GB dump file.
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1613146520/2021-02/123/Screen_2021-02-12_06-27_eddinw.png)
+
+But, in my machine (X220) need about 3 days and it still not completed :v I think thereis not only one way to import sql data.
+
+In wiki case, I'm just extract a spesific data into the xml file. I think it doesn't need extra long time.
 
 ### Remote my wiki database
 
