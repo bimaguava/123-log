@@ -25,8 +25,6 @@ In wiki case, I'm just using a spesific dump file in xml. I think it doesn't nee
 
 ### Example dump file in xml
 
-### 
-
 ### Reference
 
 * [https://en.wikipedia.org/wiki/Wikipedia:Database_download](https://en.wikipedia.org/wiki/Wikipedia:Database_download "https://en.wikipedia.org/wiki/Wikipedia:Database_download")
