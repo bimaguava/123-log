@@ -41,7 +41,7 @@ If you want it less frequent then add `-n x` where _x_ is the number of seconds.
 
 Wait....
 
-How long I did?
+How long I did for 3GB sql dump?
 
 in my machine (X220) need about **3 days** and it still not completed :v
 
