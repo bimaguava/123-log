@@ -39,6 +39,10 @@ If you want it less frequent then add `-n x` where _x_ is the number of seconds.
 
     watch -n 5 'echo "show processlist;" | mysql -uuser -ppassword';
 
+Wait....
+
+How long I did?
+
 in my machine (X220) need about **3 days** and it still not completed :v
 
 I think thereis not only one way to import sql data. I mean It should be import with another setup such as innoDB.
