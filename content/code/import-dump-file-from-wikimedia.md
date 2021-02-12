@@ -23,21 +23,7 @@ But, in my machine (X220) need about 3 days and it still not completed :v I thin
 
 In wiki case, I'm just extract a spesific data into the xml file. I think it doesn't need extra long time.
 
-### Remote my wiki database
-
-    ↪ mysql -u root -h 172.24.0.2 -p
-    Enter password: 
-    Welcome to the MySQL monitor.  Commands end with ; or \g.
-    Your MySQL connection id is 798
-    Server version: 5.5.5-10.5.8-MariaDB-1:10.5.8+maria~focal mariadb.org binary distribution
-    
-    Copyright (c) 2000, 2021, Oracle and/or its affiliates.
-    
-    Oracle is a registered trademark of Oracle Corporation and/or its
-    affiliates. Other names may be trademarks of their respective
-    owners.
-    
-    Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+### R
 
 ### 
 
