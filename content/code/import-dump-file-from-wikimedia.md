@@ -81,7 +81,11 @@ This will take forever, like few days to complete for a large dump. Alternativel
 
 ### Reference
 
+Download database or dump file in indonesia
+
+* [https://id.wikipedia.org/wiki/Wikipedia:Unduh_basis_data#idwiki-pages-articles.xml](https://id.wikipedia.org/wiki/Wikipedia:Unduh_basis_data#idwiki-pages-articles.xml "https://id.wikipedia.org/wiki/Wikipedia:Unduh_basis_data#idwiki-pages-articles.xml")
+
+Download database or dump file (english contents)
+
 * [https://en.wikipedia.org/wiki/Wikipedia:Database_download](https://en.wikipedia.org/wiki/Wikipedia:Database_download "https://en.wikipedia.org/wiki/Wikipedia:Database_download")
 * [https://dumps.wikimedia.org/enwiki/20201101/](https://dumps.wikimedia.org/enwiki/20201101/ "https://dumps.wikimedia.org/enwiki/20201101/")
-* [https://serverfault.com/questions/137965/how-do-i-load-a-sql-gz-file-to-my-database-importing](https://serverfault.com/questions/137965/how-do-i-load-a-sql-gz-file-to-my-database-importing "https://serverfault.com/questions/137965/how-do-i-load-a-sql-gz-file-to-my-database-importing")
-* [https://www.mediawiki.org/wiki/Manual:Restoring_a_wiki_from_backup](https://www.mediawiki.org/wiki/Manual:Restoring_a_wiki_from_backup "https://www.mediawiki.org/wiki/Manual:Restoring_a_wiki_from_backup")
