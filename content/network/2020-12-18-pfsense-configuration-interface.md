@@ -1,6 +1,6 @@
 ---
 type: post
-title: Setup pfSense - LAN/WAN interface
+title: pfSense - LAN/WAN interface
 date: 2020-12-18T18:11:35.000+07:00
 categories:
 - network
