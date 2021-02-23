@@ -16,3 +16,13 @@ type = "post"
 ![](https://res.cloudinary.com/bimagv/image/upload/v1614057646/2021-02/123/Screen_2021-02-23_09-38-51X_ljprva.png)
 
 ### Prerequisite
+
+* connecting Cisco to the internet using default static route
+
+    Router(config)#ip route 0.0.0.0 0.0.0.0 192.168.89.1
+    Router(config)#ip name-server 8.8.8.8
+    Router(config)#ip name-server 1.1.1.1
+    Router(config)#ip domain-lookup
+    
+
+* s
