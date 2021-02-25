@@ -3,7 +3,7 @@ categories = ["network"]
 date = 2021-02-06T17:00:00Z
 excerpt = "pfSense configuration to allow inbound traffic for internet and remote connection in client-side and also implement a remote access "
 tags = ["pfsense", "openwrt"]
-title = "pfSense - Firewall behind Router (OpenWRT) *bonus how to do it with Cisco router"
+title = "pfSense - Firewall behind Router (OpenWRT) *bonus \"how different with Cisco router\""
 type = "post"
 
 +++
@@ -61,7 +61,7 @@ And let's see..
 
 Now I'm clear with prerequisite, my pfSense can get a internet connection and have an access from OpenWRT router to implement a Remote Access VPN.
 
-#### Bonus: How it different with Cisco config?
+#### Bonus: How different with Cisco router?
 
 Now, I will show the different firewall configuration in other router vendor, example is Cisco.
 
