@@ -61,15 +61,15 @@ And let's see..
 
 Now I'm clear with prerequisite, my pfSense can get a internet connection and have an access from OpenWRT router to implement a Remote Access VPN.
 
-#### Bonus: different with Cisco config
+#### Bonus: How it different with Cisco config?
 
-Now, I will show the different firewall configuration in other router vendor, example is Cisco. 
+Now, I will show the different firewall configuration in other router vendor, example is Cisco.
 
 This is the example method in Cisco router.
 
-Note: 
+Note:
 
-**Inbound traffic** is traffic came in from internet or WAN. 
+**Inbound traffic** is traffic came in from internet or WAN.
 
 **Outbound traffic** is traffic where come from LAN interface. Such as applications, user or etc.
 
@@ -103,8 +103,6 @@ Note:
       ICT(config)# access-list 1 permit 192.168.1.0 0.0.0.255
 
   If use Cisco, now pfSense can ping to 8.8.8.8, but no with internet. So, Access-List config need to be allow for ICMP traffic.
-
-      
 
   Done.
 
