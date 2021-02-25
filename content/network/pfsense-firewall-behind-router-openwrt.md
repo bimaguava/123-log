@@ -116,7 +116,7 @@ This is the example method in Cisco router.
 
   In this Cisco router example, now pfSense can perfectly ping to google.com behind Cisco Router.
 
-Next is follow this 2 steps to get and manage internet for client and implement Remote Access.
+Next is follow this 2 steps to **get and manage internet for client** and **implement Remote Access**.
 
 ### Step 1: Setup pfSense to allow inbound traffic for client internet connection
 
