@@ -27,7 +27,9 @@ Also his block all traffic comes from WAN interface. So if you ping pfSense from
 
 To do this, OpenWRT must be configured such as intial config, static route (to client-side), default route (internet), setup Firewall Zones and PortForward Firewall rules. 
 
-**AND** DNS!
+**Don't forget to set up** DNS in General setup!
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1614265663/2021-02/123/2021-02-25-T15-06-51_vz3dks.png)
 
 pfSense too, it's need to configure basic things like LAN/WAN/OPT1 interface and default gateway.
 
