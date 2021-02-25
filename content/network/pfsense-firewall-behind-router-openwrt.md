@@ -104,7 +104,7 @@ This is the example method in Cisco router.
 
   If use Cisco, now pfSense can ping to 8.8.8.8, but no with internet. So, Access-List config need to be allow for ICMP traffic.
 
-      access-list 110 permit ip any any
+      Router(config)# access-list 110 permit ip any any
 
   Done.
 
