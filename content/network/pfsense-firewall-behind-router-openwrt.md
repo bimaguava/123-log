@@ -3,7 +3,7 @@ categories = ["network"]
 date = 2021-02-06T17:00:00Z
 excerpt = "pfSense configuration to allow inbound traffic for internet and remote connection in client-side and also implement a remote access "
 tags = ["pfsense", "openwrt"]
-title = "pfSense - Firewall behind Router *bonus OpenWRT vs Cisco different config"
+title = "pfSense - Firewall behind Router (OpenWRT) *bonus how to do it with Cisco router"
 type = "post"
 
 +++
