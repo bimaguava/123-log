@@ -67,11 +67,11 @@ Now, I will show the different firewall configuration in other router vendor, ex
 
 This is the example method in Cisco router.
 
-Note:
+**Note:**
 
-**Inbound traffic** is traffic came in from internet or WAN.
-
-**Outbound traffic** is traffic where come from LAN interface. Such as applications, user or etc.
+> **Inbound traffic** is traffic came in from internet or WAN.
+>
+> **Outbound traffic** is traffic where come from LAN interface. Such as applications, user or etc.
 
 * setting WAN interface to allow inbound traffic (traffic from internet to local area network)
 
