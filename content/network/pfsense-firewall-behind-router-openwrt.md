@@ -103,7 +103,10 @@ Note:
       ICT(config)# access-list 1 permit 192.168.1.0 0.0.0.255
 
   If use Cisco, now pfSense can ping to 8.8.8.8, but no with internet. So, Access-List config need to be allow for ICMP traffic.
-* s
+
+      
+
+  Done.
 
 Next is follow this 2 steps to get and manage internet for client and implement Remote Access.
 
