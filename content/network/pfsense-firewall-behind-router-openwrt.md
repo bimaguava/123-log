@@ -100,7 +100,7 @@ This is the example method in Cisco router.
       Router(config)# ip nat inside source list 1 interface FastEthernet0/0 overload
 * adding Access-List 1 **(This allows the LAN to get connection to the internet)**. It will be use wilcard mask instead of subnet mask
 
-      ICT(config)# access-list 1 permit 192.168.1.0 0.0.0.255
+      Router(config)# access-list 1 permit 192.168.1.0 0.0.0.255
 
   If use Cisco, now pfSense can ping to 8.8.8.8, but no with internet. So, Access-List config need to be allow for ICMP traffic.
 
