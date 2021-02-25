@@ -1,7 +1,7 @@
 +++
 categories = ["code"]
 date = 2021-02-07T17:04:00Z
-excerpt = "Create Wiki in FreeBSD on Docker"
+excerpt = "One click installation Mediawiki with jenkins"
 tags = ["wiki", "docker"]
 title = "One click installation Mediawiki with jenkins"
 type = "post"
@@ -9,7 +9,7 @@ type = "post"
 +++
 ### Preface
 
-> Main idea: Create Wiki on docker
+> Main idea: One click installation Mediawiki with jenkins
 
 ### Requirements
 
