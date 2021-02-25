@@ -102,7 +102,7 @@ This is the example method in Cisco router.
 
       Router(config)# access-list 1 permit 192.168.1.0 0.0.0.255
 
-  In this Cisco router example, now pfSense can ping to 8.8.8.8, but no with internet. So, Access-List config need to be allow for ICMP traffic.
+  In this Cisco router example, now pfSense can ping to 8.8.8.8, but no with internet. So, Access-List rules need to be allow for ICMP traffic.
 
       Router(config)# access-list 110 permit ip any any
 
