@@ -25,7 +25,9 @@ Also his block all traffic comes from WAN interface. So if you ping pfSense from
 
 ### Prerequisite: Connecting Firewall to the internet
 
-To do this, OpenWRT must be configured such as intial config, static route (to client-side), default route (internet), setup Firewall Zones and PortForward Firewall rules.
+To do this, OpenWRT must be configured such as intial config, static route (to client-side), default route (internet), setup Firewall Zones and PortForward Firewall rules. 
+
+**AND** DNS!
 
 pfSense too, it's need to configure basic things like LAN/WAN/OPT1 interface and default gateway.
 
@@ -102,11 +104,7 @@ This is the example method in Cisco router.
 
       Router(config)# access-list 1 permit 192.168.1.0 0.0.0.255
 
-  In this Cisco router example, now pfSense can ping to 8.8.8.8, but no with internet. So, Access-List rules need to be allow for ICMP traffic.
-
-      Router(config)# access-list 110 permit ip any any
-
-  Done.
+  In this Cisco router example, now pfSense can perfectly ping to google.com behind Cisco Router. 
 
 Next is follow this 2 steps to get and manage internet for client and implement Remote Access.
 
