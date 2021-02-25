@@ -36,4 +36,12 @@ type = "post"
 * adding Access-List 1 **(This allows the LAN to get connection to the internet)**. It will be use wilcard mask instead of subnet mask
 
       ICT(config)# access-list 1 permit 192.168.1.0 0.0.0.255
-* sd
+* Verify
+
+      Router(config)# show interface ethernet1/0 (verify the LAN IP configuration)
+      Router(config)# show interface fastethernet 0/0 (verify External/ISP IP configuration and status)
+      Router(config)# Show ip route (show your routing statement if its correct)
+      Router(config)# show ip nat translations (This is to confirm if your nat statements are right)
+      Router(config)# show access-lists (configured access lists)
+
+don't forget to save router config with `do wr`.
