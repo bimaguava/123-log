@@ -33,6 +33,8 @@ type = "post"
 
 ### Start Container
 
+\*good internet connection is needed to download docker images
+
     docker-compose up -d
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1612806157/2021-02/123/Screen_2021-02-08_23-36-56_av1iji.png)
