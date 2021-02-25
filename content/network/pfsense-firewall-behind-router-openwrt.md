@@ -73,7 +73,7 @@ This is the example method in Cisco router.
 >
 > **Outbound traffic** is traffic where come from LAN interface. Such as applications, user or etc.
 
-* setting WAN interface to allow inbound traffic (traffic from internet to local area network)
+* first, I need set up WAN interface to allow inbound traffic (traffic from internet to local area network)
 
       Router(config)# int fa0/0
       Router(config-if)# ip add dhcp
@@ -87,7 +87,7 @@ This is the example method in Cisco router.
       Router(config)# ip domain-lookup
 
   **WAN interface** need to be ruled with **nat outside** in Cisco.
-* setting up LAN interface and allow outbound (traffic from LAN interface) traffic
+* and configuration for LAN interface and allow outbound (traffic from LAN interface) traffic
 
       Router(config)# int fa0/1
       Router(config-if)# ip add 192.168.1.1 255.255.255.0
@@ -103,6 +103,8 @@ This is the example method in Cisco router.
       ICT(config)# access-list 1 permit 192.168.1.0 0.0.0.255
 
   If use Cisco, now pfSense can ping to 8.8.8.8, but no with internet. So, Access-List config need to be allow for ICMP traffic.
+
+      access-list 110 permit ip any any
 
   Done.
 
