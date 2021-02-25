@@ -33,7 +33,13 @@ pfSense too, it's need to configure basic things like LAN/WAN/OPT1 interface and
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1614265663/2021-02/123/2021-02-25-T15-06-51_vz3dks.png)
 
-maybe, thats all requirements
+maybe, thats all requirements. 
+
+So, to connecting pfSense to the internet **behind router**.... The thing is 'firewall setting' in the router. 
+
+It should be assign to allow inbound traffic (traffic came from internet).
+
+Look at this how to! After OpenWRT. I will give an example for another router vendor a.k.a Cisco.
 
 #### OpenWRT: Configure Zones (interface) Firewall
 
