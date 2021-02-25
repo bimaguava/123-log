@@ -45,3 +45,5 @@ type = "post"
       Router(config)# show access-lists (configured access lists)
 
 don't forget to save router config with `do wr`.
+
+Now, pfSense can ping to 8.8.8.8, but no with internet. So,
