@@ -63,22 +63,41 @@ Now I'm clear with prerequisite, my pfSense can get a internet connection and ha
 
 #### Bonus: different with Cisco config
 
-* connecting cisco to the internet (NAT cloud) and allow inbound traffic (traffic from internet to local area network)
+Now, I will show the different firewall configuration in other router vendor, example is Cisco. 
+
+This is the example method in Cisco router.
+
+Note: 
+
+**Inbound traffic** is traffic came in from internet or WAN. 
+
+**Outbound traffic** is traffic where come from LAN interface. Such as applications, user or etc.
+
+* setting WAN interface to allow inbound traffic (traffic from internet to local area network)
 
       Router(config)# int fa0/0
       Router(config-if)# ip add dhcp
       Router(config-if)# ip nat outside
       Router(config-if)# no sh
+
+  connecting cisco to the internet (NAT cloud) with default static route and setup custom dns server
+
       Router(config)# ip route 0.0.0.0 0.0.0.0 192.168.89.1
-      Router(config)# ip nat inside source list 1 interface FastEthernet0/0 overload
-      Router(config)#ip name-server 8.8.8.8
-      Router(config)#ip domain-lookup
+      Router(config)# ip name-server 8.8.8.8
+      Router(config)# ip domain-lookup
+
+  **WAN interface** need to be ruled with **nat outside** in Cisco.
 * setting up LAN interface and allow outbound (traffic from LAN interface) traffic
 
       Router(config)# int fa0/1
       Router(config-if)# ip add 192.168.1.1 255.255.255.0
       Router(config-if)# ip nat inside
       Router(config-if)# no sh
+
+  at **LAN interface** exactly it need tobe ruled with **nat inside**
+* NAT rule statements for LAN interface
+
+      Router(config)# ip nat inside source list 1 interface FastEthernet0/0 overload
 * adding Access-List 1 **(This allows the LAN to get connection to the internet)**. It will be use wilcard mask instead of subnet mask
 
       ICT(config)# access-list 1 permit 192.168.1.0 0.0.0.255
