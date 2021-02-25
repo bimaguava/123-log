@@ -33,7 +33,7 @@ type = "post"
 
 ### Start Container
 
-\*good internet connection is needed to download docker images
+> _*good internet connection is needed to download docker images_
 
     docker-compose up -d
 
