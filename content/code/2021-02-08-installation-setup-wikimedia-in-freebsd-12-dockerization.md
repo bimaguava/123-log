@@ -1,15 +1,15 @@
 +++
 categories = ["code"]
 date = 2021-02-07T17:04:00Z
-excerpt = "One click installation Mediawiki with jenkins for CI"
+excerpt = "One click installation Mediawiki with jenkins (CI tool))"
 tags = ["wiki", "docker"]
-title = "One click installation Mediawiki with jenkins for CI"
+title = "One click installation Mediawiki with jenkins (CI tool))"
 type = "post"
 
 +++
 ### Preface
 
-> Main idea: One click installation Mediawiki with jenkins for CI
+> Main idea: One click installation Mediawiki with jenkins (CI tool)
 
 ### Requirements
 
