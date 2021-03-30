@@ -51,4 +51,5 @@ pages:
 - content/sysadmin/2020-11-25-kali-linux-error-response-from-apparmor-daemon-docker-installation.md
 - content/sysadmin/2020-11-25-kali-linux-error-response-from-docker-registry.md
 - content/sysadmin/2021-02-06-mysql-service-failed-to-start.md
+- content/sysadmin/configuring-rhel-8-for-the-first-time.md
 - content/sysadmin/openshift.md
