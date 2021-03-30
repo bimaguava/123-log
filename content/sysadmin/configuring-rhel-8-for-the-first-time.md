@@ -93,3 +93,5 @@ Download labs
     Resolving deltas: 100% (73/73), done.
     [student@workstation ~]$ cd DO101-apps/
     [student@workstation DO101-apps]$ 
+
+To be continued...
