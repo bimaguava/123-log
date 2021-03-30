@@ -54,6 +54,8 @@ Join network
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1617123024/2021-03/123/Screen_2021-03-30_23-47-22_lmqot1.png)
 
+Now, it's show in zerotier panel
+
 ![](https://res.cloudinary.com/bimagv/image/upload/v1617122960/2021-03/123/Screen_2021-03-30_23-48-18X_geofil.png)
 
 Connecting to VM
@@ -70,3 +72,11 @@ Connecting to VM
 ![](https://res.cloudinary.com/bimagv/image/upload/v1617123746/2021-03/123/Screen_2021-03-31_00-01-23X_gziezf.png)
 
 ### Configure Workstation VM for labs
+
+    lab-configure
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1617124105/2021-03/123/Screen_2021-03-31_00-06-26X_tgyzok.png)
+
+Now, lab is ready!
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1617124135/2021-03/123/Screen_2021-03-31_00-07-42X_mot5ss.png)
