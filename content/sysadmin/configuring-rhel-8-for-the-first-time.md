@@ -80,3 +80,16 @@ Connecting to VM
 Now, lab is ready!
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1617124135/2021-03/123/Screen_2021-03-31_00-07-42X_mot5ss.png)
+
+Download labs
+
+    [student@workstation ~]$ git clone https://github.com/andisugandi/DO101-apps
+    Cloning into 'DO101-apps'...
+    remote: Enumerating objects: 4, done.
+    remote: Counting objects: 100% (4/4), done.
+    remote: Compressing objects: 100% (4/4), done.
+    remote: Total 173 (delta 0), reused 1 (delta 0), pack-reused 169
+    Receiving objects: 100% (173/173), 170.46 KiB | 2.43 MiB/s, done.
+    Resolving deltas: 100% (73/73), done.
+    [student@workstation ~]$ cd DO101-apps/
+    [student@workstation DO101-apps]$ 
