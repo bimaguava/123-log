@@ -81,7 +81,7 @@ Now, lab is ready!
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1617124135/2021-03/123/Screen_2021-03-31_00-07-42X_mot5ss.png)
 
-Download labs
+Download labs from [https://github.com/andisugandi/DO101-apps](https://github.com/andisugandi/DO101-apps "https://github.com/andisugandi/DO101-apps")
 
     [student@workstation ~]$ git clone https://github.com/andisugandi/DO101-apps
     Cloning into 'DO101-apps'...
