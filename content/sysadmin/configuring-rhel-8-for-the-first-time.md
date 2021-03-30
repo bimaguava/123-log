@@ -91,7 +91,5 @@ Download labs
     remote: Total 173 (delta 0), reused 1 (delta 0), pack-reused 169
     Receiving objects: 100% (173/173), 170.46 KiB | 2.43 MiB/s, done.
     Resolving deltas: 100% (73/73), done.
-    [student@workstation ~]$ cd DO101-apps/
-    [student@workstation DO101-apps]$ 
 
 To be continued...
