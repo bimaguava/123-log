@@ -11,7 +11,17 @@ type = "post"
 
 How to setup Red Hat Enterprise for the first time use
 
-### Start use
+### Create VM
+
+Click Create and the service will automaticly running
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1617121582/2021-03/123/Screen_2021-03-30_22-50-40X_a0mp6t.png)
+
+And it's done.
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1617121641/2021-03/123/Screen_2021-03-30_22-53-17_b7tm8k.png)
+
+So, I can remote to workstation VM through VNC web.
 
 ### Begining setup
 
