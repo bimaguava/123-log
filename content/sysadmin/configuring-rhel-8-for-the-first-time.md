@@ -40,8 +40,10 @@ And update using _yum update_
     sudo subscription-manager repos --enable "rhel-*-optional-rpms" --enable "rhel-*-extras-rpms"
     sudo yum update
 
+It didn't work :v because RHEL subscription not actived.
+
 #### ZeroTier for VPN connection
 
-    sudo yum install snapd
-    sudo systemctl enable --now snapd.socket
-    sudo ln -s /var/lib/snapd/snap /snap
+    curl -s https://install.zerotier.com | sudo bash
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1617122413/2021-03/123/Screen_2021-03-30_23-39-24X_dp1tqm.png)
