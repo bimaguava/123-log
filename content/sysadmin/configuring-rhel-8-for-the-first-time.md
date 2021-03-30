@@ -7,11 +7,15 @@ title = "Setup RHEL 8 VM from Red Hat Academy"
 type = "post"
 
 +++
-# Preface
+### Preface
 
 How to setup Red Hat Enterprise for the first time use
 
-# Enable Epel Repo
+### Start use
+
+### Begining setup
+
+#### Epel Repo
 
     sudo yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
 
@@ -21,12 +25,12 @@ And update using _yum update_
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1617120579/2021-03/123/Screen_2021-03-30_23-05-43X_mrujcp.png)
 
-### Adding the _optional_ and _extras_ repositories
+#### Extras repositories
 
     sudo subscription-manager repos --enable "rhel-*-optional-rpms" --enable "rhel-*-extras-rpms"
     sudo yum update
 
-### ZeroTier
+#### ZeroTier for VPN connection
 
     sudo yum install snapd
     sudo systemctl enable --now snapd.socket
