@@ -1,7 +1,7 @@
 +++
 categories = ["sysadmin"]
 date = 2021-03-29T17:00:00Z
-excerpt = "Setup RHEL 8 VM from Red Hat Academy"
+excerpt = "Such as vpn, ssh, and basic setup for Red Hat Academy Labs"
 tags = ["rhel"]
 title = "Setup RHEL 8 VM from Red Hat Academy"
 type = "post"
@@ -58,17 +58,15 @@ Join network
 
 Connecting to VM
 
-    ~ ❯❯❯ ping 107.191.43.79
-    PING 107.191.43.79 (107.191.43.79) 56(84) bytes of data.
-    64 bytes from 107.191.43.79: icmp_seq=1 ttl=54 time=256 ms
-    64 bytes from 107.191.43.79: icmp_seq=2 ttl=53 time=256 ms
+    ~ ❯❯❯ ping 172.22.249.185
+    PING 172.22.249.185 (172.22.249.185) 56(84) bytes of data.
+    64 bytes from 172.22.249.185: icmp_seq=1 ttl=54 time=256 ms
+    64 bytes from 172.22.249.185: icmp_seq=2 ttl=53 time=256 ms
     ^C
     --- 107.191.43.79 ping statistics ---
     2 packets transmitted, 2 received, 0% packet loss, time 1000ms
     rtt min/avg/max/mdev = 256.579/256.752/256.925/0.173 ms
-    ~ ❯❯❯ ssh students@107.191.43.79
-    The authenticity of host '107.191.43.79 (107.191.43.79)' can't be established.
-    ECDSA key fingerprint is SHA256:CUFbhTFzB4D1cSu27tWUbkD/wBIA/iJoW5oJh1v+liM.
-    Are you sure you want to continue connecting (yes/no)? yes
-    Warning: Permanently added '107.191.43.79' (ECDSA) to the list of known hosts.
-    students@107.191.43.79: Permission denied (publickey).
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1617123746/2021-03/123/Screen_2021-03-31_00-01-23X_gziezf.png)
+
+### Configure Workstation VM for labs
