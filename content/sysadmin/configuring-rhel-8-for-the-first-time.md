@@ -77,11 +77,11 @@ Connecting to VM
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1617124105/2021-03/123/Screen_2021-03-31_00-06-26X_tgyzok.png)
 
-Now, lab is ready!
+Now, lab config is ready!
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1617124135/2021-03/123/Screen_2021-03-31_00-07-42X_mot5ss.png)
 
-Download labs from [https://github.com/andisugandi/DO101-apps](https://github.com/andisugandi/DO101-apps "https://github.com/andisugandi/DO101-apps")
+Download lab apps from [https://github.com/andisugandi/DO101-apps](https://github.com/andisugandi/DO101-apps "https://github.com/andisugandi/DO101-apps")
 
     [student@workstation ~]$ git clone https://github.com/andisugandi/DO101-apps
     Cloning into 'DO101-apps'...
