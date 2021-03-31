@@ -1,9 +1,9 @@
 +++
 categories = ["sysadmin"]
 date = 2021-03-30T17:00:00Z
-excerpt = "Fetching Container Images with Podman"
+excerpt = "such as try get images, run container and Creating a MySQL Database Instance"
 tags = ["podman"]
-title = "Fetching Container Images with Podman"
+title = "Fetching Container Images with Podman to Creating a MySQL Database Instance"
 type = "post"
 
 +++
