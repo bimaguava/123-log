@@ -45,7 +45,8 @@ Container images are named based on the following syntax:
 
 registry_name/user_name/image_name:tag
 
-* First `registry_name`, the name of the registry storing the image. It is usually the FQDN of the registry.
-* `user_name` stands for the user or organization the image belongs to.
-* The `image_name` should be unique in user namespace.
-* The `tag` identifies the image version. If the image name includes no image tag, `latest` is assumed.
+> e.g: 
+>
+> `podman pull registry.access.redhat.com/rhel:latest`
+
+s
