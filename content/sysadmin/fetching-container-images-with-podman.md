@@ -11,7 +11,21 @@ type = "post"
 
 > getting started with podman
 
+### Scenario
+
+* Search for and fetch container images with Podman.
+* Run and configure containers locally.
+* Use the Red Hat Container Catalog.
+
 ### Getting images
+
+Podman users can use the **search** subcommand to find available images from remote or local registries. "_`podman search rhel`_"
+
+> Note:
+>
+> This classroom's Podman installation uses a several publicly available registries, like `Quay.io` and Red Hat Container Catalog.
+
+After you have found an image, you can use Podman to download it. When using the **pull** subcommand, Podman fetches the image and saves it locally for future use:
 
     [root@workstation student]# podman pull rhel
     Trying to pull registry.access.redhat.com/rhel...
@@ -26,3 +40,12 @@ type = "post"
     [root@workstation student]# podman images
     REPOSITORY                        TAG      IMAGE ID       CREATED       SIZE
     registry.access.redhat.com/rhel   latest   c61e4f9e8ada   2 weeks ago   216 MB
+
+Container images are named based on the following syntax:
+
+registry_name/user_name/image_name:tag
+
+* First `registry_name`, the name of the registry storing the image. It is usually the FQDN of the registry.
+* `user_name` stands for the user or organization the image belongs to.
+* The `image_name` should be unique in user namespace.
+* The `tag` identifies the image version. If the image name includes no image tag, `latest` is assumed.
