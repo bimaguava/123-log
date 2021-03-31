@@ -50,3 +50,19 @@ registry_name/user_name/image_name:tag
 > `podman pull registry.access.redhat.com/rhel:latest`
 
 ### Running containers
+
+The **podman run** command runs a container locally based on an image. At a minimum, the command requires the name of the image to execute in the container.
+
+The container image specifies a process that starts inside the container known as the _entry point_. The **podman run** command uses all parameters after the image name as the entry point command for the container. The following example starts a container from a Red Hat Enterprise Linux image. It sets the entry point for this container to the **echo "Hello world"** command.
+
+    [root@workstation student]# sudo podman run ubi7/ubi:7.7 echo 'Hello!'
+    Trying to pull registry.access.redhat.com/ubi7/ubi:7.7...
+    Getting image source signatures
+    Copying blob fcd63ccfdd0c done
+    Copying blob 09dbbf8834d2 done
+    Copying config 0355cd652b done
+    Writing manifest to image destination
+    Storing signatures
+    Hello!
+
+To start a container image as a background process, pass the `-d` option to the **podman run** command:
