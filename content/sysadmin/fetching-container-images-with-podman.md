@@ -49,4 +49,4 @@ registry_name/user_name/image_name:tag
 >
 > `podman pull registry.access.redhat.com/rhel:latest`
 
-s
+### Running containers
