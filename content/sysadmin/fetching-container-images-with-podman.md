@@ -45,7 +45,7 @@ Container images are named based on the following syntax:
 
 registry_name/user_name/image_name:tag
 
-> e.g: 
+> e.g:
 >
 > `podman pull registry.access.redhat.com/rhel:latest`
 
@@ -66,3 +66,20 @@ The container image specifies a process that starts inside the container known a
     Hello!
 
 To start a container image as a background process, pass the `-d` option to the **podman run** command:
+
+    [student@workstation ~]$ sudo podman run -d rhscl/httpd-24-rhel7:2.4-36.8
+    009e9d587d603d6e123cd5044cd9fb8212669fee6f2a9d4c2feef5418370d0bc
+
+And container just created and running
+
+    [root@workstation student]# podman container ls
+    CONTAINER ID  IMAGE                                                     COMMAND               CREATED        STATUS            PORTS  NAMES
+    009e9d587d60  registry.access.redhat.com/rhscl/httpd-24-rhel7:2.4-36.8  /usr/bin/run-http...  5 minutes ago  Up 5 minutes ago         gracious_hawking
+
+And use inspect command to show ip of container
+
+    [root@workstation student]# podman inspect -l -f "{{.NetworkSettings.IPAddress}}" 
+    10.88.0.3
+    
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1617260132/2021-03/123/Screenshot_from_2021-04-01_13.54.47_wfzr74.png)
