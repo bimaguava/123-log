@@ -1,7 +1,7 @@
 +++
 categories = ["security"]
 date = 2021-04-10T17:00:00Z
-excerpt = ""
+excerpt = "Metasploit: No local databased found"
 tags = ["metasploit"]
 title = "Metasploit: No local databased found"
 type = "post"
