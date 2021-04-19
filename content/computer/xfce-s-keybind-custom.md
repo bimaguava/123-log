@@ -20,3 +20,5 @@ Use **Settings Editor (action function keybind)** and search easy click. Change 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1618846792/2021-04/123/Screenshot_2021-04-19_22-39-37_yknibq.png)
 
 * Use **Window Manager>Keyboard** to setup window action such as move workspace and stick window.
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1618846910/2021-04/123/Screenshot_2021-04-19_22-41-35_n5dryb.png)
