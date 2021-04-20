@@ -1,0 +1,25 @@
++++
+categories = ["computer"]
+date = 2021-04-19T17:00:00Z
+excerpt = "Printer driver installation in Artix OpenRC"
+tags = ["openrc"]
+title = "Printer driver installation in Artix OpenRC"
+type = "post"
+
++++
+## Preface
+
+> Printer driver installation in Artix OpenRC with gutenprint and cups-openrc
+
+## Installation
+
+    sudo pacman -S cups-openrc gutenprint
+
+Add cups services to ~~systemctl~~ OpenRC
+
+    $ sudo rc-update add cupsd
+     * service cupsd added to runlevel default
+
+like at the systemd system, you can start and stop process
+
+> rc-service <service> <start/stop/restart>

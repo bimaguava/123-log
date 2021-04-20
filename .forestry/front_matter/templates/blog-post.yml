@@ -44,6 +44,7 @@ pages:
 - content/computer/2021-01-07-thumbnail-image-not-show.md
 - content/computer/2021-02-05-how-to-make-a-windowspe-boot-cd-create-a-system-image-wim.md
 - content/computer/fish-shell-as-default-shell.md
+- content/computer/printer-driver-installation-in-artix-openrc.md
 - content/computer/xfce-s-keybind-custom.md
 - content/network/2020-02-03-basic-firewall-fgt-policy-object.md
 - content/network/2021-02-06-connect-eve-ng-lab-to-external-network.md
