@@ -11,7 +11,7 @@ type = "post"
 
 > Printer driver installation in Artix OpenRC with gutenprint and cups-openrc
 
-## Installation
+## Installation gutenprint to OpenRC system
 
     sudo pacman -S cups-openrc gutenprint
 
