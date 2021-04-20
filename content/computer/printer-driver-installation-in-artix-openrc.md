@@ -53,13 +53,31 @@ and this installation driver should be done.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1618902337/2021-04/123/Screenshot_2021-04-20_14-04-38_nccmkv.png)
 
+I need to add new class for this printer to working with gutenberg gimp interface. So, I entered the **Administration** menu add I click "Add Class" on there.
+
+Just add Name of class (must be different with printer value name)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1618903337/2021-04/123/Screenshot_2021-04-20_14-15-46_yo4q9b.png)
+
+And it gonna be show up in Classes list
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1618903524/2021-04/123/Screenshot_2021-04-20_14-25-13_uq8mw1.png)
+
 ## Print test
 
 I use OnlyOffice workspace for printing sample document
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1618902747/2021-04/123/Screenshot_2021-04-20_14-11-37_hhtb3n.png)
 
-Ty
+and it working
+
+So, let's try with gutenberg gimp interface. In setup menu choose manufacture printer do you need and choose ""Custom command" to run `lp` command with Epson L350 class
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1618903570/2021-04/123/Screenshot_2021-04-20_14-17-43_whnb4c.png)
+
+and it work perfectly
+
+## L Series support with gutenberg list
 
 ## Reference
 
