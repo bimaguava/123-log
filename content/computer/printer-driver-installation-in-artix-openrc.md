@@ -23,3 +23,14 @@ Add cups services to ~~systemctl~~ OpenRC
 like at the systemd system, you can start and stop process
 
 > rc-service <service> <start/stop/restart>
+
+    $ sudo rc-service cupsd start
+    cupsd             | * Caching service dependencies ...                    [ ok ]
+    avahi-daemon      | * Starting avahi-daemon ...                           [ ok ]
+    cupsd             | * Starting cupsd ...                                  [ ok ]
+
+if permission problem, add user to sys or wheel sudo
+
+    sudo usermod -a -G sys bima
+  
+ s
