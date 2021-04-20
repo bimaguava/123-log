@@ -43,6 +43,7 @@ pages:
 - content/computer/2020-12-07-use-sharex-as-screen-recorder-ffmpeg-included.md
 - content/computer/2021-01-07-thumbnail-image-not-show.md
 - content/computer/2021-02-05-how-to-make-a-windowspe-boot-cd-create-a-system-image-wim.md
+- content/computer/configuring-samba-in-artix-openrc.md
 - content/computer/fish-shell-as-default-shell.md
 - content/computer/printer-driver-installation-in-artix-openrc.md
 - content/computer/xfce-s-keybind-custom.md
