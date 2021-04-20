@@ -79,6 +79,14 @@ and it work perfectly
 
 ## L Series support with gutenberg list
 
+| --- | --- | --- |
+| Epson L120 | escp2-l120 |  |
+| Epson L130 | escp2-l130 |  |
+| Epson L210 | escp2-l210 |  |
+| Epson L310 | escp2-l310 |  |
+| Epson L1300 | escp2-l1300 |  |
+| Epson L1800 | escp2-l1800 |
+
 ## Reference
 
 * [List of Gutenprint supported printers](http://gimp-print.sourceforge.net/p_Supported_Printers.php)
