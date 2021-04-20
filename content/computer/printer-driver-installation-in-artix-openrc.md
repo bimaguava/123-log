@@ -3,7 +3,7 @@ categories = ["computer"]
 date = 2021-04-19T17:00:00Z
 excerpt = "Printer driver installation in Artix OpenRC"
 tags = ["openrc", "gutenprint"]
-title = "Printer driver installation in Artix OpenRC use gutenprint"
+title = "Printer driver installation in Artix OpenRC using gutenprint"
 type = "post"
 
 +++
@@ -53,7 +53,7 @@ and this installation driver should be done.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1618902337/2021-04/123/Screenshot_2021-04-20_14-04-38_nccmkv.png)
 
-I need to add new class for this printer to working with gutenberg gimp interface. So, I entered the **Administration** menu add I click "Add Class" on there.
+I need to add new class for this printer to working with gutenprint gimp interface. So, I entered the **Administration** menu add I click "Add Class" on there.
 
 Just add Name of class (must be different with printer value name)
 
@@ -71,7 +71,7 @@ I use OnlyOffice workspace for printing sample document
 
 and it working
 
-So, let's try with gutenberg gimp interface. In setup menu choose manufacture printer do you need and choose ""Custom command" to run `lp` command with Epson L350 class
+So, let's try with gutenprint gimp interface. In setup menu choose manufacture printer do you need and choose ""Custom command" to run `lp` command with Epson L350 class
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1618903570/2021-04/123/Screenshot_2021-04-20_14-17-43_whnb4c.png)
 
