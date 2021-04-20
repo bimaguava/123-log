@@ -2,8 +2,8 @@
 categories = ["computer"]
 date = 2021-04-19T17:00:00Z
 excerpt = "Printer driver installation in Artix OpenRC"
-tags = ["openrc"]
-title = "Printer driver installation in Artix OpenRC"
+tags = ["openrc", "gutenprint"]
+title = "Printer driver installation in Artix OpenRC use gutenprint"
 type = "post"
 
 +++
