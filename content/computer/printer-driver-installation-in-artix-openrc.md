@@ -54,3 +54,9 @@ and this installation driver should be done.
 ![](https://res.cloudinary.com/bimagv/image/upload/v1618902337/2021-04/123/Screenshot_2021-04-20_14-04-38_nccmkv.png)
 
 ## Print test
+
+I use OnlyOffice workspace for printing sample document
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1618902747/2021-04/123/Screenshot_2021-04-20_14-11-37_hhtb3n.png)
+
+Ty
