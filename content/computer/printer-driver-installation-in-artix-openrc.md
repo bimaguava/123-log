@@ -49,7 +49,7 @@ the next I will choose manufacture type of my printer. It says L310 (but its for
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1618902233/2021-04/123/Screenshot_2021-04-20_14-02-55_nguioz.png)
 
-and this installation driver should be done. 
+and this installation driver should be done.
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1618902337/2021-04/123/Screenshot_2021-04-20_14-04-38_nccmkv.png)
 
@@ -60,3 +60,7 @@ I use OnlyOffice workspace for printing sample document
 ![](https://res.cloudinary.com/bimagv/image/upload/v1618902747/2021-04/123/Screenshot_2021-04-20_14-11-37_hhtb3n.png)
 
 Ty
+
+## Reference
+
+* [List of Gutenprint supported printers](http://gimp-print.sourceforge.net/p_Supported_Printers.php)
