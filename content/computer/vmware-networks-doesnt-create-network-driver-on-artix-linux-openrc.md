@@ -9,4 +9,4 @@ type = "post"
 +++
 ## Preface
 
-> Troubleshoot installation of `vmware-workstation-openrc` package from AUR
+> Troubleshoot vmware-networks not running using `vmware-workstation-openrc` package from AUR
