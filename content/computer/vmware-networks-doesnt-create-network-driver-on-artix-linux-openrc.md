@@ -42,6 +42,10 @@ and run it again
     sudo rc-services vmware-networks-configuration start
     sudo rc-services vmware-usbarbitrator start
 
+and it working
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1619372800/2021-04/123/Screenshot_2021-04-25_21-47-22_uesbg8.png)
+
 ## Read Also
 
 [https://alexbelle.wordpress.com/2017/04/10/how-to-manually-configure-vmware-networking-on-linux-command-line/](https://alexbelle.wordpress.com/2017/04/10/how-to-manually-configure-vmware-networking-on-linux-command-line/ "https://alexbelle.wordpress.com/2017/04/10/how-to-manually-configure-vmware-networking-on-linux-command-line/")
