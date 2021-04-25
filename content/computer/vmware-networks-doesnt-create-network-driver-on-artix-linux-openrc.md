@@ -7,3 +7,6 @@ title = "vmware-networks doesnt create network driver on Artix Linux (OpenRC)"
 type = "post"
 
 +++
+## Preface
+
+> Troubleshoot installation of `vmware-workstation-openrc` package from AUR
