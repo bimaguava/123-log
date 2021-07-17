@@ -7,7 +7,7 @@ title = "DOKKU server on Armbian?"
 type = "post"
 
 +++
-## Normal installation
+## Root installation
 
     root@arm-64:~# wget https://raw.githubusercontent.com/dokku/dokku/v0.24.10/bootstrap.sh
     --2021-07-18 02:32:39--  https://raw.githubusercontent.com/dokku/dokku/v0.24.10/bootstrap.sh
@@ -52,4 +52,6 @@ and
     deb https://packagecloud.io/dokku/dokku/ubuntu/ focal main
     E: Unable to locate package dokku
 
-this installation not 
+this installation cannot found package related with dokku. So, maybe this tool is not build for arm system.
+
+## Docker installation
