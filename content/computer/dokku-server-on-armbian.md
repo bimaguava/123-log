@@ -9,6 +9,8 @@ type = "post"
 +++
 ## Root installation
 
+Downloading script
+
     root@arm-64:~# wget https://raw.githubusercontent.com/dokku/dokku/v0.24.10/bootstrap.sh
     --2021-07-18 02:32:39--  https://raw.githubusercontent.com/dokku/dokku/v0.24.10/bootstrap.sh
     Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.109.133, 185.199.108.133, ...
@@ -21,7 +23,7 @@ type = "post"
     
     2021-07-18 02:32:40 (19.4 MB/s) - ‘bootstrap.sh’ saved [9073/9073]
 
-and
+Execute script
 
     root@arm-64:~# DOKKU_TAG=v0.24.10 bash bootstrap.sh
     Preparing to install v0.24.10 from https://github.com/dokku/dokku.git...
@@ -56,6 +58,10 @@ this installation cannot found package related with dokku. So, maybe this tool i
 
 ## Docker installation
 
+![](https://res.cloudinary.com/bimagv/image/upload/v1626551900/2021-07/123/2021-07-18-02---55-42---624-1100_zzdxm9.png)
+
+Use different port, example: 3022, 8083, 8443
+
     docker pull dokku/dokku:0.24.10
     docker container run \
       --env DOKKU_HOSTNAME=dokku.me \
@@ -68,3 +74,16 @@ this installation cannot found package related with dokku. So, maybe this tool i
       dokku/dokku:0.24.10
 
 Make sure that the port is not conflict with each other application.
+
+Dokku is run in the following configuration:
+
+* The global hostname is set to `dokku.me` on boot.
+* The container name is dokku.
+* Container SSH port 22 is exposed on the host as 3022.
+* Container HTTP port 80 is exposed on the host as 8083.
+* Container HTTPS port 443 is exposed on the host as 8443.
+* Data within the container is stored on the host within the `/var/lib/dokku` directory.
+* The docker socket is mounted into container
+* The "web installer" is not supported.
+
+### Plugin
