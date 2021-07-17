@@ -75,15 +75,20 @@ Use different port, example: 3022, 8083, 8443
 
 Make sure that the port is not conflict with each other application.
 
-Dokku is run in the following configuration:
+Is dokku can run?
 
-* The global hostname is set to `dokku.me` on boot.
-* The container name is dokku.
-* Container SSH port 22 is exposed on the host as 3022.
-* Container HTTP port 80 is exposed on the host as 8083.
-* Container HTTPS port 443 is exposed on the host as 8443.
-* Data within the container is stored on the host within the `/var/lib/dokku` directory.
-* The docker socket is mounted into container
-* The "web installer" is not supported.
+    root@arm-64:~# docker container run \
+    >   --env DOKKU_HOSTNAME=dokku.me \
+    >   --name dokku \
+    >   --publish 3022:22 \
+    >   --publish 8083:80 \
+    >   --publish 8443:443 \
+    >   --volume /var/lib/dokku:/mnt/dokku \
+    >   --volume /var/run/docker.sock:/var/run/docker.sock \
+    >   dokku/dokku:0.24.10
+    WARNING: The requested image's platform (linux/amd64) does not match the detected host platform (linux/arm64/v8) and no specific platform was requested
+    standard_init_linux.go:219: exec user process caused: exec format error
 
-### Plugin
+hawoiasoidhasodihasd....
+
+noooooooo.....
