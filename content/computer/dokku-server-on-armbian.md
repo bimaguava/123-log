@@ -55,3 +55,16 @@ and
 this installation cannot found package related with dokku. So, maybe this tool is not build for arm system.
 
 ## Docker installation
+
+    docker pull dokku/dokku:0.24.10
+    docker container run \
+      --env DOKKU_HOSTNAME=dokku.me \
+      --name dokku \
+      --publish 3022:22 \
+      --publish 8083:80 \
+      --publish 8443:443 \
+      --volume /var/lib/dokku:/mnt/dokku \
+      --volume /var/run/docker.sock:/var/run/docker.sock \
+      dokku/dokku:0.24.10
+
+Make sure that the port is not conflict with each other application.
