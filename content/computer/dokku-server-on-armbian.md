@@ -73,9 +73,7 @@ Use different port, example: 3022, 8083, 8443
       --volume /var/run/docker.sock:/var/run/docker.sock \
       dokku/dokku:0.24.10
 
-Make sure that the port is not conflict with each other application.
-
-Is dokku can run?
+So, dokku can run on docker arm??
 
     root@arm-64:~# docker container run \
     >   --env DOKKU_HOSTNAME=dokku.me \
@@ -90,5 +88,3 @@ Is dokku can run?
     standard_init_linux.go:219: exec user process caused: exec format error
 
 hawoiasoidhasodihasd....
-
-noooooooo.....
