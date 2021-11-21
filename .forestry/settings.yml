@@ -20,6 +20,21 @@ sections:
   create: all
   match: "**/*"
 - type: directory
+  path: content/android
+  label: Android
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/stb
+  label: stb
+  create: all
+  match: "**/*"
+- type: directory
+  path: content/iot
+  label: IoT
+  create: all
+  match: "**/*"
+- type: directory
   path: content/network
   label: Network
   create: all
