@@ -7,3 +7,6 @@ title = "Error NET::ERR CERT DATE INVALID - Your connection is not private on Wi
 type = "post"
 
 +++
+## Preface
+
+Beginning on September 24, 2022, some users might have encountered a “Your connection is not private” or similar error message from their web browser when attempting to visit a website that uses a Let’s Encrypt SSL certificate. Make sure the ISRG Root X1 certificate and the Let’s Encrypt Intermediate Signed by ISRG Root X1 are installed in your OS.
