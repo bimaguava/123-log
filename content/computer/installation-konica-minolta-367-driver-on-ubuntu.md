@@ -7,3 +7,8 @@ title = "Installation Konica Minolta 367 Driver on Ubuntu"
 type = "post"
 
 +++
+j
+
+Source
+
+[https://www.freeprinterdriverdownload.org/konica-minolta-bizhub-367-driver-download/](https://www.freeprinterdriverdownload.org/konica-minolta-bizhub-367-driver-download/ "https://www.freeprinterdriverdownload.org/konica-minolta-bizhub-367-driver-download/")
