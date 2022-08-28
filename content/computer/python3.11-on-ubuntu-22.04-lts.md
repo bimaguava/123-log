@@ -7,7 +7,7 @@ title = "Python3.11 on Ubuntu 22.04 LTS"
 type = "post"
 
 +++
-I'm guarantee this way is the best way (for me) to install a newer version of Python without adding ppa or 3rd repository's shit.
+I'm guarantee this way is the best way (for me) to install a newer version of Python without adding ppa or 3rd repository's shit. Do it your self man haha.
 
 # Installation
 
