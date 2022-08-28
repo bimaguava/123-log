@@ -68,6 +68,8 @@ check where pip on python-3.11 folder
     whereis pip3.11
     pip3.11: /usr/local/bin/pip3.11
 
+> /usr/local/bin/pip3.11
+
 and select that to be default python pip on your machine
 
     sudo update-alternatives --install /usr/bin/pip pip /usr/local/bin/pip3.11 1
