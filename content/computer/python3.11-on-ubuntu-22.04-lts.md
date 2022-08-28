@@ -40,3 +40,28 @@ to create executable path to run **python** command on terminal
     sudo update-alternatives --install /usr/bin/python python /opt/Python-3.11.0a7/
 
 After that, you can uninstall old version of python you run before and their python3-pip. Or just leaving that.
+
+## Python-pip setup
+
+    python -m pip install --upgrade pip setuptools wheel
+    
+    Defaulting to user installation because normal site-packages is not writeable
+    Requirement already satisfied: pip in /usr/local/lib/python3.11/site-packages (22.0.4)
+    Collecting pip
+      Downloading pip-22.2.2-py3-none-any.whl (2.0 MB)
+         ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 2.6 MB/s eta 0:00:00
+    Requirement already satisfied: setuptools in /usr/local/lib/python3.11/site-packages (58.1.0)
+    Collecting setuptools
+      Using cached setuptools-65.3.0-py3-none-any.whl (1.2 MB)
+    Collecting wheel
+      Downloading wheel-0.37.1-py2.py3-none-any.whl (35 kB)
+    Installing collected packages: wheel, setuptools, pip
+      WARNING: The script wheel is installed in '/home/ok/.local/bin' which is not on PATH.
+      Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+      WARNING: The scripts pip, pip3 and pip3.11 are installed in '/home/ok/.local/bin' which is not on PATH.
+      Consider adding this directory to PATH or, if you prefer to suppress this warning, use --no-warn-script-location.
+    Successfully installed pip-22.2.2 setuptools-65.3.0 wheel-0.37.1
+    WARNING: You are using pip version 22.0.4; however, version 22.2.2 is available.
+    You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
+
+s
