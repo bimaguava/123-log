@@ -44,7 +44,6 @@ After that, you can uninstall old version of python you run before and their pyt
 ## Python-pip setup
 
     python -m pip install --upgrade pip setuptools wheel
-    
     Defaulting to user installation because normal site-packages is not writeable
     Requirement already satisfied: pip in /usr/local/lib/python3.11/site-packages (22.0.4)
     Collecting pip
@@ -64,4 +63,9 @@ After that, you can uninstall old version of python you run before and their pyt
     WARNING: You are using pip version 22.0.4; however, version 22.2.2 is available.
     You should consider upgrading via the '/usr/bin/python -m pip install --upgrade pip' command.
 
-s
+check where pip on python-3.11 folder
+
+    whereis pip3.11
+    pip3.11: /usr/local/bin/pip3.11
+
+and
