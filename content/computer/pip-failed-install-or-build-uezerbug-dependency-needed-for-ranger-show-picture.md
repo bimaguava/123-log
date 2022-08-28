@@ -9,7 +9,7 @@ type = "post"
 +++
 # To the conclusion
 
-to build the uezerbug installation python-wheel is needed in this scenario. I'm to update wheel and it's still useless. Searching on the internet about this case
+to build the uezerbug installation python-wheel is needed in this scenario. I'm trying to update wheel and it's still useless. Searching on the internet about this case
 
         ...
         
@@ -23,7 +23,7 @@ to build the uezerbug installation python-wheel is needed in this scenario. I'm 
 
 and a quick googled search of the error pip message **_#include anycodings_pip <X11/extensions/XShm.h>_** revealed pip that you're missing the package, **libxext-dev**.
 
-So, just 
+So, just
 
     sudo apt install libext-dev
 
