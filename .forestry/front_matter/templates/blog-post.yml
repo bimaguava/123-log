@@ -50,6 +50,7 @@ pages:
 - content/computer/fish-shell-as-default-shell.md
 - content/computer/installation-konica-minolta-367-driver-on-ubuntu.md
 - content/computer/printer-driver-installation-in-artix-openrc.md
+- content/computer/python3.11-on-ubuntu-22.04-lts.md
 - content/computer/vmware-networks-doesnt-create-network-driver-on-artix-linux-openrc.md
 - content/computer/xbacklight-not-show-output-driver-video.md
 - content/computer/xfce-s-keybind-custom.md
