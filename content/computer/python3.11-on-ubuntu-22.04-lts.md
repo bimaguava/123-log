@@ -9,7 +9,7 @@ type = "post"
 +++
 Long time not write some note in here... I know how important it is, documentation of work to read again on future as a timeline of work process. 
 
-I'm guarantee this way is the best way (for me) to install a newer version of Python without adding ppa or 3rd repository's shit. Do it your self man haha. You try it manual always is the best. Because, your know what you do on your machine. Your lovely machine. 
+In this note I'm on fresh installation of Ubuntu 22.04 LTS (Linux Mint) on my X220. Now I'm just trying to install newer version of python. And I'm guarantee this way is the best way (for me) to install a newer version of Python without adding ppa or 3rd repository's shit. Do it your self man haha. You try it manual always is the best. Because, your know what you do on your machine. Your lovely machine. 
 
 So, sure what gonna do
 
