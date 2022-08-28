@@ -68,4 +68,22 @@ check where pip on python-3.11 folder
     whereis pip3.11
     pip3.11: /usr/local/bin/pip3.11
 
-and
+and select that to be default python pip on your machine
+
+    sudo update-alternatives --install /usr/bin/pip pip /usr/local/bin/pip3.11 1
+
+# Testing
+
+python
+
+    ok@x220:~$ python
+    Python 3.11.0a7 (main, Aug 28 2022, 12:35:07) [GCC 11.2.0] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>> 
+
+pip
+
+    ok@x220:~$ pip --version
+    pip 22.2.2 from /home/ok/.local/lib/python3.11/site-packages/pip (python 3.11)
+
+Thanks me later
