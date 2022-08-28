@@ -26,13 +26,17 @@ just like that :)
     make
     sudo make altinstall
     sudo ldconfig /opt/Python-3.11.{version}
-    
 
-if ll is ok, we're go to setup default Python for our system
+if all is ok, we're go to setup default Python for our system
 
-# Set
+# Setup
+
+After installation, were gonna select Python 3.11 path on 
+
+> /opt/Python-3.11.0a7
+
+to create executable path to run **python** command on terminal
 
     sudo update-alternatives --install /usr/bin/python python /opt/Python-3.11.0a7/
-    
 
-s
+After that, you can uninstall old version of python you run before and their python3-pip. Or just leaving that.
