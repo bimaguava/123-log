@@ -51,4 +51,12 @@ and try again
 
 ok great.
 
-Let's update ranger configuration
+Let's update ranger configuration on \~/.config/ranger/rc.conf
+
+    set preview_images true
+    set preview_images_method  ueberzug 
+
+# Source
+
+* [https://www.anycodings.com/1questions/840232/pip3-failed-to-build-ueberzug](https://www.anycodings.com/1questions/840232/pip3-failed-to-build-ueberzug "https://www.anycodings.com/1questions/840232/pip3-failed-to-build-ueberzug")
+* [https://askubuntu.com/questions/1222930/image-preview-doesnt-work-in-ranger](https://askubuntu.com/questions/1222930/image-preview-doesnt-work-in-ranger "https://askubuntu.com/questions/1222930/image-preview-doesnt-work-in-ranger")
