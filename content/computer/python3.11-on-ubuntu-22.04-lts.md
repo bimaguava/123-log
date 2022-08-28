@@ -7,6 +7,8 @@ title = "Python3.11 on Ubuntu 22.04 LTS"
 type = "post"
 
 +++
+I'm guarantee this way is the best way (for me) to install a newer version of Python without adding ppa or 3rd repository's shit.
+
 # Installation
 
     wget https://www.python.org/ftp/python/3.11.0/Python-3.11.0a7.tar.xz
@@ -23,3 +25,8 @@ type = "post"
 if ll is ok, we're go to setup default Python for our system
 
 # Set
+
+    sudo update-alternatives --install /usr/bin/python python /opt/Python-3.11.0a7/
+    
+
+s
