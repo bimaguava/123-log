@@ -1,9 +1,9 @@
 +++
 categories = ["computer"]
 date = 2021-04-18T17:00:00Z
-excerpt = "Fish Shell as default shell"
-tags = ["fish"]
-title = "Fish Shell as default shell"
+excerpt = "Fish Shell as default shell, disable greetings every terminal launched. And setup for tmux"
+tags = ["fish", "tmux"]
+title = "Fish Shell as default shell and tmux"
 type = "post"
 
 +++
