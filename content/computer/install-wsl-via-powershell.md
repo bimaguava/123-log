@@ -26,7 +26,7 @@ Install WSL on powershell
 * run **wsreset** in Administrator mode
 * Reset the Microsoft Store on **App & Service**
 
-But, in my reality this thing not solving my case. I'm still cannot install any distro on Microsoft Store and run installation with AppxBundle Ubuntu it just show the error: 
+But, in my reality this thing not solving my case. I'm still cannot install any distro on Microsoft Store and run installation with AppxBundle Ubuntu it just show the error:
 
 > app installation failed with error message: catastrophic failure (0x8000ffff)
 
@@ -54,12 +54,14 @@ After download clear, navigate to that file app and install with these command
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1665851691/2022-10/123/powershell_3w0NR7qCFo_bmshjf.png)
 
-In a second, wait until process is done and your app is shown on Recently added app 
+In a second, wait until process is done and your app is shown on Recently added app
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1665851933/2022-10/123/chrome_xQi2CVVlRO_v6t7g4.png)
 
 So, this is what I looking for, Ubuntu WSL 22.04 LTS
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1665852053/2022-10/123/ubuntu2204_7HiaCZ1IUU_qyzsan.png)
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1665852786/2022-10/123/ubuntu2204_e2gJx0WOSd_cn1cyd.png)
 
 thankee youee
