@@ -48,6 +48,7 @@ pages:
 - content/computer/dokku-server-on-armbian.md
 - content/computer/error-net-err-cert-date-invalid-your-connection-is-not-private-on-windows-7.md
 - content/computer/fish-shell-as-default-shell.md
+- content/computer/install-wsl-via-powershell.md
 - content/computer/installation-konica-minolta-367-driver-on-ubuntu.md
 - content/computer/pip-failed-install-or-build-uezerbug-dependency-needed-for-ranger-show-picture.md
 - content/computer/printer-driver-installation-in-artix-openrc.md
