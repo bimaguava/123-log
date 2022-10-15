@@ -39,7 +39,7 @@ sections:
   label: Pages
   create: all
   match: "**/*"
-upload_dir: 2022-04/123
+upload_dir: 2022-10/123
 public_path: https://res.cloudinary.com/bimagv/image/upload
 front_matter_path: ''
 use_front_matter_path: false
