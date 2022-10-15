@@ -54,4 +54,12 @@ After download clear, navigate to that file app and install with these command
 
 ![](https://res.cloudinary.com/bimagv/image/upload/v1665851691/2022-10/123/powershell_3w0NR7qCFo_bmshjf.png)
 
-Thanke youee
+In a second, wait until process is done and your app is shown on Recently added app 
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1665851933/2022-10/123/chrome_xQi2CVVlRO_v6t7g4.png)
+
+So, this is what I looking for, Ubuntu WSL 22.04 LTS
+
+![](https://res.cloudinary.com/bimagv/image/upload/v1665852053/2022-10/123/ubuntu2204_7HiaCZ1IUU_qyzsan.png)
+
+thankee youee
