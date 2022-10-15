@@ -7,4 +7,6 @@ title = "Install WSL via powershell"
 type = "post"
 
 +++
-Test
+## Meet the problem
+
+In this case, my version Windows is not same with other. Maybe, I need an adjustment and more setup. So you can see what needed to install WSL and while minimizing errors happen. Sorry for my terrible english :)
