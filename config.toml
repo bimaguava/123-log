@@ -3,7 +3,7 @@
 
 baseURL      = "https://123log.netlify.app/"
 languageCode = "en-us"
-title        = "123-log"
+title        = "123-log test"
 theme        = "oriclone-bulma-md"
 
 Paginate     = 7
