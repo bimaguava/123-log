@@ -1,7 +1,7 @@
 # A Hugo Site Using Oriclone Theme
 # $ hugo server --baseUrl=192.168.43.111 --bind="0.0.0.0"
 
-baseURL      = "https://123log.netlify.app/"
+baseURL      = "https://123-log.vercel.app/"
 languageCode = "en-us"
 title        = "123-log test"
 theme        = "oriclone-bulma-md"
