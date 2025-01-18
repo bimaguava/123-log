@@ -6,7 +6,9 @@ languageCode = "en-us"
 title        = "123-log test"
 theme        = "oriclone-bulma-md"
 
-Paginate     = 7
+# Paginate     = 7
+[pagination]
+pagerSize = 10
 
 buildFuture = true
 
@@ -72,3 +74,6 @@ PygmentsStyle      = "monokai"
     ordered = false
     startLevel = 3
     style = "widget-list"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
