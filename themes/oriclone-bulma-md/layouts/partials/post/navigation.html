@@ -3,17 +3,17 @@
      role="navigation" aria-label="pagination">
 
     <!-- Previous Page. -->
-    {{ if .Page.PrevPage }}
+    {{ if .Page.Prev }}
       <a class="pagination-previous post-previous"
-         href="{{ .Page.PrevPage.Permalink | absURL }}"
-         title="{{ .Page.PrevPage.Title }}">
+         href="{{ .Page.Prev.Permalink | absURL }}"
+         title="{{ .Page.Prev.Title }}">
         <span class="fas fa-chevron-left"></span>&nbsp;&nbsp;</a>
     {{ end }}
 
-    {{ if .Page.NextPage }}
+    {{ if .Page.Next }}
       <a class="pagination-next post-next"
-         href="{{ .Page.NextPage.Permalink | absURL }}" 
-         title="{{ .Page.NextPage.Title }}">&nbsp;&nbsp;
+         href="{{ .Page.Next.Permalink | absURL }}" 
+         title="{{ .Page.Next.Title }}">&nbsp;&nbsp;
         <span class="fas fa-chevron-right"></span></a>
     {{ end }}
 </nav>
